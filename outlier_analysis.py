@@ -22,13 +22,15 @@ print("ΑΕΜ: 6931")
 print("ΕΡΩΤΗΜΑΤΑ 2 & 3: BOXPLOTS ΚΑΙ ΑΚΡΑΙΕΣ ΤΙΜΕΣ")
 print("=" * 70)
 
-# Συνεχείς μεταβλητές (εξαιρείται quality που είναι διακριτή κλίμακα)
+# Συνεχείς μεταβλητές (χωρίς quality γιατί είναι διακριτή)
 continuous_vars = ['fixed acidity', 'volatile acidity', 'citric acid', 
                    'residual sugar', 'chlorides', 'free sulfur dioxide',
-                   'total sulfur dioxide', 'density', 'pH', 'sulphates', 'alcohol']
+                   'total sulfur dioxide', 'density', 'pH', 'sulphates', 
+                   'alcohol']
 
 print(f"\n📊 Dataset: {df.shape[0]} γραμμές × {df.shape[1]} στήλες")
-print(f"📋 Συνεχείς μεταβλητές: {len(continuous_vars)}")
+print(f"📋 Συνεχείς μεταβλητές: {len(continuous_vars)} (χωρίς quality - διακριτή)")
+
 
 # ============================================================
 # ΕΡΩΤΗΜΑ 2: BOXPLOTS
@@ -60,13 +62,49 @@ for idx, var in enumerate(continuous_vars):
     ax.set_ylabel('Τιμή')
     ax.grid(True, alpha=0.3)
 
-# Αφαίρεση κενού subplot
-axes[2, 3].axis('off')
-
 plt.tight_layout()
 plt.savefig('boxplots_all_data.png', dpi=150, bbox_inches='tight')
 plt.close()
 print("   ✅ Αποθήκευση: boxplots_all_data.png")
+
+# === 2.1B ΚΑΤΑΝΟΜΗ QUALITY (ΔΙΑΚΡΙΤΗ ΜΕΤΑΒΛΗΤΗ) ===
+print("\n📊 Δημιουργία κατανομής Quality (ιστόγραμμα)...")
+
+fig, axes = plt.subplots(1, 2, figsize=(14, 5))
+fig.suptitle('Κατανομή Quality (Διακριτή Μεταβλητή) - ΑΕΜ: 6931', 
+             fontsize=14, fontweight='bold')
+
+# Συνολική κατανομή
+quality_counts = df['quality'].value_counts().sort_index()
+axes[0].bar(quality_counts.index, quality_counts.values, color=colors['all'], alpha=0.7, edgecolor='black')
+axes[0].set_title('Συνολική Κατανομή', fontweight='bold')
+axes[0].set_xlabel('Quality Score')
+axes[0].set_ylabel('Συχνότητα')
+axes[0].grid(True, alpha=0.3, axis='y')
+
+# Κατανομή ανά τύπο κρασιού
+quality_red = df[df['wine_type'] == 'red']['quality'].value_counts().sort_index()
+quality_white = df[df['wine_type'] == 'white']['quality'].value_counts().sort_index()
+
+x = np.arange(len(quality_counts.index))
+width = 0.35
+
+axes[1].bar(x - width/2, [quality_red.get(i, 0) for i in quality_counts.index], 
+            width, label='Κόκκινο', color=colors['red'], alpha=0.7, edgecolor='black')
+axes[1].bar(x + width/2, [quality_white.get(i, 0) for i in quality_counts.index], 
+            width, label='Λευκό', color=colors['white'], alpha=0.7, edgecolor='black')
+axes[1].set_title('Σύγκριση Κόκκινου vs Λευκού', fontweight='bold')
+axes[1].set_xlabel('Quality Score')
+axes[1].set_ylabel('Συχνότητα')
+axes[1].set_xticks(x)
+axes[1].set_xticklabels(quality_counts.index)
+axes[1].legend()
+axes[1].grid(True, alpha=0.3, axis='y')
+
+plt.tight_layout()
+plt.savefig('quality_distribution.png', dpi=150, bbox_inches='tight')
+plt.close()
+print("   ✅ Αποθήκευση: quality_distribution.png")
 
 # === 2.2 BOXPLOTS ΞΕΧΩΡΙΣΤΑ ΑΝΑ ΤΥΠΟ ΚΡΑΣΙΟΥ ===
 print("\n📊 Δημιουργία Boxplots ανά τύπο κρασιού (side-by-side)...")
@@ -94,8 +132,6 @@ for idx, var in enumerate(continuous_vars):
     ax.set_title(var, fontsize=10, fontweight='bold')
     ax.set_ylabel('Τιμή')
     ax.grid(True, alpha=0.3)
-
-axes[2, 3].axis('off')
 
 # Προσθήκη legend
 from matplotlib.patches import Patch

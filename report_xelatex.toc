@@ -1,24 +1,74 @@
 \xpg@aux {}{greek}
-\contentsline {section}{\numberline {1}Εισαγωγή}{2}{section.1}%
-\contentsline {subsection}{\numberline {1.1}Σκοπός της Εργασίας}{2}{subsection.1.1}%
-\contentsline {subsection}{\numberline {1.2}Τι είναι ο Καθαρισμός Δεδομένων;}{2}{subsection.1.2}%
-\contentsline {section}{\numberline {2}Περιγραφή Δεδομένων}{2}{section.2}%
-\contentsline {subsection}{\numberline {2.1}Μεταβλητές}{2}{subsection.2.1}%
-\contentsline {section}{\numberline {3}Δειγματοληψία}{3}{section.3}%
-\contentsline {section}{\numberline {4}Εντοπισμός Προβλημάτων}{3}{section.4}%
-\contentsline {subsection}{\numberline {4.1}Τυπογραφικά Λάθη (wine\_type)}{3}{subsection.4.1}%
-\contentsline {subsection}{\numberline {4.2}Μη Αριθμητικές Τιμές}{3}{subsection.4.2}%
-\contentsline {subsection}{\numberline {4.3}Αδύνατες Τιμές}{4}{subsection.4.3}%
-\contentsline {subsection}{\numberline {4.4}Διπλοεγγραφές}{4}{subsection.4.4}%
-\contentsline {subsection}{\numberline {4.5}Ελλείπουσες Τιμές (Missing Values)}{4}{subsection.4.5}%
-\contentsline {section}{\numberline {5}Αντιμετώπιση Προβλημάτων}{5}{section.5}%
-\contentsline {subsection}{\numberline {5.1}Στρατηγική Αντιμετώπισης}{5}{subsection.5.1}%
-\contentsline {subsection}{\numberline {5.2}Διόρθωση Τυπογραφικών Λαθών}{5}{subsection.5.2}%
-\contentsline {subsection}{\numberline {5.3}Γιατί Διάμεσος (Median) και όχι Μέσος Όρος;}{5}{subsection.5.3}%
-\contentsline {subsection}{\numberline {5.4}Γιατί ανά Τύπο Κρασιού;}{5}{subsection.5.4}%
-\contentsline {section}{\numberline {6}Αποτελέσματα}{6}{section.6}%
-\contentsline {subsection}{\numberline {6.1}Συνοπτικός Πίνακας Προβλημάτων}{6}{subsection.6.1}%
-\contentsline {subsection}{\numberline {6.2}Εξέλιξη Μεγέθους Dataset}{6}{subsection.6.2}%
-\contentsline {subsection}{\numberline {6.3}Κατανομή Τελικού Dataset}{6}{subsection.6.3}%
-\contentsline {section}{\numberline {7}Συμπεράσματα}{6}{section.7}%
-\contentsline {section}{\numberline {\Greeknumeral {1}}Πλήρης Κώδικας Python}{7}{appendix.Alph1}%
+\contentsline {section}{\numberline {1}Ερώτημα 1: Δειγματοληψία και Καθαρισμός Δεδομένων}{3}{section.1}%
+\contentsline {subsection}{\numberline {1.1}Εισαγωγή}{3}{subsection.1.1}%
+\contentsline {subsubsection}{\numberline {1.1.1}Σκοπός της Εργασίας}{3}{subsubsection.1.1.1}%
+\contentsline {subsubsection}{\numberline {1.1.2}Τι είναι ο Καθαρισμός Δεδομένων;}{3}{subsubsection.1.1.2}%
+\contentsline {subsection}{\numberline {1.2}Περιγραφή Δεδομένων}{3}{subsection.1.2}%
+\contentsline {subsubsection}{\numberline {1.2.1}Μεταβλητές}{3}{subsubsection.1.2.1}%
+\contentsline {subsection}{\numberline {1.3}Δειγματοληψία}{4}{subsection.1.3}%
+\contentsline {subsubsection}{\numberline {1.3.1}Τι είναι το Seed και γιατί το χρησιμοποιούμε;}{4}{subsubsection.1.3.1}%
+\contentsline {subsubsection}{\numberline {1.3.2}Εφαρμογή Δειγματοληψίας}{5}{subsubsection.1.3.2}%
+\contentsline {subsection}{\numberline {1.4}Εντοπισμός Προβλημάτων}{5}{subsection.1.4}%
+\contentsline {subsubsection}{\numberline {1.4.1}Τυπογραφικά Λάθη (wine\_type)}{5}{subsubsection.1.4.1}%
+\contentsline {subsubsection}{\numberline {1.4.2}Μη Αριθμητικές Τιμές}{5}{subsubsection.1.4.2}%
+\contentsline {subsubsection}{\numberline {1.4.3}Αδύνατες Τιμές}{6}{subsubsection.1.4.3}%
+\contentsline {subsubsection}{\numberline {1.4.4}Διπλοεγγραφές}{6}{subsubsection.1.4.4}%
+\contentsline {subsubsection}{\numberline {1.4.5}Ελλείπουσες Τιμές (Missing Values)}{6}{subsubsection.1.4.5}%
+\contentsline {subsection}{\numberline {1.5}Αντιμετώπιση Προβλημάτων}{7}{subsection.1.5}%
+\contentsline {subsubsection}{\numberline {1.5.1}Στρατηγική Αντιμετώπισης}{7}{subsubsection.1.5.1}%
+\contentsline {subsubsection}{\numberline {1.5.2}Διόρθωση Τυπογραφικών Λαθών}{7}{subsubsection.1.5.2}%
+\contentsline {subsubsection}{\numberline {1.5.3}Γιατί Διάμεσος (Median) και όχι Μέσος Όρος;}{7}{subsubsection.1.5.3}%
+\contentsline {subsubsection}{\numberline {1.5.4}Γιατί ανά Τύπο Κρασιού;}{7}{subsubsection.1.5.4}%
+\contentsline {subsection}{\numberline {1.6}Αποτελέσματα}{8}{subsection.1.6}%
+\contentsline {subsubsection}{\numberline {1.6.1}Συνοπτικός Πίνακας Προβλημάτων}{8}{subsubsection.1.6.1}%
+\contentsline {subsubsection}{\numberline {1.6.2}Εξέλιξη Μεγέθους Dataset}{8}{subsubsection.1.6.2}%
+\contentsline {subsubsection}{\numberline {1.6.3}Κατανομή Τελικού Dataset}{8}{subsubsection.1.6.3}%
+\contentsline {subsection}{\numberline {1.7}Συμπεράσματα}{8}{subsection.1.7}%
+\contentsline {section}{\numberline {2}Ερώτημα 2: Γραφήματα Boxplot}{9}{section.2}%
+\contentsline {subsection}{\numberline {2.1}Τι είναι το Boxplot;}{9}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2.2}Τα Στοιχεία του Boxplot}{9}{subsection.2.2}%
+\contentsline {subsection}{\numberline {2.3}Πώς Διαβάζουμε ένα Boxplot;}{10}{subsection.2.3}%
+\contentsline {subsection}{\numberline {2.4}Μαθηματικός Τύπος IQR}{10}{subsection.2.4}%
+\contentsline {subsection}{\numberline {2.5}Κατασκευή Boxplots στην Python}{10}{subsection.2.5}%
+\contentsline {subsection}{\numberline {2.6}Boxplots για το Σύνολο των Δεδομένων}{11}{subsection.2.6}%
+\contentsline {subsection}{\numberline {2.7}Κατανομή Quality (Διακριτή Μεταβλητή)}{12}{subsection.2.7}%
+\contentsline {subsection}{\numberline {2.8}Boxplots ανά Τύπο Κρασιού}{13}{subsection.2.8}%
+\contentsline {subsection}{\numberline {2.9}Συμπεράσματα Ερωτήματος 2}{15}{subsection.2.9}%
+\contentsline {section}{\numberline {3}Ερώτημα 3: Εντοπισμός και Μετασχηματισμός Ακραίων Τιμών}{16}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Τι είναι οι Ακραίες Τιμές (Outliers);}{16}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}Μέθοδος IQR (Interquartile Range)}{16}{subsection.3.2}%
+\contentsline {subsubsection}{\numberline {3.2.1}Πώς λειτουργεί η μέθοδος IQR}{16}{subsubsection.3.2.1}%
+\contentsline {subsubsection}{\numberline {3.2.2}Παράδειγμα}{16}{subsubsection.3.2.2}%
+\contentsline {subsubsection}{\numberline {3.2.3}Πλεονεκτήματα μεθόδου IQR}{17}{subsubsection.3.2.3}%
+\contentsline {subsubsection}{\numberline {3.2.4}Κώδικας IQR στην Python}{17}{subsubsection.3.2.4}%
+\contentsline {subsubsection}{\numberline {3.2.5}Αποτελέσματα μεθόδου IQR}{17}{subsubsection.3.2.5}%
+\contentsline {subsection}{\numberline {3.3}Μέθοδος Z-Score}{17}{subsection.3.3}%
+\contentsline {subsubsection}{\numberline {3.3.1}Πώς λειτουργεί η μέθοδος Z-Score}{17}{subsubsection.3.3.1}%
+\contentsline {paragraph}{Τι είναι η Τυπική Απόκλιση;}{18}{section*.6}%
+\contentsline {subsubsection}{\numberline {3.3.2}Παράδειγμα}{18}{subsubsection.3.3.2}%
+\contentsline {subsubsection}{\numberline {3.3.3}Πλεονεκτήματα και μειονεκτήματα μεθόδου Z-Score}{19}{subsubsection.3.3.3}%
+\contentsline {subsubsection}{\numberline {3.3.4}Κώδικας Z-Score στην Python}{19}{subsubsection.3.3.4}%
+\contentsline {subsubsection}{\numberline {3.3.5}Αποτελέσματα μεθόδου Z-Score ($|z| > 3.5$)}{19}{subsubsection.3.3.5}%
+\contentsline {subsection}{\numberline {3.4}Σύγκριση Μεθόδων IQR vs Z-Score}{20}{subsection.3.4}%
+\contentsline {subsection}{\numberline {3.5}Clamp Transformation (Μετασχηματισμός Αποκοπής)}{20}{subsection.3.5}%
+\contentsline {subsubsection}{\numberline {3.5.1}Τι είναι το Clamp Transformation;}{20}{subsubsection.3.5.1}%
+\contentsline {subsubsection}{\numberline {3.5.2}Γιατί Clamp αντί για αφαίρεση;}{20}{subsubsection.3.5.2}%
+\contentsline {subsubsection}{\numberline {3.5.3}Εφαρμογή: Κώδικας Clamp στην Python}{20}{subsubsection.3.5.3}%
+\contentsline {subsubsection}{\numberline {3.5.4}Αποτελέσματα Clamp Transformation}{21}{subsubsection.3.5.4}%
+\contentsline {subsection}{\numberline {3.6}Boxplots Πριν και Μετά τον Μετασχηματισμό}{21}{subsection.3.6}%
+\contentsline {subsection}{\numberline {3.7}Συμπεράσματα Ερωτήματος 3}{22}{subsection.3.7}%
+\contentsline {section}{\numberline {4}Ερώτημα 4: Οπτική Παρουσίαση και Περιγραφικά Στατιστικά}{23}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Περιγραφικά Στατιστικά - Συνεχείς Μεταβλητές}{23}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}Περιγραφικά Στατιστικά - Κατηγορικές Μεταβλητές}{24}{subsection.4.2}%
+\contentsline {subsection}{\numberline {4.3}Boxplots Τελικού Dataset}{24}{subsection.4.3}%
+\contentsline {subsection}{\numberline {4.4}Histograms με Κατανομές Πυκνότητας}{25}{subsection.4.4}%
+\contentsline {subsection}{\numberline {4.5}Correlation Heatmap (Πίνακας Συσχετίσεων)}{26}{subsection.4.5}%
+\contentsline {subsection}{\numberline {4.6}Scatter Plots Ισχυρών Συσχετίσεων}{28}{subsection.4.6}%
+\contentsline {subsection}{\numberline {4.7}Violin Plots}{28}{subsection.4.7}%
+\contentsline {subsection}{\numberline {4.8}Συνοπτικό Dashboard}{30}{subsection.4.8}%
+\contentsline {subsection}{\numberline {4.9}Συμπεράσματα Ερωτήματος 4}{30}{subsection.4.9}%
+\contentsline {section}{\numberline {\Greeknumeral {1}}Πλήρης Κώδικας Python}{31}{appendix.Alph1}%
+\contentsline {subsection}{\numberline {\Greeknumeral {1}.1}Κώδικας Ερωτήματος Α: Δειγματοληψία και Καθαρισμός}{31}{subsection.Alph1.1}%
+\contentsline {subsection}{\numberline {\Greeknumeral {1}.2}Κώδικας Ερωτήματος Β: Boxplots και Κατανομή Quality}{32}{subsection.Alph1.2}%
+\contentsline {subsection}{\numberline {\Greeknumeral {1}.3}Κώδικας Ερωτήματος Γ: Εντοπισμός Ακραίων Τιμών και Clamp Transformation}{35}{subsection.Alph1.3}%
+\contentsline {subsection}{\numberline {\Greeknumeral {1}.4}Κώδικας Ερωτήματος Δ: Οπτική Παρουσίαση και Περιγραφικά Στατιστικά}{37}{subsection.Alph1.4}%
