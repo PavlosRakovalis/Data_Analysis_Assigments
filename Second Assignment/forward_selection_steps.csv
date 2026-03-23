@@ -1,0 +1,11 @@
+Step,Variable Added,p-value,R²,R² adj,AIC,BIC,Variables in model
+1,alcohol,4.5494245780589114e-243,0.18965333653764804,0.1894996289004207,12463.458945280983,12476.60003401481,['alcohol']
+2,volatile acidity,1.0948629782591949e-79,0.24276672972320545,0.24247940918809752,12107.930378081217,12127.642011181957,"['alcohol', 'volatile acidity']"
+3,sulphates,2.1021889392585364e-18,0.25369344614744993,0.2532686037069267,12033.273257275094,12059.555434742746,"['alcohol', 'volatile acidity', 'sulphates']"
+4,free sulfur dioxide,2.5757043554734147e-06,0.256818752733985,0.25625456123862267,12013.140963053756,12045.993684888323,"['alcohol', 'volatile acidity', 'sulphates', 'free sulfur dioxide']"
+5,total sulfur dioxide,5.641213088375878e-16,0.26601096148192516,0.26531431281210915,11949.501496579858,11988.924762781338,"['alcohol', 'volatile acidity', 'sulphates', 'free sulfur dioxide', 'total sulfur dioxide']"
+6,residual sugar,8.815139565428611e-08,0.26998864101438613,0.26915703513743283,11922.84257884851,11968.836389416902,"['alcohol', 'volatile acidity', 'sulphates', 'free sulfur dioxide', 'total sulfur dioxide', 'residual sugar']"
+7,chlorides,6.6783154348301126e-06,0.2727953089677615,0.2718286487252195,11904.52660018511,11957.090955120417,"['alcohol', 'volatile acidity', 'sulphates', 'free sulfur dioxide', 'total sulfur dioxide', 'residual sugar', 'chlorides']"
+8,density,0.005961157597458505,0.2738391268242143,0.27273574847940785,11898.95094756604,11958.085846868258,"['alcohol', 'volatile acidity', 'sulphates', 'free sulfur dioxide', 'total sulfur dioxide', 'residual sugar', 'chlorides', 'density']"
+9,pH,0.0024568792933968397,0.2751034681428315,0.27386409337331874,11891.760218407075,11957.465662076207,"['alcohol', 'volatile acidity', 'sulphates', 'free sulfur dioxide', 'total sulfur dioxide', 'residual sugar', 'chlorides', 'density', 'pH']"
+10,fixed acidity,0.00037129022408230174,0.2768468236248124,0.2754727913687318,11881.061122233761,11953.337110269807,"['alcohol', 'volatile acidity', 'sulphates', 'free sulfur dioxide', 'total sulfur dioxide', 'residual sugar', 'chlorides', 'density', 'pH', 'fixed acidity']"

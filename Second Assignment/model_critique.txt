@@ -1,0 +1,44 @@
+SUB-QUESTION 5: Model Appropriateness Critique
+======================================================================
+
+PROBLEMS IDENTIFIED:
+
+1. DISCRETE RESPONSE VARIABLE
+   The response variable 'quality' takes integer values (3-9), making it
+   an ordinal/discrete variable. Linear regression assumes a continuous
+   response. This fundamental violation means:
+   - Predicted values may fall outside the valid range
+   - The residuals show a characteristic banded pattern
+   → ALTERNATIVE: Ordinal logistic regression or multinomial regression
+
+2. LOW EXPLANATORY POWER (R² ≈ 27.7%)
+   The model explains only about 27.7% of the variance in quality.
+   This means ~72.3% of quality variation is unexplained,
+   suggesting important predictors are missing or relationships are
+   more complex than linear.
+
+3. NON-NORMALITY OF RESIDUALS
+   The Jarque-Bera and Shapiro-Wilk tests reject normality of residuals.
+   This affects the validity of confidence intervals and hypothesis tests.
+   The Q-Q plot shows deviations in the tails.
+
+4. HETEROSCEDASTICITY
+   The Breusch-Pagan test indicates non-constant variance of residuals.
+   This violates a key OLS assumption and affects the reliability of
+   standard errors and t-tests.
+
+5. MULTICOLLINEARITY
+   Some predictors show high VIF values (especially density, which is
+   physically related to alcohol and residual sugar). This makes
+   individual coefficient estimates unstable and hard to interpret.
+
+6. NON-LINEAR RELATIONSHIPS
+   As shown in Sub-question 4, polynomial terms are statistically
+   significant for some variables, suggesting the true relationships
+   are not purely linear.
+
+RECOMMENDED ALTERNATIVES:
+- Ordinal logistic regression (accounts for the ordinal nature of quality)
+- Random forest or gradient boosting (captures non-linear relationships)
+- Poisson or negative binomial regression (for count-like response)
+- Ridge/LASSO regression (handles multicollinearity)

@@ -1,0 +1,204 @@
+\xpginauxfiletrue 
+\selectlanguage *{greek}
+\contentsline {section}{\numberline {1}Εισαγωγή}{3}{section.1}%
+\contentsline {subsection}{\numberline {1.1}Σκοπός}{3}{subsection.1.1}%
+\contentsline {subsection}{\numberline {1.2}Δεδομένα}{3}{subsection.1.2}%
+\selectlanguage *{english}
+\selectlanguage *[variant=monotonic,numerals=greek]{greek}
+\selectlanguage *{greek}
+\contentsline {section}{\numberline {2}Απλή Γραμμική Παλινδρόμηση (Υποερώτημα 1)}{3}{section.2}%
+\contentsline {subsection}{\numberline {2.1}Μεθοδολογία}{3}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2.2}Αποτελέσματα}{4}{subsection.2.2}%
+\selectlanguage *{english}
+\selectlanguage *[variant=monotonic,numerals=greek]{greek}
+\selectlanguage *{greek}
+\selectlanguage *{english}
+\selectlanguage *[variant=monotonic,numerals=greek]{greek}
+\selectlanguage *{greek}
+\selectlanguage *{english}
+\selectlanguage *[variant=monotonic,numerals=greek]{greek}
+\selectlanguage *{greek}
+\selectlanguage *{english}
+\selectlanguage *[variant=monotonic,numerals=greek]{greek}
+\selectlanguage *{greek}
+\selectlanguage *{english}
+\selectlanguage *[variant=monotonic,numerals=greek]{greek}
+\selectlanguage *{greek}
+\selectlanguage *{english}
+\selectlanguage *[variant=monotonic,numerals=greek]{greek}
+\selectlanguage *{greek}
+\selectlanguage *{english}
+\selectlanguage *[variant=monotonic,numerals=greek]{greek}
+\selectlanguage *{greek}
+\selectlanguage *{english}
+\selectlanguage *[variant=monotonic,numerals=greek]{greek}
+\selectlanguage *{greek}
+\selectlanguage *{english}
+\selectlanguage *[variant=monotonic,numerals=greek]{greek}
+\selectlanguage *{greek}
+\selectlanguage *{english}
+\selectlanguage *[variant=monotonic,numerals=greek]{greek}
+\selectlanguage *{greek}
+\selectlanguage *{english}
+\selectlanguage *[variant=monotonic,numerals=greek]{greek}
+\selectlanguage *{greek}
+\contentsline {section}{\numberline {3}Πολλαπλή Γραμμική Παλινδρόμηση (Υποερώτημα 2)}{5}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Μεθοδολογία}{5}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}Αποτελέσματα}{6}{subsection.3.2}%
+\selectlanguage *{english}
+\selectlanguage *[variant=monotonic,numerals=greek]{greek}
+\selectlanguage *{greek}
+\selectlanguage *{english}
+\selectlanguage *[variant=monotonic,numerals=greek]{greek}
+\selectlanguage *{greek}
+\selectlanguage *{english}
+\selectlanguage *[variant=monotonic,numerals=greek]{greek}
+\selectlanguage *{greek}
+\selectlanguage *{english}
+\selectlanguage *[variant=monotonic,numerals=greek]{greek}
+\selectlanguage *{greek}
+\selectlanguage *{english}
+\selectlanguage *[variant=monotonic,numerals=greek]{greek}
+\selectlanguage *{greek}
+\selectlanguage *{english}
+\selectlanguage *[variant=monotonic,numerals=greek]{greek}
+\selectlanguage *{greek}
+\selectlanguage *{english}
+\selectlanguage *[variant=monotonic,numerals=greek]{greek}
+\selectlanguage *{greek}
+\selectlanguage *{english}
+\selectlanguage *[variant=monotonic,numerals=greek]{greek}
+\selectlanguage *{greek}
+\selectlanguage *{english}
+\selectlanguage *[variant=monotonic,numerals=greek]{greek}
+\selectlanguage *{greek}
+\selectlanguage *{english}
+\selectlanguage *[variant=monotonic,numerals=greek]{greek}
+\selectlanguage *{greek}
+\selectlanguage *{english}
+\selectlanguage *[variant=monotonic,numerals=greek]{greek}
+\selectlanguage *{greek}
+\selectlanguage *{english}
+\selectlanguage *[variant=monotonic,numerals=greek]{greek}
+\selectlanguage *{greek}
+\selectlanguage *{english}
+\selectlanguage *[variant=monotonic,numerals=greek]{greek}
+\selectlanguage *{greek}
+\contentsline {section}{\numberline {4}Πρόσω Επιλογή Μεταβλητών (Υποερώτημα 3)}{6}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Μεθοδολογία}{6}{subsection.4.1}%
+\selectlanguage *{english}
+\selectlanguage *[variant=monotonic,numerals=greek]{greek}
+\selectlanguage *{greek}
+\contentsline {subsection}{\numberline {4.2}Αποτελέσματα}{7}{subsection.4.2}%
+\selectlanguage *{english}
+\selectlanguage *[variant=monotonic,numerals=greek]{greek}
+\selectlanguage *{greek}
+\selectlanguage *{english}
+\selectlanguage *[variant=monotonic,numerals=greek]{greek}
+\selectlanguage *{greek}
+\selectlanguage *{english}
+\selectlanguage *[variant=monotonic,numerals=greek]{greek}
+\selectlanguage *{greek}
+\selectlanguage *{english}
+\selectlanguage *[variant=monotonic,numerals=greek]{greek}
+\selectlanguage *{greek}
+\selectlanguage *{english}
+\selectlanguage *[variant=monotonic,numerals=greek]{greek}
+\selectlanguage *{greek}
+\selectlanguage *{english}
+\selectlanguage *[variant=monotonic,numerals=greek]{greek}
+\selectlanguage *{greek}
+\selectlanguage *{english}
+\selectlanguage *[variant=monotonic,numerals=greek]{greek}
+\selectlanguage *{greek}
+\selectlanguage *{english}
+\selectlanguage *[variant=monotonic,numerals=greek]{greek}
+\selectlanguage *{greek}
+\selectlanguage *{english}
+\selectlanguage *[variant=monotonic,numerals=greek]{greek}
+\selectlanguage *{greek}
+\selectlanguage *{english}
+\selectlanguage *[variant=monotonic,numerals=greek]{greek}
+\selectlanguage *{greek}
+\selectlanguage *{english}
+\selectlanguage *[variant=monotonic,numerals=greek]{greek}
+\selectlanguage *{greek}
+\selectlanguage *{english}
+\selectlanguage *[variant=monotonic,numerals=greek]{greek}
+\selectlanguage *{greek}
+\selectlanguage *{english}
+\selectlanguage *[variant=monotonic,numerals=greek]{greek}
+\selectlanguage *{greek}
+\contentsline {section}{\numberline {5}Πολυωνυμική Παλινδρόμηση (Υποερώτημα 4)}{8}{section.5}%
+\contentsline {subsection}{\numberline {5.1}Μεθοδολογία}{8}{subsection.5.1}%
+\selectlanguage *{english}
+\selectlanguage *[variant=monotonic,numerals=greek]{greek}
+\selectlanguage *{greek}
+\selectlanguage *{english}
+\selectlanguage *[variant=monotonic,numerals=greek]{greek}
+\selectlanguage *{greek}
+\contentsline {subsection}{\numberline {5.2}Αποτελέσματα}{8}{subsection.5.2}%
+\selectlanguage *{english}
+\selectlanguage *[variant=monotonic,numerals=greek]{greek}
+\selectlanguage *{greek}
+\selectlanguage *{english}
+\selectlanguage *[variant=monotonic,numerals=greek]{greek}
+\selectlanguage *{greek}
+\selectlanguage *{english}
+\selectlanguage *[variant=monotonic,numerals=greek]{greek}
+\selectlanguage *{greek}
+\selectlanguage *{english}
+\selectlanguage *[variant=monotonic,numerals=greek]{greek}
+\selectlanguage *{greek}
+\contentsline {section}{\numberline {6}Κριτική Αξιολόγηση Μοντέλου (Υποερώτημα 5)}{10}{section.6}%
+\contentsline {subsection}{\numberline {6.1}Διαγνωστικοί έλεγχοι}{10}{subsection.6.1}%
+\contentsline {subsection}{\numberline {6.2}Πολυσυγγραμμικότητα (VIF)}{11}{subsection.6.2}%
+\selectlanguage *{english}
+\selectlanguage *[variant=monotonic,numerals=greek]{greek}
+\selectlanguage *{greek}
+\selectlanguage *{english}
+\selectlanguage *[variant=monotonic,numerals=greek]{greek}
+\selectlanguage *{greek}
+\selectlanguage *{english}
+\selectlanguage *[variant=monotonic,numerals=greek]{greek}
+\selectlanguage *{greek}
+\selectlanguage *{english}
+\selectlanguage *[variant=monotonic,numerals=greek]{greek}
+\selectlanguage *{greek}
+\selectlanguage *{english}
+\selectlanguage *[variant=monotonic,numerals=greek]{greek}
+\selectlanguage *{greek}
+\selectlanguage *{english}
+\selectlanguage *[variant=monotonic,numerals=greek]{greek}
+\selectlanguage *{greek}
+\selectlanguage *{english}
+\selectlanguage *[variant=monotonic,numerals=greek]{greek}
+\selectlanguage *{greek}
+\selectlanguage *{english}
+\selectlanguage *[variant=monotonic,numerals=greek]{greek}
+\selectlanguage *{greek}
+\selectlanguage *{english}
+\selectlanguage *[variant=monotonic,numerals=greek]{greek}
+\selectlanguage *{greek}
+\selectlanguage *{english}
+\selectlanguage *[variant=monotonic,numerals=greek]{greek}
+\selectlanguage *{greek}
+\selectlanguage *{english}
+\selectlanguage *[variant=monotonic,numerals=greek]{greek}
+\selectlanguage *{greek}
+\contentsline {subsection}{\numberline {6.3}Εντοπισμένα προβλήματα}{11}{subsection.6.3}%
+\contentsline {subsection}{\numberline {6.4}Εναλλακτικές προσεγγίσεις}{11}{subsection.6.4}%
+\contentsline {section}{\numberline {7}Συμπεράσματα}{11}{section.7}%
+\selectlanguage *{english}
+\selectlanguage *[variant=monotonic,numerals=greek]{greek}
+\selectlanguage *{greek}
+\selectlanguage *{english}
+\selectlanguage *[variant=monotonic,numerals=greek]{greek}
+\selectlanguage *{greek}
+\selectlanguage *{english}
+\selectlanguage *[variant=monotonic,numerals=greek]{greek}
+\selectlanguage *{greek}
+\selectlanguage *{english}
+\selectlanguage *[variant=monotonic,numerals=greek]{greek}
+\selectlanguage *{greek}
+\xpginauxfilefalse 
