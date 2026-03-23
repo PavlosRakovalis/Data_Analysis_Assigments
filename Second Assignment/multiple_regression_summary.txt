@@ -3,8 +3,8 @@
 Dep. Variable:                quality   R-squared:                       0.277
 Model:                            OLS   Adj. R-squared:                  0.276
 Method:                 Least Squares   F-statistic:                     183.4
-Date:                Sat, 21 Mar 2026   Prob (F-statistic):               0.00
-Time:                        17:11:03   Log-Likelihood:                -5928.4
+Date:                Sun, 22 Mar 2026   Prob (F-statistic):               0.00
+Time:                        16:41:32   Log-Likelihood:                -5928.4
 No. Observations:                5274   AIC:                         1.188e+04
 Df Residuals:                    5262   BIC:                         1.196e+04
 Df Model:                          11                                         

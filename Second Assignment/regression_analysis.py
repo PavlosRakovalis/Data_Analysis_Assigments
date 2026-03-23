@@ -11,13 +11,16 @@ import numpy as np
 import matplotlib.pyplot as plt
 import statsmodels.api as sm
 from statsmodels.formula.api import ols
+from pathlib import Path
 import warnings
 warnings.filterwarnings('ignore')
 
 # ============================================================
 # Load the cleaned data from the first assignment
 # ============================================================
-data = pd.read_csv('../First Assignment/cleaned_wine_data_AEM_6931.csv')
+DATA_PATH = Path(__file__).resolve().parents[1] / 'First Assignment' / 'cleaned_wine_data_AEM_6931.csv'
+OUTPUT_DIR = Path(__file__).resolve().parent
+data = pd.read_csv(DATA_PATH)
 
 print("=" * 70)
 print("SECOND ASSIGNMENT - LINEAR REGRESSION ANALYSIS")
@@ -100,7 +103,7 @@ if len(not_significant) > 0:
         print(f"  - {row['Predictor']} (p = {row['p-value (β1)']:.6e})")
 
 # Save results table
-results_df.to_csv('simple_regression_results.csv', index=False)
+results_df.to_csv(OUTPUT_DIR / 'simple_regression_results.csv', index=False)
 
 # ============================================================
 # Scatter plots for significant predictors
@@ -147,7 +150,7 @@ if n_sig > 0:
         axes[j].set_visible(False)
 
     plt.tight_layout()
-    plt.savefig('scatter_plots_significant.png', dpi=150, bbox_inches='tight')
+    plt.savefig(OUTPUT_DIR / 'scatter_plots_significant.png', dpi=150, bbox_inches='tight')
     plt.close()
     print(f"\nScatter plots saved to: scatter_plots_significant.png")
 
@@ -211,7 +214,7 @@ for var, p, coef in sorted(not_rejected_H0, key=lambda x: x[1]):
     print(f"  - {var}: β = {coef:.6f}, p = {p:.6e}")
 
 # Save multiple regression summary
-with open('multiple_regression_summary.txt', 'w') as f:
+with open(OUTPUT_DIR / 'multiple_regression_summary.txt', 'w') as f:
     f.write(str(multi_model.summary()))
     f.write("\n\nVariables where H0: βj = 0 is REJECTED (p < 0.05):\n")
     for var, p, coef in sorted(rejected_H0, key=lambda x: x[1]):
