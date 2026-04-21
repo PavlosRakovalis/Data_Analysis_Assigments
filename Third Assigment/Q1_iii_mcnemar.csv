@@ -1,0 +1,4 @@
+pair,A_correct_B_wrong,A_wrong_B_correct,statistic,p_value
+LogReg vs LDA,15,54,15.0,2.612848003590018e-06
+LogReg vs GNB,15,73,15.0,2.559492715287498e-10
+LDA vs GNB,0,19,0.0,3.814697265625e-06
