@@ -1,0 +1,11 @@
+pair,A_only_correct,B_only_correct,p_value
+KNN (K=9)  vs  Logistic Regression,13,5,0.09625244140625
+KNN (K=9)  vs  LDA,9,5,0.4239501953125
+KNN (K=9)  vs  QDA,27,4,7.772240795323116e-05
+KNN (K=9)  vs  Gaussian NB,44,2,1.492986507526999e-09
+Logistic Regression  vs  LDA,2,6,0.2890625
+Logistic Regression  vs  QDA,21,6,0.007053637888068591
+Logistic Regression  vs  Gaussian NB,38,4,3.5428638720888023e-07
+LDA  vs  QDA,24,5,0.0008302254277448881
+LDA  vs  Gaussian NB,42,4,4.8875822347069404e-08
+QDA  vs  Gaussian NB,25,6,0.001225424070670712

@@ -1,0 +1,143 @@
+\xpginauxfiletrue 
+\selectlanguage *{greek}
+\contentsline {section}{\numberline {1}Ποιο κομμάτι της εργασίας λύνουμε εδώ}{5}{section.1}%
+\contentsline {subsection}{\numberline {1.1}Η εκφώνηση, με απλά λόγια}{5}{subsection.1.1}%
+\contentsline {subsection}{\numberline {1.2}Τι είναι το Ερώτημα Α}{5}{subsection.1.2}%
+\contentsline {section}{\numberline {2}Θεωρητικό υπόβαθρο}{6}{section.2}%
+\contentsline {subsection}{\numberline {2.1}Τι σημαίνει ``πρόβλεψη τύπου κρασιού''}{6}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2.2}Πώς κωδικοποιούμε τις δύο κατηγορίες}{7}{subsection.2.2}%
+\contentsline {subsection}{\numberline {2.3}Τι κάνει η Logistic Regression}{7}{subsection.2.3}%
+\contentsline {subsection}{\numberline {2.4}Πώς αποφασίζει τελικά red ή white}{7}{subsection.2.4}%
+\contentsline {subsection}{\numberline {2.5}Γιατί χωρίζουμε σε training και test}{8}{subsection.2.5}%
+\contentsline {subsection}{\numberline {2.6}Τι είναι ο confusion matrix}{8}{subsection.2.6}%
+\contentsline {subsection}{\numberline {2.7}Τα μέτρα αξιολόγησης}{8}{subsection.2.7}%
+\contentsline {subsubsection}{\numberline {2.7.1}Accuracy}{8}{subsubsection.2.7.1}%
+\contentsline {subsubsection}{\numberline {2.7.2}Sensitivity για white}{9}{subsubsection.2.7.2}%
+\contentsline {subsubsection}{\numberline {2.7.3}Specificity για red}{9}{subsubsection.2.7.3}%
+\contentsline {subsubsection}{\numberline {2.7.4}Balanced accuracy}{9}{subsubsection.2.7.4}%
+\contentsline {subsubsection}{\numberline {2.7.5}Precision και F1-score}{9}{subsubsection.2.7.5}%
+\contentsline {subsubsection}{\numberline {2.7.6}ROC καμπύλη και AUC}{10}{subsubsection.2.7.6}%
+\contentsline {paragraph}{Πώς δημιουργείται βήμα-βήμα η ROC καμπύλη.}{10}{section*.2}%
+\contentsline {paragraph}{Γιατί παίρνει τη μορφή που παίρνει.}{11}{section*.3}%
+\contentsline {paragraph}{Σύνδεση με τις δικές μας μεταβλητές.}{11}{section*.4}%
+\contentsline {section}{\numberline {3}Πώς λύσαμε το υποερώτημα Α(a)}{12}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Βήμα 1: Φόρτωση των δεδομένων}{12}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}Βήμα 2: Ορισμός στόχου}{12}{subsection.3.2}%
+\contentsline {subsection}{\numberline {3.3}Βήμα 3: Επιλογή μίας προβλεπτικής μεταβλητής κάθε φορά}{12}{subsection.3.3}%
+\contentsline {subsection}{\numberline {3.4}Βήμα 4: Διαχωρισμός σε training και test}{13}{subsection.3.4}%
+\contentsline {subsection}{\numberline {3.5}Βήμα 5: Εκπαίδευση Logistic Regression}{13}{subsection.3.5}%
+\contentsline {subsection}{\numberline {3.6}Βήμα 6: Πρόβλεψη και αξιολόγηση}{13}{subsection.3.6}%
+\contentsline {section}{\numberline {4}Αποτελέσματα Logistic Regression}{14}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Συνοπτικός πίνακας}{14}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}Πείραμα 1: Logistic Regression με μεταβλητή alcohol}{15}{subsection.4.2}%
+\contentsline {subsubsection}{\numberline {4.2.1}Το μοντέλο που εκπαιδεύτηκε}{15}{subsubsection.4.2.1}%
+\contentsline {subsubsection}{\numberline {4.2.2}Confusion matrix}{15}{subsubsection.4.2.2}%
+\contentsline {subsubsection}{\numberline {4.2.3}Μέτρα αξιολόγησης}{15}{subsubsection.4.2.3}%
+\contentsline {subsubsection}{\numberline {4.2.4}Ερμηνεία με απλά λόγια}{16}{subsubsection.4.2.4}%
+\contentsline {subsection}{\numberline {4.3}Πείραμα 2: Logistic Regression με μεταβλητή pH}{16}{subsection.4.3}%
+\contentsline {subsubsection}{\numberline {4.3.1}Το μοντέλο που εκπαιδεύτηκε}{16}{subsubsection.4.3.1}%
+\contentsline {subsubsection}{\numberline {4.3.2}Confusion matrix}{16}{subsubsection.4.3.2}%
+\contentsline {subsubsection}{\numberline {4.3.3}Μέτρα αξιολόγησης}{17}{subsubsection.4.3.3}%
+\contentsline {subsubsection}{\numberline {4.3.4}Ερμηνεία με απλά λόγια}{17}{subsubsection.4.3.4}%
+\contentsline {subsection}{\numberline {4.4}Πείραμα 3: Logistic Regression με μεταβλητή chlorides}{17}{subsection.4.4}%
+\contentsline {subsubsection}{\numberline {4.4.1}Το μοντέλο που εκπαιδεύτηκε}{17}{subsubsection.4.4.1}%
+\contentsline {subsubsection}{\numberline {4.4.2}Confusion matrix}{18}{subsubsection.4.4.2}%
+\contentsline {subsubsection}{\numberline {4.4.3}Μέτρα αξιολόγησης}{18}{subsubsection.4.4.3}%
+\contentsline {subsubsection}{\numberline {4.4.4}Ερμηνεία με απλά λόγια}{19}{subsubsection.4.4.4}%
+\contentsline {section}{\numberline {5}Συμπέρασμα για το υποερώτημα Α(a)}{19}{section.5}%
+\contentsline {section}{\numberline {6}Υποερώτημα Α(b): Linear Discriminant Analysis}{20}{section.6}%
+\contentsline {subsection}{\numberline {6.1}Τι ζητάει το υποερώτημα Α(b)}{20}{subsection.6.1}%
+\contentsline {subsection}{\numberline {6.2}Θεωρητικό υπόβαθρο: τι κάνει η LDA}{20}{subsection.6.2}%
+\contentsline {subsubsection}{\numberline {6.2.1}Η βασική υπόθεση της LDA}{21}{subsubsection.6.2.1}%
+\contentsline {subsubsection}{\numberline {6.2.2}Πώς αποφασίζει η LDA}{21}{subsubsection.6.2.2}%
+\contentsline {subsection}{\numberline {6.3}Πώς λύσαμε το υποερώτημα Α(b)}{22}{subsection.6.3}%
+\contentsline {subsection}{\numberline {6.4}Κέντρα και διασπορά των δύο κλάσεων στο training set}{23}{subsection.6.4}%
+\contentsline {subsection}{\numberline {6.5}Συνοπτικά αποτελέσματα LDA}{24}{subsection.6.5}%
+\contentsline {subsection}{\numberline {6.6}Όρια απόφασης της LDA}{24}{subsection.6.6}%
+\contentsline {subsection}{\numberline {6.7}Πείραμα 1: LDA με μεταβλητή alcohol}{25}{subsection.6.7}%
+\contentsline {subsubsection}{\numberline {6.7.1}Το μοντέλο που εκπαιδεύτηκε}{25}{subsubsection.6.7.1}%
+\contentsline {subsubsection}{\numberline {6.7.2}Confusion matrix}{25}{subsubsection.6.7.2}%
+\contentsline {subsubsection}{\numberline {6.7.3}Μέτρα αξιολόγησης}{25}{subsubsection.6.7.3}%
+\contentsline {subsection}{\numberline {6.8}Πείραμα 2: LDA με μεταβλητή pH}{26}{subsection.6.8}%
+\contentsline {subsubsection}{\numberline {6.8.1}Το μοντέλο που εκπαιδεύτηκε}{26}{subsubsection.6.8.1}%
+\contentsline {subsubsection}{\numberline {6.8.2}Confusion matrix}{26}{subsubsection.6.8.2}%
+\contentsline {subsubsection}{\numberline {6.8.3}Μέτρα αξιολόγησης}{26}{subsubsection.6.8.3}%
+\contentsline {subsection}{\numberline {6.9}Πείραμα 3: LDA με μεταβλητή chlorides}{26}{subsection.6.9}%
+\contentsline {subsubsection}{\numberline {6.9.1}Το μοντέλο που εκπαιδεύτηκε}{26}{subsubsection.6.9.1}%
+\contentsline {subsubsection}{\numberline {6.9.2}Confusion matrix}{27}{subsubsection.6.9.2}%
+\contentsline {subsubsection}{\numberline {6.9.3}Μέτρα αξιολόγησης}{27}{subsubsection.6.9.3}%
+\contentsline {subsubsection}{\numberline {6.9.4}Γιατί βελτιώνεται η LDA με chlorides;}{27}{subsubsection.6.9.4}%
+\contentsline {subsection}{\numberline {6.10}Συμπέρασμα για το υποερώτημα Α(b)}{28}{subsection.6.10}%
+\contentsline {section}{\numberline {7}Υποερώτημα Α(c): Gaussian Naive Bayes}{28}{section.7}%
+\contentsline {subsection}{\numberline {7.1}Τι ζητάει το υποερώτημα Α(c)}{28}{subsection.7.1}%
+\contentsline {subsection}{\numberline {7.2}Θεωρητικό υπόβαθρο: η ιδέα του Bayes}{29}{subsection.7.2}%
+\contentsline {subsection}{\numberline {7.3}Γιατί λέγεται Gaussian Naive Bayes}{30}{subsection.7.3}%
+\contentsline {subsection}{\numberline {7.4}Πώς αποφασίζει το Gaussian NB}{30}{subsection.7.4}%
+\contentsline {subsection}{\numberline {7.5}Πώς λύσαμε το υποερώτημα Α(c)}{31}{subsection.7.5}%
+\contentsline {subsection}{\numberline {7.6}Παράμετροι που έμαθε το Gaussian NB}{31}{subsection.7.6}%
+\contentsline {subsection}{\numberline {7.7}Συνοπτικά αποτελέσματα Gaussian NB}{31}{subsection.7.7}%
+\contentsline {subsection}{\numberline {7.8}Σχετικά όρια απόφασης}{32}{subsection.7.8}%
+\contentsline {subsection}{\numberline {7.9}Πείραμα 1: Gaussian NB με μεταβλητή alcohol}{32}{subsection.7.9}%
+\contentsline {subsubsection}{\numberline {7.9.1}Confusion matrix}{32}{subsubsection.7.9.1}%
+\contentsline {subsubsection}{\numberline {7.9.2}Μέτρα αξιολόγησης}{32}{subsubsection.7.9.2}%
+\contentsline {subsection}{\numberline {7.10}Πείραμα 2: Gaussian NB με μεταβλητή pH}{33}{subsection.7.10}%
+\contentsline {subsubsection}{\numberline {7.10.1}Confusion matrix}{33}{subsubsection.7.10.1}%
+\contentsline {subsubsection}{\numberline {7.10.2}Μέτρα αξιολόγησης}{33}{subsubsection.7.10.2}%
+\contentsline {subsection}{\numberline {7.11}Πείραμα 3: Gaussian NB με μεταβλητή chlorides}{33}{subsection.7.11}%
+\contentsline {subsubsection}{\numberline {7.11.1}Confusion matrix}{33}{subsubsection.7.11.1}%
+\contentsline {subsubsection}{\numberline {7.11.2}Μέτρα αξιολόγησης}{34}{subsubsection.7.11.2}%
+\contentsline {subsubsection}{\numberline {7.11.3}Γιατί το Gaussian NB με chlorides είναι καλύτερο από την LDA;}{34}{subsubsection.7.11.3}%
+\contentsline {subsection}{\numberline {7.12}Συμπέρασμα για το υποερώτημα Α(c)}{34}{subsection.7.12}%
+\contentsline {section}{\numberline {8}Υποερώτημα Α(ii): Καταλληλότερη προβλεπτική μεταβλητή}{35}{section.8}%
+\contentsline {subsection}{\numberline {8.1}Τι ζητάει το Α(ii)}{35}{subsection.8.1}%
+\contentsline {subsection}{\numberline {8.2}Συνολική εικόνα ανά μεταβλητή}{35}{subsection.8.2}%
+\contentsline {subsection}{\numberline {8.3}Γιατί τα chlorides είναι καλύτερα;}{36}{subsection.8.3}%
+\contentsline {subsection}{\numberline {8.4}Απάντηση στο Α(ii)}{36}{subsection.8.4}%
+\contentsline {section}{\numberline {9}Α(iii): Σύγκριση με Chlorides}{36}{section.9}%
+\contentsline {subsection}{\numberline {9.1}Τι ζητάει το Α(iii)}{36}{subsection.9.1}%
+\contentsline {subsection}{\numberline {9.2}Επίδοση στο test set}{36}{subsection.9.2}%
+\contentsline {subsection}{\numberline {9.3}Confusion matrices με chlorides}{37}{subsection.9.3}%
+\contentsline {subsection}{\numberline {9.4}Υπάρχει σημαντική διαφορά;}{37}{subsection.9.4}%
+\contentsline {subsection}{\numberline {9.5}Επιβεβαίωση με cross-validation}{37}{subsection.9.5}%
+\contentsline {subsection}{\numberline {9.6}Απάντηση στο Α(iii)}{38}{subsection.9.6}%
+\contentsline {section}{\numberline {10}Ερώτημα Β: Πρόβλεψη με όλες τις μεταβλητές}{39}{section.10}%
+\contentsline {subsection}{\numberline {10.1}Τι ζητάει το Ερώτημα Β}{39}{subsection.10.1}%
+\contentsline {subsection}{\numberline {10.2}Γιατί βοηθάει η χρήση πολλών μεταβλητών}{39}{subsection.10.2}%
+\contentsline {subsection}{\numberline {10.3}Γιατί δεν ενώνουμε απλά τις μεταβλητές χωρίς σκέψη}{40}{subsection.10.3}%
+\contentsline {subsection}{\numberline {10.4}Τα δεδομένα για το Ερώτημα Β}{40}{subsection.10.4}%
+\contentsline {section}{\numberline {11}Θεωρητικό υπόβαθρο για το Ερώτημα Β}{40}{section.11}%
+\contentsline {subsection}{\numberline {11.1}Γενίκευση σε πολλές μεταβλητές}{41}{subsection.11.1}%
+\contentsline {subsection}{\numberline {11.2}K-Nearest Neighbors (KNN)}{41}{subsection.11.2}%
+\contentsline {subsubsection}{\numberline {11.2.1}Πώς μετράμε ``κοντινό''}{41}{subsubsection.11.2.1}%
+\contentsline {subsubsection}{\numberline {11.2.2}Πώς ψηφίζουν οι γείτονες}{42}{subsubsection.11.2.2}%
+\contentsline {subsubsection}{\numberline {11.2.3}Γιατί το \(K\) είναι σημαντικό}{42}{subsubsection.11.2.3}%
+\contentsline {subsubsection}{\numberline {11.2.4}Τι είναι το 5-fold cross-validation}{42}{subsubsection.11.2.4}%
+\contentsline {subsection}{\numberline {11.3}Quadratic Discriminant Analysis (QDA)}{43}{subsection.11.3}%
+\contentsline {subsubsection}{\numberline {11.3.1}Πότε κερδίζει η QDA}{43}{subsubsection.11.3.1}%
+\contentsline {subsubsection}{\numberline {11.3.2}Πότε χάνει η QDA}{43}{subsubsection.11.3.2}%
+\contentsline {subsection}{\numberline {11.4}Τι δείχνει η ROC καμπύλη και η AUC σε αυτό το πλαίσιο}{43}{subsection.11.4}%
+\contentsline {section}{\numberline {12}Πώς λύσαμε το Ερώτημα Β}{43}{section.12}%
+\contentsline {subsection}{\numberline {12.1}Δομή του κώδικα}{43}{subsection.12.1}%
+\contentsline {subsection}{\numberline {12.2}Τυποποίηση μέσω Pipeline}{44}{subsection.12.2}%
+\contentsline {subsection}{\numberline {12.3}Επιλογή του \(K\) με 5-fold CV}{44}{subsection.12.3}%
+\contentsline {section}{\numberline {13}Επιλογή του K με 5-fold CV}{45}{section.13}%
+\contentsline {subsection}{\numberline {13.1}Τι βρήκαμε}{45}{subsection.13.1}%
+\contentsline {subsection}{\numberline {13.2}Γιατί αυτό το K έχει νόημα}{45}{subsection.13.2}%
+\contentsline {section}{\numberline {14}Αποτελέσματα στο test set}{46}{section.14}%
+\contentsline {subsection}{\numberline {14.1}Συνοπτικός πίνακας}{46}{subsection.14.1}%
+\contentsline {subsection}{\numberline {14.2}Σύντομη υπενθύμιση των metrics}{46}{subsection.14.2}%
+\contentsline {subsection}{\numberline {14.3}Ερμηνεία των αποτελεσμάτων}{46}{subsection.14.3}%
+\contentsline {subsection}{\numberline {14.4}Γιατί η QDA είναι χειρότερη από τη LDA εδώ}{47}{subsection.14.4}%
+\contentsline {subsection}{\numberline {14.5}Confusion matrices}{47}{subsection.14.5}%
+\contentsline {section}{\numberline {15}ROC καμπύλες και AUC}{47}{section.15}%
+\contentsline {subsection}{\numberline {15.1}Η εικόνα}{47}{subsection.15.1}%
+\contentsline {subsection}{\numberline {15.2}Γιατί η AUC της Logistic Regression είναι η μεγαλύτερη, αλλά όχι η accuracy της}{48}{subsection.15.2}%
+\contentsline {section}{\numberline {16}Είναι στατιστικά σημαντικές οι διαφορές;}{49}{section.16}%
+\contentsline {subsection}{\numberline {16.1}McNemar test}{49}{subsection.16.1}%
+\contentsline {subsection}{\numberline {16.2}Τι μας λένε τα p-values}{49}{subsection.16.2}%
+\contentsline {section}{\numberline {17}Τελικά συμπεράσματα για το Ερώτημα Β}{50}{section.17}%
+\contentsline {subsection}{\numberline {17.1}Υπάρχει σημαντική διαφορά στην επίδοση των μεθόδων;}{50}{subsection.17.1}%
+\contentsline {subsection}{\numberline {17.2}Ποια μέθοδος έχει την καλύτερη ακρίβεια;}{50}{subsection.17.2}%
+\contentsline {subsection}{\numberline {17.3}Γιατί το Ερώτημα Β δίνει πολύ καλύτερα αποτελέσματα από το Ερώτημα Α}{50}{subsection.17.3}%
+\contentsline {subsection}{\numberline {17.4}Σύνοψη}{51}{subsection.17.4}%
+\xpginauxfilefalse 
