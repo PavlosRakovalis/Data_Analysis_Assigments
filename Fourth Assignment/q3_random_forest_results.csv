@@ -1,0 +1,2 @@
+model,n_estimators,p,max_features,random_state,test_accuracy,test_error,tn,fp,fn,tp
+Random Forest,200,11,5,6931,0.9666456891126495,0.033354310887350525,365,26,27,1171

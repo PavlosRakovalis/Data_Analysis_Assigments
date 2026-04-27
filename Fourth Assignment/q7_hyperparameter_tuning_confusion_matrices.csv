@@ -1,0 +1,9 @@
+method,variant,tn,fp,fn,tp
+Decision Tree,untuned,360,31,74,1124
+Decision Tree,tuned,367,24,31,1167
+Bagging,untuned,365,26,28,1170
+Bagging,tuned,370,21,22,1176
+Random Forest,untuned,365,26,27,1171
+Random Forest,tuned,368,23,22,1176
+Boosting,untuned,361,30,21,1177
+Boosting,tuned,364,27,22,1176

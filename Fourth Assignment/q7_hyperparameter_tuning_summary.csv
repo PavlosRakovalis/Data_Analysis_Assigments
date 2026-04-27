@@ -1,0 +1,5 @@
+method,untuned_test_accuracy,untuned_test_error,best_cv_accuracy,tuned_test_accuracy,tuned_test_error,best_params
+Decision Tree,0.933920704845815,0.06607929515418498,0.9573676571690474,0.9653870358716173,0.03461296412838266,"{'criterion': 'gini', 'max_depth': 6, 'min_samples_leaf': 1}"
+Bagging,0.9660163624921334,0.03398363750786659,0.9678903354176442,0.9729389553178099,0.02706104468219006,"{'estimator__max_depth': 6, 'max_features': 0.7, 'max_samples': 1.0, 'n_estimators': 50}"
+Random Forest,0.9666456891126495,0.033354310887350525,0.9689695937958103,0.9716803020767778,0.028319697923222198,"{'max_depth': 10, 'max_features': 3, 'min_samples_leaf': 1, 'n_estimators': 100}"
+Boosting,0.9679043423536816,0.03209565764631839,0.9665400802441517,0.9691629955947136,0.03083700440528636,"{'learning_rate': 0.1, 'max_depth': 2, 'n_estimators': 200, 'subsample': 1.0}"
