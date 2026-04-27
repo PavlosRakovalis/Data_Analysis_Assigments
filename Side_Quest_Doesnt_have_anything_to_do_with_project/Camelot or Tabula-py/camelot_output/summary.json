@@ -1,0 +1,376 @@
+{
+  "lattice": {
+    "flavor": "lattice",
+    "elapsed_seconds": 39.054,
+    "num_tables": 2,
+    "tables": [
+      {
+        "index": 1,
+        "page": 2,
+        "csv": "table_01_page2.csv",
+        "shape": [
+          1,
+          3
+        ],
+        "accuracy": 0.0,
+        "whitespace": 100.0,
+        "order": 1
+      },
+      {
+        "index": 2,
+        "page": 7,
+        "csv": "table_02_page7.csv",
+        "shape": [
+          3,
+          3
+        ],
+        "accuracy": 0.0,
+        "whitespace": 100.0,
+        "order": 1
+      }
+    ]
+  },
+  "stream": {
+    "flavor": "stream",
+    "elapsed_seconds": 25.073,
+    "num_tables": 28,
+    "tables": [
+      {
+        "index": 1,
+        "page": 1,
+        "csv": "table_01_page1.csv",
+        "shape": [
+          2,
+          2
+        ],
+        "accuracy": 100.0,
+        "whitespace": 50.0,
+        "order": 1
+      },
+      {
+        "index": 2,
+        "page": 2,
+        "csv": "table_02_page2.csv",
+        "shape": [
+          1,
+          1
+        ],
+        "accuracy": 100.0,
+        "whitespace": 0.0,
+        "order": 1
+      },
+      {
+        "index": 3,
+        "page": 3,
+        "csv": "table_03_page3.csv",
+        "shape": [
+          3,
+          2
+        ],
+        "accuracy": 100.0,
+        "whitespace": 50.0,
+        "order": 1
+      },
+      {
+        "index": 4,
+        "page": 4,
+        "csv": "table_04_page4.csv",
+        "shape": [
+          11,
+          7
+        ],
+        "accuracy": 100.0,
+        "whitespace": 81.82,
+        "order": 1
+      },
+      {
+        "index": 5,
+        "page": 5,
+        "csv": "table_05_page5.csv",
+        "shape": [
+          8,
+          7
+        ],
+        "accuracy": 100.0,
+        "whitespace": 85.71,
+        "order": 1
+      },
+      {
+        "index": 6,
+        "page": 6,
+        "csv": "table_06_page6.csv",
+        "shape": [
+          3,
+          4
+        ],
+        "accuracy": 100.0,
+        "whitespace": 75.0,
+        "order": 1
+      },
+      {
+        "index": 7,
+        "page": 7,
+        "csv": "table_07_page7.csv",
+        "shape": [
+          12,
+          5
+        ],
+        "accuracy": 99.82,
+        "whitespace": 76.67,
+        "order": 1
+      },
+      {
+        "index": 8,
+        "page": 8,
+        "csv": "table_08_page8.csv",
+        "shape": [
+          5,
+          5
+        ],
+        "accuracy": 100.0,
+        "whitespace": 80.0,
+        "order": 1
+      },
+      {
+        "index": 9,
+        "page": 9,
+        "csv": "table_09_page9.csv",
+        "shape": [
+          12,
+          10
+        ],
+        "accuracy": 100.0,
+        "whitespace": 89.17,
+        "order": 1
+      },
+      {
+        "index": 10,
+        "page": 10,
+        "csv": "table_10_page10.csv",
+        "shape": [
+          6,
+          6
+        ],
+        "accuracy": 100.0,
+        "whitespace": 83.33,
+        "order": 1
+      },
+      {
+        "index": 11,
+        "page": 11,
+        "csv": "table_11_page11.csv",
+        "shape": [
+          10,
+          9
+        ],
+        "accuracy": 100.0,
+        "whitespace": 87.78,
+        "order": 1
+      },
+      {
+        "index": 12,
+        "page": 12,
+        "csv": "table_12_page12.csv",
+        "shape": [
+          13,
+          8
+        ],
+        "accuracy": 100.0,
+        "whitespace": 89.42,
+        "order": 1
+      },
+      {
+        "index": 13,
+        "page": 13,
+        "csv": "table_13_page13.csv",
+        "shape": [
+          16,
+          11
+        ],
+        "accuracy": 99.75,
+        "whitespace": 64.2,
+        "order": 1
+      },
+      {
+        "index": 14,
+        "page": 14,
+        "csv": "table_14_page14.csv",
+        "shape": [
+          11,
+          14
+        ],
+        "accuracy": 97.91,
+        "whitespace": 61.69,
+        "order": 1
+      },
+      {
+        "index": 15,
+        "page": 15,
+        "csv": "table_15_page15.csv",
+        "shape": [
+          6,
+          7
+        ],
+        "accuracy": 100.0,
+        "whitespace": 16.67,
+        "order": 1
+      },
+      {
+        "index": 16,
+        "page": 15,
+        "csv": "table_16_page15.csv",
+        "shape": [
+          7,
+          9
+        ],
+        "accuracy": 100.0,
+        "whitespace": 41.27,
+        "order": 2
+      },
+      {
+        "index": 17,
+        "page": 16,
+        "csv": "table_17_page16.csv",
+        "shape": [
+          5,
+          7
+        ],
+        "accuracy": 100.0,
+        "whitespace": 2.86,
+        "order": 1
+      },
+      {
+        "index": 18,
+        "page": 16,
+        "csv": "table_18_page16.csv",
+        "shape": [
+          6,
+          9
+        ],
+        "accuracy": 100.0,
+        "whitespace": 33.33,
+        "order": 2
+      },
+      {
+        "index": 19,
+        "page": 17,
+        "csv": "table_19_page17.csv",
+        "shape": [
+          7,
+          10
+        ],
+        "accuracy": 99.35,
+        "whitespace": 34.29,
+        "order": 1
+      },
+      {
+        "index": 20,
+        "page": 18,
+        "csv": "table_20_page18.csv",
+        "shape": [
+          9,
+          9
+        ],
+        "accuracy": 99.15,
+        "whitespace": 55.56,
+        "order": 1
+      },
+      {
+        "index": 21,
+        "page": 19,
+        "csv": "table_21_page19.csv",
+        "shape": [
+          5,
+          6
+        ],
+        "accuracy": 100.0,
+        "whitespace": 3.33,
+        "order": 1
+      },
+      {
+        "index": 22,
+        "page": 19,
+        "csv": "table_22_page19.csv",
+        "shape": [
+          6,
+          7
+        ],
+        "accuracy": 100.0,
+        "whitespace": 28.57,
+        "order": 2
+      },
+      {
+        "index": 23,
+        "page": 20,
+        "csv": "table_23_page20.csv",
+        "shape": [
+          13,
+          7
+        ],
+        "accuracy": 100.0,
+        "whitespace": 62.64,
+        "order": 1
+      },
+      {
+        "index": 24,
+        "page": 21,
+        "csv": "table_24_page21.csv",
+        "shape": [
+          17,
+          11
+        ],
+        "accuracy": 97.96,
+        "whitespace": 81.82,
+        "order": 1
+      },
+      {
+        "index": 25,
+        "page": 22,
+        "csv": "table_25_page22.csv",
+        "shape": [
+          28,
+          7
+        ],
+        "accuracy": 100.0,
+        "whitespace": 62.76,
+        "order": 1
+      },
+      {
+        "index": 26,
+        "page": 23,
+        "csv": "table_26_page23.csv",
+        "shape": [
+          6,
+          7
+        ],
+        "accuracy": 100.0,
+        "whitespace": 0.0,
+        "order": 1
+      },
+      {
+        "index": 27,
+        "page": 24,
+        "csv": "table_27_page24.csv",
+        "shape": [
+          8,
+          7
+        ],
+        "accuracy": 100.0,
+        "whitespace": 23.21,
+        "order": 1
+      },
+      {
+        "index": 28,
+        "page": 25,
+        "csv": "table_28_page25.csv",
+        "shape": [
+          15,
+          10
+        ],
+        "accuracy": 94.08,
+        "whitespace": 75.33,
+        "order": 1
+      }
+    ]
+  }
+}

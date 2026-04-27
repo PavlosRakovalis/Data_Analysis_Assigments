@@ -1,0 +1,169 @@
+{
+  "mode": "stream",
+  "elapsed_seconds": 12.535,
+  "num_tables": 15,
+  "per_page_counts": {
+    "1": 0,
+    "2": 0,
+    "3": 0,
+    "4": 0,
+    "5": 0,
+    "6": 0,
+    "7": 0,
+    "8": 0,
+    "9": 0,
+    "10": 0,
+    "11": 0,
+    "12": 0,
+    "13": 1,
+    "14": 1,
+    "15": 1,
+    "16": 1,
+    "17": 2,
+    "18": 1,
+    "19": 2,
+    "20": 1,
+    "21": 1,
+    "22": 1,
+    "23": 1,
+    "24": 1,
+    "25": 1
+  },
+  "tables": [
+    {
+      "index": 1,
+      "page": 13,
+      "csv": "table_01_page13.csv",
+      "shape": [
+        10,
+        8
+      ]
+    },
+    {
+      "index": 2,
+      "page": 14,
+      "csv": "table_02_page14.csv",
+      "shape": [
+        7,
+        8
+      ]
+    },
+    {
+      "index": 3,
+      "page": 15,
+      "csv": "table_03_page15.csv",
+      "shape": [
+        13,
+        13
+      ]
+    },
+    {
+      "index": 4,
+      "page": 16,
+      "csv": "table_04_page16.csv",
+      "shape": [
+        11,
+        9
+      ]
+    },
+    {
+      "index": 5,
+      "page": 17,
+      "csv": "table_05_page17.csv",
+      "shape": [
+        6,
+        9
+      ]
+    },
+    {
+      "index": 6,
+      "page": 17,
+      "csv": "table_06_page17.csv",
+      "shape": [
+        6,
+        9
+      ]
+    },
+    {
+      "index": 7,
+      "page": 18,
+      "csv": "table_07_page18.csv",
+      "shape": [
+        4,
+        7
+      ]
+    },
+    {
+      "index": 8,
+      "page": 19,
+      "csv": "table_08_page19.csv",
+      "shape": [
+        6,
+        7
+      ]
+    },
+    {
+      "index": 9,
+      "page": 19,
+      "csv": "table_09_page19.csv",
+      "shape": [
+        6,
+        7
+      ]
+    },
+    {
+      "index": 10,
+      "page": 20,
+      "csv": "table_10_page20.csv",
+      "shape": [
+        13,
+        7
+      ]
+    },
+    {
+      "index": 11,
+      "page": 21,
+      "csv": "table_11_page21.csv",
+      "shape": [
+        8,
+        7
+      ]
+    },
+    {
+      "index": 12,
+      "page": 22,
+      "csv": "table_12_page22.csv",
+      "shape": [
+        27,
+        7
+      ]
+    },
+    {
+      "index": 13,
+      "page": 23,
+      "csv": "table_13_page23.csv",
+      "shape": [
+        6,
+        7
+      ]
+    },
+    {
+      "index": 14,
+      "page": 24,
+      "csv": "table_14_page24.csv",
+      "shape": [
+        8,
+        7
+      ]
+    },
+    {
+      "index": 15,
+      "page": 25,
+      "csv": "table_15_page25.csv",
+      "shape": [
+        10,
+        8
+      ]
+    }
+  ]
+}

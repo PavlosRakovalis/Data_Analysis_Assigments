@@ -1,0 +1,3346 @@
+{
+  "lattice": {
+    "mode": "lattice",
+    "elapsed_seconds": 7.26,
+    "num_tables": 349,
+    "per_page_counts": {
+      "1": 3,
+      "2": 9,
+      "3": 6,
+      "4": 122,
+      "5": 54,
+      "6": 6,
+      "7": 5,
+      "8": 6,
+      "9": 6,
+      "10": 6,
+      "11": 7,
+      "12": 6,
+      "13": 14,
+      "14": 10,
+      "15": 11,
+      "16": 11,
+      "17": 10,
+      "18": 4,
+      "19": 11,
+      "20": 7,
+      "21": 4,
+      "22": 8,
+      "23": 7,
+      "24": 8,
+      "25": 8
+    },
+    "tables": [
+      {
+        "index": 1,
+        "page": 1,
+        "csv": "table_01_page1.csv",
+        "shape": [
+          3,
+          1
+        ]
+      },
+      {
+        "index": 2,
+        "page": 1,
+        "csv": "table_02_page1.csv",
+        "shape": [
+          2,
+          1
+        ]
+      },
+      {
+        "index": 3,
+        "page": 1,
+        "csv": "table_03_page1.csv",
+        "shape": [
+          3,
+          2
+        ]
+      },
+      {
+        "index": 4,
+        "page": 2,
+        "csv": "table_04_page2.csv",
+        "shape": [
+          2,
+          1
+        ]
+      },
+      {
+        "index": 5,
+        "page": 2,
+        "csv": "table_05_page2.csv",
+        "shape": [
+          2,
+          1
+        ]
+      },
+      {
+        "index": 6,
+        "page": 2,
+        "csv": "table_06_page2.csv",
+        "shape": [
+          2,
+          1
+        ]
+      },
+      {
+        "index": 7,
+        "page": 2,
+        "csv": "table_07_page2.csv",
+        "shape": [
+          2,
+          1
+        ]
+      },
+      {
+        "index": 8,
+        "page": 2,
+        "csv": "table_08_page2.csv",
+        "shape": [
+          2,
+          1
+        ]
+      },
+      {
+        "index": 9,
+        "page": 2,
+        "csv": "table_09_page2.csv",
+        "shape": [
+          2,
+          1
+        ]
+      },
+      {
+        "index": 10,
+        "page": 2,
+        "csv": "table_10_page2.csv",
+        "shape": [
+          3,
+          5
+        ]
+      },
+      {
+        "index": 11,
+        "page": 2,
+        "csv": "table_11_page2.csv",
+        "shape": [
+          2,
+          1
+        ]
+      },
+      {
+        "index": 12,
+        "page": 2,
+        "csv": "table_12_page2.csv",
+        "shape": [
+          2,
+          1
+        ]
+      },
+      {
+        "index": 13,
+        "page": 3,
+        "csv": "table_13_page3.csv",
+        "shape": [
+          2,
+          1
+        ]
+      },
+      {
+        "index": 14,
+        "page": 3,
+        "csv": "table_14_page3.csv",
+        "shape": [
+          2,
+          1
+        ]
+      },
+      {
+        "index": 15,
+        "page": 3,
+        "csv": "table_15_page3.csv",
+        "shape": [
+          2,
+          1
+        ]
+      },
+      {
+        "index": 16,
+        "page": 3,
+        "csv": "table_16_page3.csv",
+        "shape": [
+          2,
+          1
+        ]
+      },
+      {
+        "index": 17,
+        "page": 3,
+        "csv": "table_17_page3.csv",
+        "shape": [
+          2,
+          1
+        ]
+      },
+      {
+        "index": 18,
+        "page": 3,
+        "csv": "table_18_page3.csv",
+        "shape": [
+          2,
+          5
+        ]
+      },
+      {
+        "index": 19,
+        "page": 4,
+        "csv": "table_19_page4.csv",
+        "shape": [
+          2,
+          1
+        ]
+      },
+      {
+        "index": 20,
+        "page": 4,
+        "csv": "table_20_page4.csv",
+        "shape": [
+          2,
+          1
+        ]
+      },
+      {
+        "index": 21,
+        "page": 4,
+        "csv": "table_21_page4.csv",
+        "shape": [
+          2,
+          1
+        ]
+      },
+      {
+        "index": 22,
+        "page": 4,
+        "csv": "table_22_page4.csv",
+        "shape": [
+          2,
+          2
+        ]
+      },
+      {
+        "index": 23,
+        "page": 4,
+        "csv": "table_23_page4.csv",
+        "shape": [
+          2,
+          1
+        ]
+      },
+      {
+        "index": 24,
+        "page": 4,
+        "csv": "table_24_page4.csv",
+        "shape": [
+          2,
+          1
+        ]
+      },
+      {
+        "index": 25,
+        "page": 4,
+        "csv": "table_25_page4.csv",
+        "shape": [
+          2,
+          1
+        ]
+      },
+      {
+        "index": 26,
+        "page": 4,
+        "csv": "table_26_page4.csv",
+        "shape": [
+          2,
+          1
+        ]
+      },
+      {
+        "index": 27,
+        "page": 4,
+        "csv": "table_27_page4.csv",
+        "shape": [
+          2,
+          1
+        ]
+      },
+      {
+        "index": 28,
+        "page": 4,
+        "csv": "table_28_page4.csv",
+        "shape": [
+          2,
+          1
+        ]
+      },
+      {
+        "index": 29,
+        "page": 4,
+        "csv": "table_29_page4.csv",
+        "shape": [
+          2,
+          1
+        ]
+      },
+      {
+        "index": 30,
+        "page": 4,
+        "csv": "table_30_page4.csv",
+        "shape": [
+          2,
+          2
+        ]
+      },
+      {
+        "index": 31,
+        "page": 4,
+        "csv": "table_31_page4.csv",
+        "shape": [
+          2,
+          1
+        ]
+      },
+      {
+        "index": 32,
+        "page": 4,
+        "csv": "table_32_page4.csv",
+        "shape": [
+          2,
+          1
+        ]
+      },
+      {
+        "index": 33,
+        "page": 4,
+        "csv": "table_33_page4.csv",
+        "shape": [
+          2,
+          1
+        ]
+      },
+      {
+        "index": 34,
+        "page": 4,
+        "csv": "table_34_page4.csv",
+        "shape": [
+          2,
+          1
+        ]
+      },
+      {
+        "index": 35,
+        "page": 4,
+        "csv": "table_35_page4.csv",
+        "shape": [
+          2,
+          2
+        ]
+      },
+      {
+        "index": 36,
+        "page": 4,
+        "csv": "table_36_page4.csv",
+        "shape": [
+          2,
+          1
+        ]
+      },
+      {
+        "index": 37,
+        "page": 4,
+        "csv": "table_37_page4.csv",
+        "shape": [
+          2,
+          1
+        ]
+      },
+      {
+        "index": 38,
+        "page": 4,
+        "csv": "table_38_page4.csv",
+        "shape": [
+          2,
+          1
+        ]
+      },
+      {
+        "index": 39,
+        "page": 4,
+        "csv": "table_39_page4.csv",
+        "shape": [
+          2,
+          1
+        ]
+      },
+      {
+        "index": 40,
+        "page": 4,
+        "csv": "table_40_page4.csv",
+        "shape": [
+          2,
+          1
+        ]
+      },
+      {
+        "index": 41,
+        "page": 4,
+        "csv": "table_41_page4.csv",
+        "shape": [
+          2,
+          1
+        ]
+      },
+      {
+        "index": 42,
+        "page": 4,
+        "csv": "table_42_page4.csv",
+        "shape": [
+          2,
+          2
+        ]
+      },
+      {
+        "index": 43,
+        "page": 4,
+        "csv": "table_43_page4.csv",
+        "shape": [
+          2,
+          1
+        ]
+      },
+      {
+        "index": 44,
+        "page": 4,
+        "csv": "table_44_page4.csv",
+        "shape": [
+          2,
+          1
+        ]
+      },
+      {
+        "index": 45,
+        "page": 4,
+        "csv": "table_45_page4.csv",
+        "shape": [
+          2,
+          1
+        ]
+      },
+      {
+        "index": 46,
+        "page": 4,
+        "csv": "table_46_page4.csv",
+        "shape": [
+          2,
+          1
+        ]
+      },
+      {
+        "index": 47,
+        "page": 4,
+        "csv": "table_47_page4.csv",
+        "shape": [
+          2,
+          1
+        ]
+      },
+      {
+        "index": 48,
+        "page": 4,
+        "csv": "table_48_page4.csv",
+        "shape": [
+          2,
+          1
+        ]
+      },
+      {
+        "index": 49,
+        "page": 4,
+        "csv": "table_49_page4.csv",
+        "shape": [
+          2,
+          1
+        ]
+      },
+      {
+        "index": 50,
+        "page": 4,
+        "csv": "table_50_page4.csv",
+        "shape": [
+          2,
+          1
+        ]
+      },
+      {
+        "index": 51,
+        "page": 4,
+        "csv": "table_51_page4.csv",
+        "shape": [
+          2,
+          1
+        ]
+      },
+      {
+        "index": 52,
+        "page": 4,
+        "csv": "table_52_page4.csv",
+        "shape": [
+          2,
+          1
+        ]
+      },
+      {
+        "index": 53,
+        "page": 4,
+        "csv": "table_53_page4.csv",
+        "shape": [
+          2,
+          1
+        ]
+      },
+      {
+        "index": 54,
+        "page": 4,
+        "csv": "table_54_page4.csv",
+        "shape": [
+          2,
+          1
+        ]
+      },
+      {
+        "index": 55,
+        "page": 4,
+        "csv": "table_55_page4.csv",
+        "shape": [
+          2,
+          1
+        ]
+      },
+      {
+        "index": 56,
+        "page": 4,
+        "csv": "table_56_page4.csv",
+        "shape": [
+          2,
+          1
+        ]
+      },
+      {
+        "index": 57,
+        "page": 4,
+        "csv": "table_57_page4.csv",
+        "shape": [
+          2,
+          1
+        ]
+      },
+      {
+        "index": 58,
+        "page": 4,
+        "csv": "table_58_page4.csv",
+        "shape": [
+          2,
+          1
+        ]
+      },
+      {
+        "index": 59,
+        "page": 4,
+        "csv": "table_59_page4.csv",
+        "shape": [
+          2,
+          1
+        ]
+      },
+      {
+        "index": 60,
+        "page": 4,
+        "csv": "table_60_page4.csv",
+        "shape": [
+          2,
+          1
+        ]
+      },
+      {
+        "index": 61,
+        "page": 4,
+        "csv": "table_61_page4.csv",
+        "shape": [
+          2,
+          2
+        ]
+      },
+      {
+        "index": 62,
+        "page": 4,
+        "csv": "table_62_page4.csv",
+        "shape": [
+          2,
+          1
+        ]
+      },
+      {
+        "index": 63,
+        "page": 4,
+        "csv": "table_63_page4.csv",
+        "shape": [
+          2,
+          1
+        ]
+      },
+      {
+        "index": 64,
+        "page": 4,
+        "csv": "table_64_page4.csv",
+        "shape": [
+          2,
+          2
+        ]
+      },
+      {
+        "index": 65,
+        "page": 4,
+        "csv": "table_65_page4.csv",
+        "shape": [
+          2,
+          1
+        ]
+      },
+      {
+        "index": 66,
+        "page": 4,
+        "csv": "table_66_page4.csv",
+        "shape": [
+          2,
+          1
+        ]
+      },
+      {
+        "index": 67,
+        "page": 4,
+        "csv": "table_67_page4.csv",
+        "shape": [
+          2,
+          1
+        ]
+      },
+      {
+        "index": 68,
+        "page": 4,
+        "csv": "table_68_page4.csv",
+        "shape": [
+          2,
+          1
+        ]
+      },
+      {
+        "index": 69,
+        "page": 4,
+        "csv": "table_69_page4.csv",
+        "shape": [
+          2,
+          2
+        ]
+      },
+      {
+        "index": 70,
+        "page": 4,
+        "csv": "table_70_page4.csv",
+        "shape": [
+          2,
+          1
+        ]
+      },
+      {
+        "index": 71,
+        "page": 4,
+        "csv": "table_71_page4.csv",
+        "shape": [
+          2,
+          1
+        ]
+      },
+      {
+        "index": 72,
+        "page": 4,
+        "csv": "table_72_page4.csv",
+        "shape": [
+          2,
+          1
+        ]
+      },
+      {
+        "index": 73,
+        "page": 4,
+        "csv": "table_73_page4.csv",
+        "shape": [
+          2,
+          1
+        ]
+      },
+      {
+        "index": 74,
+        "page": 4,
+        "csv": "table_74_page4.csv",
+        "shape": [
+          2,
+          1
+        ]
+      },
+      {
+        "index": 75,
+        "page": 4,
+        "csv": "table_75_page4.csv",
+        "shape": [
+          2,
+          1
+        ]
+      },
+      {
+        "index": 76,
+        "page": 4,
+        "csv": "table_76_page4.csv",
+        "shape": [
+          2,
+          1
+        ]
+      },
+      {
+        "index": 77,
+        "page": 4,
+        "csv": "table_77_page4.csv",
+        "shape": [
+          2,
+          1
+        ]
+      },
+      {
+        "index": 78,
+        "page": 4,
+        "csv": "table_78_page4.csv",
+        "shape": [
+          2,
+          2
+        ]
+      },
+      {
+        "index": 79,
+        "page": 4,
+        "csv": "table_79_page4.csv",
+        "shape": [
+          2,
+          2
+        ]
+      },
+      {
+        "index": 80,
+        "page": 4,
+        "csv": "table_80_page4.csv",
+        "shape": [
+          2,
+          1
+        ]
+      },
+      {
+        "index": 81,
+        "page": 4,
+        "csv": "table_81_page4.csv",
+        "shape": [
+          2,
+          1
+        ]
+      },
+      {
+        "index": 82,
+        "page": 4,
+        "csv": "table_82_page4.csv",
+        "shape": [
+          2,
+          2
+        ]
+      },
+      {
+        "index": 83,
+        "page": 4,
+        "csv": "table_83_page4.csv",
+        "shape": [
+          2,
+          1
+        ]
+      },
+      {
+        "index": 84,
+        "page": 4,
+        "csv": "table_84_page4.csv",
+        "shape": [
+          2,
+          1
+        ]
+      },
+      {
+        "index": 85,
+        "page": 4,
+        "csv": "table_85_page4.csv",
+        "shape": [
+          2,
+          1
+        ]
+      },
+      {
+        "index": 86,
+        "page": 4,
+        "csv": "table_86_page4.csv",
+        "shape": [
+          2,
+          1
+        ]
+      },
+      {
+        "index": 87,
+        "page": 4,
+        "csv": "table_87_page4.csv",
+        "shape": [
+          2,
+          1
+        ]
+      },
+      {
+        "index": 88,
+        "page": 4,
+        "csv": "table_88_page4.csv",
+        "shape": [
+          2,
+          1
+        ]
+      },
+      {
+        "index": 89,
+        "page": 4,
+        "csv": "table_89_page4.csv",
+        "shape": [
+          2,
+          2
+        ]
+      },
+      {
+        "index": 90,
+        "page": 4,
+        "csv": "table_90_page4.csv",
+        "shape": [
+          2,
+          1
+        ]
+      },
+      {
+        "index": 91,
+        "page": 4,
+        "csv": "table_91_page4.csv",
+        "shape": [
+          2,
+          1
+        ]
+      },
+      {
+        "index": 92,
+        "page": 4,
+        "csv": "table_92_page4.csv",
+        "shape": [
+          2,
+          1
+        ]
+      },
+      {
+        "index": 93,
+        "page": 4,
+        "csv": "table_93_page4.csv",
+        "shape": [
+          2,
+          1
+        ]
+      },
+      {
+        "index": 94,
+        "page": 4,
+        "csv": "table_94_page4.csv",
+        "shape": [
+          2,
+          1
+        ]
+      },
+      {
+        "index": 95,
+        "page": 4,
+        "csv": "table_95_page4.csv",
+        "shape": [
+          2,
+          1
+        ]
+      },
+      {
+        "index": 96,
+        "page": 4,
+        "csv": "table_96_page4.csv",
+        "shape": [
+          2,
+          1
+        ]
+      },
+      {
+        "index": 97,
+        "page": 4,
+        "csv": "table_97_page4.csv",
+        "shape": [
+          2,
+          1
+        ]
+      },
+      {
+        "index": 98,
+        "page": 4,
+        "csv": "table_98_page4.csv",
+        "shape": [
+          2,
+          1
+        ]
+      },
+      {
+        "index": 99,
+        "page": 4,
+        "csv": "table_99_page4.csv",
+        "shape": [
+          17,
+          23
+        ]
+      },
+      {
+        "index": 100,
+        "page": 4,
+        "csv": "table_100_page4.csv",
+        "shape": [
+          2,
+          1
+        ]
+      },
+      {
+        "index": 101,
+        "page": 4,
+        "csv": "table_101_page4.csv",
+        "shape": [
+          2,
+          1
+        ]
+      },
+      {
+        "index": 102,
+        "page": 4,
+        "csv": "table_102_page4.csv",
+        "shape": [
+          2,
+          1
+        ]
+      },
+      {
+        "index": 103,
+        "page": 4,
+        "csv": "table_103_page4.csv",
+        "shape": [
+          2,
+          2
+        ]
+      },
+      {
+        "index": 104,
+        "page": 4,
+        "csv": "table_104_page4.csv",
+        "shape": [
+          2,
+          1
+        ]
+      },
+      {
+        "index": 105,
+        "page": 4,
+        "csv": "table_105_page4.csv",
+        "shape": [
+          2,
+          1
+        ]
+      },
+      {
+        "index": 106,
+        "page": 4,
+        "csv": "table_106_page4.csv",
+        "shape": [
+          2,
+          1
+        ]
+      },
+      {
+        "index": 107,
+        "page": 4,
+        "csv": "table_107_page4.csv",
+        "shape": [
+          2,
+          1
+        ]
+      },
+      {
+        "index": 108,
+        "page": 4,
+        "csv": "table_108_page4.csv",
+        "shape": [
+          2,
+          1
+        ]
+      },
+      {
+        "index": 109,
+        "page": 4,
+        "csv": "table_109_page4.csv",
+        "shape": [
+          2,
+          1
+        ]
+      },
+      {
+        "index": 110,
+        "page": 4,
+        "csv": "table_110_page4.csv",
+        "shape": [
+          2,
+          1
+        ]
+      },
+      {
+        "index": 111,
+        "page": 4,
+        "csv": "table_111_page4.csv",
+        "shape": [
+          2,
+          2
+        ]
+      },
+      {
+        "index": 112,
+        "page": 4,
+        "csv": "table_112_page4.csv",
+        "shape": [
+          2,
+          1
+        ]
+      },
+      {
+        "index": 113,
+        "page": 4,
+        "csv": "table_113_page4.csv",
+        "shape": [
+          2,
+          1
+        ]
+      },
+      {
+        "index": 114,
+        "page": 4,
+        "csv": "table_114_page4.csv",
+        "shape": [
+          2,
+          1
+        ]
+      },
+      {
+        "index": 115,
+        "page": 4,
+        "csv": "table_115_page4.csv",
+        "shape": [
+          2,
+          1
+        ]
+      },
+      {
+        "index": 116,
+        "page": 4,
+        "csv": "table_116_page4.csv",
+        "shape": [
+          2,
+          1
+        ]
+      },
+      {
+        "index": 117,
+        "page": 4,
+        "csv": "table_117_page4.csv",
+        "shape": [
+          2,
+          1
+        ]
+      },
+      {
+        "index": 118,
+        "page": 4,
+        "csv": "table_118_page4.csv",
+        "shape": [
+          2,
+          1
+        ]
+      },
+      {
+        "index": 119,
+        "page": 4,
+        "csv": "table_119_page4.csv",
+        "shape": [
+          2,
+          1
+        ]
+      },
+      {
+        "index": 120,
+        "page": 4,
+        "csv": "table_120_page4.csv",
+        "shape": [
+          2,
+          1
+        ]
+      },
+      {
+        "index": 121,
+        "page": 4,
+        "csv": "table_121_page4.csv",
+        "shape": [
+          2,
+          1
+        ]
+      },
+      {
+        "index": 122,
+        "page": 4,
+        "csv": "table_122_page4.csv",
+        "shape": [
+          2,
+          1
+        ]
+      },
+      {
+        "index": 123,
+        "page": 4,
+        "csv": "table_123_page4.csv",
+        "shape": [
+          2,
+          1
+        ]
+      },
+      {
+        "index": 124,
+        "page": 4,
+        "csv": "table_124_page4.csv",
+        "shape": [
+          2,
+          2
+        ]
+      },
+      {
+        "index": 125,
+        "page": 4,
+        "csv": "table_125_page4.csv",
+        "shape": [
+          2,
+          1
+        ]
+      },
+      {
+        "index": 126,
+        "page": 4,
+        "csv": "table_126_page4.csv",
+        "shape": [
+          2,
+          1
+        ]
+      },
+      {
+        "index": 127,
+        "page": 4,
+        "csv": "table_127_page4.csv",
+        "shape": [
+          2,
+          1
+        ]
+      },
+      {
+        "index": 128,
+        "page": 4,
+        "csv": "table_128_page4.csv",
+        "shape": [
+          2,
+          1
+        ]
+      },
+      {
+        "index": 129,
+        "page": 4,
+        "csv": "table_129_page4.csv",
+        "shape": [
+          2,
+          2
+        ]
+      },
+      {
+        "index": 130,
+        "page": 4,
+        "csv": "table_130_page4.csv",
+        "shape": [
+          2,
+          1
+        ]
+      },
+      {
+        "index": 131,
+        "page": 4,
+        "csv": "table_131_page4.csv",
+        "shape": [
+          2,
+          1
+        ]
+      },
+      {
+        "index": 132,
+        "page": 4,
+        "csv": "table_132_page4.csv",
+        "shape": [
+          2,
+          1
+        ]
+      },
+      {
+        "index": 133,
+        "page": 4,
+        "csv": "table_133_page4.csv",
+        "shape": [
+          2,
+          1
+        ]
+      },
+      {
+        "index": 134,
+        "page": 4,
+        "csv": "table_134_page4.csv",
+        "shape": [
+          2,
+          1
+        ]
+      },
+      {
+        "index": 135,
+        "page": 4,
+        "csv": "table_135_page4.csv",
+        "shape": [
+          2,
+          1
+        ]
+      },
+      {
+        "index": 136,
+        "page": 4,
+        "csv": "table_136_page4.csv",
+        "shape": [
+          2,
+          1
+        ]
+      },
+      {
+        "index": 137,
+        "page": 4,
+        "csv": "table_137_page4.csv",
+        "shape": [
+          2,
+          1
+        ]
+      },
+      {
+        "index": 138,
+        "page": 4,
+        "csv": "table_138_page4.csv",
+        "shape": [
+          2,
+          1
+        ]
+      },
+      {
+        "index": 139,
+        "page": 4,
+        "csv": "table_139_page4.csv",
+        "shape": [
+          2,
+          2
+        ]
+      },
+      {
+        "index": 140,
+        "page": 4,
+        "csv": "table_140_page4.csv",
+        "shape": [
+          2,
+          1
+        ]
+      },
+      {
+        "index": 141,
+        "page": 5,
+        "csv": "table_141_page5.csv",
+        "shape": [
+          2,
+          1
+        ]
+      },
+      {
+        "index": 142,
+        "page": 5,
+        "csv": "table_142_page5.csv",
+        "shape": [
+          2,
+          1
+        ]
+      },
+      {
+        "index": 143,
+        "page": 5,
+        "csv": "table_143_page5.csv",
+        "shape": [
+          2,
+          2
+        ]
+      },
+      {
+        "index": 144,
+        "page": 5,
+        "csv": "table_144_page5.csv",
+        "shape": [
+          13,
+          17
+        ]
+      },
+      {
+        "index": 145,
+        "page": 5,
+        "csv": "table_145_page5.csv",
+        "shape": [
+          2,
+          2
+        ]
+      },
+      {
+        "index": 146,
+        "page": 5,
+        "csv": "table_146_page5.csv",
+        "shape": [
+          2,
+          1
+        ]
+      },
+      {
+        "index": 147,
+        "page": 5,
+        "csv": "table_147_page5.csv",
+        "shape": [
+          2,
+          2
+        ]
+      },
+      {
+        "index": 148,
+        "page": 5,
+        "csv": "table_148_page5.csv",
+        "shape": [
+          2,
+          1
+        ]
+      },
+      {
+        "index": 149,
+        "page": 5,
+        "csv": "table_149_page5.csv",
+        "shape": [
+          2,
+          1
+        ]
+      },
+      {
+        "index": 150,
+        "page": 5,
+        "csv": "table_150_page5.csv",
+        "shape": [
+          2,
+          1
+        ]
+      },
+      {
+        "index": 151,
+        "page": 5,
+        "csv": "table_151_page5.csv",
+        "shape": [
+          2,
+          1
+        ]
+      },
+      {
+        "index": 152,
+        "page": 5,
+        "csv": "table_152_page5.csv",
+        "shape": [
+          2,
+          1
+        ]
+      },
+      {
+        "index": 153,
+        "page": 5,
+        "csv": "table_153_page5.csv",
+        "shape": [
+          2,
+          1
+        ]
+      },
+      {
+        "index": 154,
+        "page": 5,
+        "csv": "table_154_page5.csv",
+        "shape": [
+          2,
+          1
+        ]
+      },
+      {
+        "index": 155,
+        "page": 5,
+        "csv": "table_155_page5.csv",
+        "shape": [
+          2,
+          1
+        ]
+      },
+      {
+        "index": 156,
+        "page": 5,
+        "csv": "table_156_page5.csv",
+        "shape": [
+          2,
+          1
+        ]
+      },
+      {
+        "index": 157,
+        "page": 5,
+        "csv": "table_157_page5.csv",
+        "shape": [
+          2,
+          1
+        ]
+      },
+      {
+        "index": 158,
+        "page": 5,
+        "csv": "table_158_page5.csv",
+        "shape": [
+          2,
+          2
+        ]
+      },
+      {
+        "index": 159,
+        "page": 5,
+        "csv": "table_159_page5.csv",
+        "shape": [
+          2,
+          1
+        ]
+      },
+      {
+        "index": 160,
+        "page": 5,
+        "csv": "table_160_page5.csv",
+        "shape": [
+          2,
+          1
+        ]
+      },
+      {
+        "index": 161,
+        "page": 5,
+        "csv": "table_161_page5.csv",
+        "shape": [
+          2,
+          1
+        ]
+      },
+      {
+        "index": 162,
+        "page": 5,
+        "csv": "table_162_page5.csv",
+        "shape": [
+          2,
+          2
+        ]
+      },
+      {
+        "index": 163,
+        "page": 5,
+        "csv": "table_163_page5.csv",
+        "shape": [
+          2,
+          1
+        ]
+      },
+      {
+        "index": 164,
+        "page": 5,
+        "csv": "table_164_page5.csv",
+        "shape": [
+          2,
+          1
+        ]
+      },
+      {
+        "index": 165,
+        "page": 5,
+        "csv": "table_165_page5.csv",
+        "shape": [
+          2,
+          1
+        ]
+      },
+      {
+        "index": 166,
+        "page": 5,
+        "csv": "table_166_page5.csv",
+        "shape": [
+          2,
+          2
+        ]
+      },
+      {
+        "index": 167,
+        "page": 5,
+        "csv": "table_167_page5.csv",
+        "shape": [
+          2,
+          1
+        ]
+      },
+      {
+        "index": 168,
+        "page": 5,
+        "csv": "table_168_page5.csv",
+        "shape": [
+          2,
+          1
+        ]
+      },
+      {
+        "index": 169,
+        "page": 5,
+        "csv": "table_169_page5.csv",
+        "shape": [
+          2,
+          1
+        ]
+      },
+      {
+        "index": 170,
+        "page": 5,
+        "csv": "table_170_page5.csv",
+        "shape": [
+          2,
+          1
+        ]
+      },
+      {
+        "index": 171,
+        "page": 5,
+        "csv": "table_171_page5.csv",
+        "shape": [
+          2,
+          1
+        ]
+      },
+      {
+        "index": 172,
+        "page": 5,
+        "csv": "table_172_page5.csv",
+        "shape": [
+          2,
+          1
+        ]
+      },
+      {
+        "index": 173,
+        "page": 5,
+        "csv": "table_173_page5.csv",
+        "shape": [
+          2,
+          1
+        ]
+      },
+      {
+        "index": 174,
+        "page": 5,
+        "csv": "table_174_page5.csv",
+        "shape": [
+          2,
+          1
+        ]
+      },
+      {
+        "index": 175,
+        "page": 5,
+        "csv": "table_175_page5.csv",
+        "shape": [
+          2,
+          1
+        ]
+      },
+      {
+        "index": 176,
+        "page": 5,
+        "csv": "table_176_page5.csv",
+        "shape": [
+          2,
+          1
+        ]
+      },
+      {
+        "index": 177,
+        "page": 5,
+        "csv": "table_177_page5.csv",
+        "shape": [
+          2,
+          1
+        ]
+      },
+      {
+        "index": 178,
+        "page": 5,
+        "csv": "table_178_page5.csv",
+        "shape": [
+          2,
+          1
+        ]
+      },
+      {
+        "index": 179,
+        "page": 5,
+        "csv": "table_179_page5.csv",
+        "shape": [
+          2,
+          1
+        ]
+      },
+      {
+        "index": 180,
+        "page": 5,
+        "csv": "table_180_page5.csv",
+        "shape": [
+          2,
+          1
+        ]
+      },
+      {
+        "index": 181,
+        "page": 5,
+        "csv": "table_181_page5.csv",
+        "shape": [
+          2,
+          1
+        ]
+      },
+      {
+        "index": 182,
+        "page": 5,
+        "csv": "table_182_page5.csv",
+        "shape": [
+          2,
+          2
+        ]
+      },
+      {
+        "index": 183,
+        "page": 5,
+        "csv": "table_183_page5.csv",
+        "shape": [
+          2,
+          1
+        ]
+      },
+      {
+        "index": 184,
+        "page": 5,
+        "csv": "table_184_page5.csv",
+        "shape": [
+          2,
+          2
+        ]
+      },
+      {
+        "index": 185,
+        "page": 5,
+        "csv": "table_185_page5.csv",
+        "shape": [
+          2,
+          1
+        ]
+      },
+      {
+        "index": 186,
+        "page": 5,
+        "csv": "table_186_page5.csv",
+        "shape": [
+          2,
+          1
+        ]
+      },
+      {
+        "index": 187,
+        "page": 5,
+        "csv": "table_187_page5.csv",
+        "shape": [
+          2,
+          1
+        ]
+      },
+      {
+        "index": 188,
+        "page": 5,
+        "csv": "table_188_page5.csv",
+        "shape": [
+          2,
+          1
+        ]
+      },
+      {
+        "index": 189,
+        "page": 5,
+        "csv": "table_189_page5.csv",
+        "shape": [
+          2,
+          2
+        ]
+      },
+      {
+        "index": 190,
+        "page": 5,
+        "csv": "table_190_page5.csv",
+        "shape": [
+          2,
+          1
+        ]
+      },
+      {
+        "index": 191,
+        "page": 5,
+        "csv": "table_191_page5.csv",
+        "shape": [
+          2,
+          1
+        ]
+      },
+      {
+        "index": 192,
+        "page": 5,
+        "csv": "table_192_page5.csv",
+        "shape": [
+          2,
+          2
+        ]
+      },
+      {
+        "index": 193,
+        "page": 5,
+        "csv": "table_193_page5.csv",
+        "shape": [
+          2,
+          1
+        ]
+      },
+      {
+        "index": 194,
+        "page": 5,
+        "csv": "table_194_page5.csv",
+        "shape": [
+          2,
+          1
+        ]
+      },
+      {
+        "index": 195,
+        "page": 6,
+        "csv": "table_195_page6.csv",
+        "shape": [
+          2,
+          1
+        ]
+      },
+      {
+        "index": 196,
+        "page": 6,
+        "csv": "table_196_page6.csv",
+        "shape": [
+          2,
+          2
+        ]
+      },
+      {
+        "index": 197,
+        "page": 6,
+        "csv": "table_197_page6.csv",
+        "shape": [
+          2,
+          1
+        ]
+      },
+      {
+        "index": 198,
+        "page": 6,
+        "csv": "table_198_page6.csv",
+        "shape": [
+          2,
+          1
+        ]
+      },
+      {
+        "index": 199,
+        "page": 6,
+        "csv": "table_199_page6.csv",
+        "shape": [
+          2,
+          1
+        ]
+      },
+      {
+        "index": 200,
+        "page": 6,
+        "csv": "table_200_page6.csv",
+        "shape": [
+          3,
+          4
+        ]
+      },
+      {
+        "index": 201,
+        "page": 7,
+        "csv": "table_201_page7.csv",
+        "shape": [
+          2,
+          2
+        ]
+      },
+      {
+        "index": 202,
+        "page": 7,
+        "csv": "table_202_page7.csv",
+        "shape": [
+          2,
+          1
+        ]
+      },
+      {
+        "index": 203,
+        "page": 7,
+        "csv": "table_203_page7.csv",
+        "shape": [
+          2,
+          1
+        ]
+      },
+      {
+        "index": 204,
+        "page": 7,
+        "csv": "table_204_page7.csv",
+        "shape": [
+          2,
+          1
+        ]
+      },
+      {
+        "index": 205,
+        "page": 7,
+        "csv": "table_205_page7.csv",
+        "shape": [
+          3,
+          4
+        ]
+      },
+      {
+        "index": 206,
+        "page": 8,
+        "csv": "table_206_page8.csv",
+        "shape": [
+          2,
+          1
+        ]
+      },
+      {
+        "index": 207,
+        "page": 8,
+        "csv": "table_207_page8.csv",
+        "shape": [
+          2,
+          1
+        ]
+      },
+      {
+        "index": 208,
+        "page": 8,
+        "csv": "table_208_page8.csv",
+        "shape": [
+          2,
+          1
+        ]
+      },
+      {
+        "index": 209,
+        "page": 8,
+        "csv": "table_209_page8.csv",
+        "shape": [
+          2,
+          1
+        ]
+      },
+      {
+        "index": 210,
+        "page": 8,
+        "csv": "table_210_page8.csv",
+        "shape": [
+          2,
+          2
+        ]
+      },
+      {
+        "index": 211,
+        "page": 8,
+        "csv": "table_211_page8.csv",
+        "shape": [
+          3,
+          4
+        ]
+      },
+      {
+        "index": 212,
+        "page": 9,
+        "csv": "table_212_page9.csv",
+        "shape": [
+          2,
+          1
+        ]
+      },
+      {
+        "index": 213,
+        "page": 9,
+        "csv": "table_213_page9.csv",
+        "shape": [
+          2,
+          1
+        ]
+      },
+      {
+        "index": 214,
+        "page": 9,
+        "csv": "table_214_page9.csv",
+        "shape": [
+          2,
+          1
+        ]
+      },
+      {
+        "index": 215,
+        "page": 9,
+        "csv": "table_215_page9.csv",
+        "shape": [
+          2,
+          1
+        ]
+      },
+      {
+        "index": 216,
+        "page": 9,
+        "csv": "table_216_page9.csv",
+        "shape": [
+          2,
+          2
+        ]
+      },
+      {
+        "index": 217,
+        "page": 9,
+        "csv": "table_217_page9.csv",
+        "shape": [
+          3,
+          4
+        ]
+      },
+      {
+        "index": 218,
+        "page": 10,
+        "csv": "table_218_page10.csv",
+        "shape": [
+          2,
+          2
+        ]
+      },
+      {
+        "index": 219,
+        "page": 10,
+        "csv": "table_219_page10.csv",
+        "shape": [
+          2,
+          1
+        ]
+      },
+      {
+        "index": 220,
+        "page": 10,
+        "csv": "table_220_page10.csv",
+        "shape": [
+          2,
+          1
+        ]
+      },
+      {
+        "index": 221,
+        "page": 10,
+        "csv": "table_221_page10.csv",
+        "shape": [
+          2,
+          1
+        ]
+      },
+      {
+        "index": 222,
+        "page": 10,
+        "csv": "table_222_page10.csv",
+        "shape": [
+          2,
+          1
+        ]
+      },
+      {
+        "index": 223,
+        "page": 10,
+        "csv": "table_223_page10.csv",
+        "shape": [
+          3,
+          4
+        ]
+      },
+      {
+        "index": 224,
+        "page": 11,
+        "csv": "table_224_page11.csv",
+        "shape": [
+          2,
+          1
+        ]
+      },
+      {
+        "index": 225,
+        "page": 11,
+        "csv": "table_225_page11.csv",
+        "shape": [
+          3,
+          5
+        ]
+      },
+      {
+        "index": 226,
+        "page": 11,
+        "csv": "table_226_page11.csv",
+        "shape": [
+          2,
+          1
+        ]
+      },
+      {
+        "index": 227,
+        "page": 11,
+        "csv": "table_227_page11.csv",
+        "shape": [
+          2,
+          1
+        ]
+      },
+      {
+        "index": 228,
+        "page": 11,
+        "csv": "table_228_page11.csv",
+        "shape": [
+          2,
+          1
+        ]
+      },
+      {
+        "index": 229,
+        "page": 11,
+        "csv": "table_229_page11.csv",
+        "shape": [
+          2,
+          1
+        ]
+      },
+      {
+        "index": 230,
+        "page": 11,
+        "csv": "table_230_page11.csv",
+        "shape": [
+          2,
+          1
+        ]
+      },
+      {
+        "index": 231,
+        "page": 12,
+        "csv": "table_231_page12.csv",
+        "shape": [
+          2,
+          1
+        ]
+      },
+      {
+        "index": 232,
+        "page": 12,
+        "csv": "table_232_page12.csv",
+        "shape": [
+          2,
+          1
+        ]
+      },
+      {
+        "index": 233,
+        "page": 12,
+        "csv": "table_233_page12.csv",
+        "shape": [
+          2,
+          1
+        ]
+      },
+      {
+        "index": 234,
+        "page": 12,
+        "csv": "table_234_page12.csv",
+        "shape": [
+          2,
+          1
+        ]
+      },
+      {
+        "index": 235,
+        "page": 12,
+        "csv": "table_235_page12.csv",
+        "shape": [
+          2,
+          1
+        ]
+      },
+      {
+        "index": 236,
+        "page": 12,
+        "csv": "table_236_page12.csv",
+        "shape": [
+          2,
+          5
+        ]
+      },
+      {
+        "index": 237,
+        "page": 13,
+        "csv": "table_237_page13.csv",
+        "shape": [
+          2,
+          1
+        ]
+      },
+      {
+        "index": 238,
+        "page": 13,
+        "csv": "table_238_page13.csv",
+        "shape": [
+          2,
+          1
+        ]
+      },
+      {
+        "index": 239,
+        "page": 13,
+        "csv": "table_239_page13.csv",
+        "shape": [
+          3,
+          1
+        ]
+      },
+      {
+        "index": 240,
+        "page": 13,
+        "csv": "table_240_page13.csv",
+        "shape": [
+          17,
+          7
+        ]
+      },
+      {
+        "index": 241,
+        "page": 13,
+        "csv": "table_241_page13.csv",
+        "shape": [
+          3,
+          1
+        ]
+      },
+      {
+        "index": 242,
+        "page": 13,
+        "csv": "table_242_page13.csv",
+        "shape": [
+          3,
+          1
+        ]
+      },
+      {
+        "index": 243,
+        "page": 13,
+        "csv": "table_243_page13.csv",
+        "shape": [
+          3,
+          1
+        ]
+      },
+      {
+        "index": 244,
+        "page": 13,
+        "csv": "table_244_page13.csv",
+        "shape": [
+          3,
+          1
+        ]
+      },
+      {
+        "index": 245,
+        "page": 13,
+        "csv": "table_245_page13.csv",
+        "shape": [
+          3,
+          1
+        ]
+      },
+      {
+        "index": 246,
+        "page": 13,
+        "csv": "table_246_page13.csv",
+        "shape": [
+          3,
+          1
+        ]
+      },
+      {
+        "index": 247,
+        "page": 13,
+        "csv": "table_247_page13.csv",
+        "shape": [
+          3,
+          1
+        ]
+      },
+      {
+        "index": 248,
+        "page": 13,
+        "csv": "table_248_page13.csv",
+        "shape": [
+          3,
+          1
+        ]
+      },
+      {
+        "index": 249,
+        "page": 13,
+        "csv": "table_249_page13.csv",
+        "shape": [
+          18,
+          7
+        ]
+      },
+      {
+        "index": 250,
+        "page": 13,
+        "csv": "table_250_page13.csv",
+        "shape": [
+          3,
+          1
+        ]
+      },
+      {
+        "index": 251,
+        "page": 14,
+        "csv": "table_251_page14.csv",
+        "shape": [
+          3,
+          1
+        ]
+      },
+      {
+        "index": 252,
+        "page": 14,
+        "csv": "table_252_page14.csv",
+        "shape": [
+          3,
+          1
+        ]
+      },
+      {
+        "index": 253,
+        "page": 14,
+        "csv": "table_253_page14.csv",
+        "shape": [
+          3,
+          1
+        ]
+      },
+      {
+        "index": 254,
+        "page": 14,
+        "csv": "table_254_page14.csv",
+        "shape": [
+          3,
+          1
+        ]
+      },
+      {
+        "index": 255,
+        "page": 14,
+        "csv": "table_255_page14.csv",
+        "shape": [
+          17,
+          7
+        ]
+      },
+      {
+        "index": 256,
+        "page": 14,
+        "csv": "table_256_page14.csv",
+        "shape": [
+          2,
+          1
+        ]
+      },
+      {
+        "index": 257,
+        "page": 14,
+        "csv": "table_257_page14.csv",
+        "shape": [
+          2,
+          1
+        ]
+      },
+      {
+        "index": 258,
+        "page": 14,
+        "csv": "table_258_page14.csv",
+        "shape": [
+          4,
+          1
+        ]
+      },
+      {
+        "index": 259,
+        "page": 14,
+        "csv": "table_259_page14.csv",
+        "shape": [
+          3,
+          1
+        ]
+      },
+      {
+        "index": 260,
+        "page": 14,
+        "csv": "table_260_page14.csv",
+        "shape": [
+          3,
+          1
+        ]
+      },
+      {
+        "index": 261,
+        "page": 15,
+        "csv": "table_261_page15.csv",
+        "shape": [
+          3,
+          1
+        ]
+      },
+      {
+        "index": 262,
+        "page": 15,
+        "csv": "table_262_page15.csv",
+        "shape": [
+          3,
+          1
+        ]
+      },
+      {
+        "index": 263,
+        "page": 15,
+        "csv": "table_263_page15.csv",
+        "shape": [
+          2,
+          1
+        ]
+      },
+      {
+        "index": 264,
+        "page": 15,
+        "csv": "table_264_page15.csv",
+        "shape": [
+          3,
+          1
+        ]
+      },
+      {
+        "index": 265,
+        "page": 15,
+        "csv": "table_265_page15.csv",
+        "shape": [
+          4,
+          1
+        ]
+      },
+      {
+        "index": 266,
+        "page": 15,
+        "csv": "table_266_page15.csv",
+        "shape": [
+          3,
+          1
+        ]
+      },
+      {
+        "index": 267,
+        "page": 15,
+        "csv": "table_267_page15.csv",
+        "shape": [
+          2,
+          2
+        ]
+      },
+      {
+        "index": 268,
+        "page": 15,
+        "csv": "table_268_page15.csv",
+        "shape": [
+          18,
+          7
+        ]
+      },
+      {
+        "index": 269,
+        "page": 15,
+        "csv": "table_269_page15.csv",
+        "shape": [
+          19,
+          7
+        ]
+      },
+      {
+        "index": 270,
+        "page": 15,
+        "csv": "table_270_page15.csv",
+        "shape": [
+          3,
+          1
+        ]
+      },
+      {
+        "index": 271,
+        "page": 15,
+        "csv": "table_271_page15.csv",
+        "shape": [
+          2,
+          1
+        ]
+      },
+      {
+        "index": 272,
+        "page": 16,
+        "csv": "table_272_page16.csv",
+        "shape": [
+          3,
+          1
+        ]
+      },
+      {
+        "index": 273,
+        "page": 16,
+        "csv": "table_273_page16.csv",
+        "shape": [
+          2,
+          1
+        ]
+      },
+      {
+        "index": 274,
+        "page": 16,
+        "csv": "table_274_page16.csv",
+        "shape": [
+          3,
+          1
+        ]
+      },
+      {
+        "index": 275,
+        "page": 16,
+        "csv": "table_275_page16.csv",
+        "shape": [
+          3,
+          1
+        ]
+      },
+      {
+        "index": 276,
+        "page": 16,
+        "csv": "table_276_page16.csv",
+        "shape": [
+          3,
+          1
+        ]
+      },
+      {
+        "index": 277,
+        "page": 16,
+        "csv": "table_277_page16.csv",
+        "shape": [
+          4,
+          1
+        ]
+      },
+      {
+        "index": 278,
+        "page": 16,
+        "csv": "table_278_page16.csv",
+        "shape": [
+          3,
+          1
+        ]
+      },
+      {
+        "index": 279,
+        "page": 16,
+        "csv": "table_279_page16.csv",
+        "shape": [
+          21,
+          7
+        ]
+      },
+      {
+        "index": 280,
+        "page": 16,
+        "csv": "table_280_page16.csv",
+        "shape": [
+          2,
+          1
+        ]
+      },
+      {
+        "index": 281,
+        "page": 16,
+        "csv": "table_281_page16.csv",
+        "shape": [
+          3,
+          1
+        ]
+      },
+      {
+        "index": 282,
+        "page": 16,
+        "csv": "table_282_page16.csv",
+        "shape": [
+          2,
+          1
+        ]
+      },
+      {
+        "index": 283,
+        "page": 17,
+        "csv": "table_283_page17.csv",
+        "shape": [
+          2,
+          1
+        ]
+      },
+      {
+        "index": 284,
+        "page": 17,
+        "csv": "table_284_page17.csv",
+        "shape": [
+          8,
+          8
+        ]
+      },
+      {
+        "index": 285,
+        "page": 17,
+        "csv": "table_285_page17.csv",
+        "shape": [
+          2,
+          2
+        ]
+      },
+      {
+        "index": 286,
+        "page": 17,
+        "csv": "table_286_page17.csv",
+        "shape": [
+          8,
+          8
+        ]
+      },
+      {
+        "index": 287,
+        "page": 17,
+        "csv": "table_287_page17.csv",
+        "shape": [
+          2,
+          1
+        ]
+      },
+      {
+        "index": 288,
+        "page": 17,
+        "csv": "table_288_page17.csv",
+        "shape": [
+          3,
+          1
+        ]
+      },
+      {
+        "index": 289,
+        "page": 17,
+        "csv": "table_289_page17.csv",
+        "shape": [
+          2,
+          2
+        ]
+      },
+      {
+        "index": 290,
+        "page": 17,
+        "csv": "table_290_page17.csv",
+        "shape": [
+          16,
+          8
+        ]
+      },
+      {
+        "index": 291,
+        "page": 17,
+        "csv": "table_291_page17.csv",
+        "shape": [
+          3,
+          1
+        ]
+      },
+      {
+        "index": 292,
+        "page": 17,
+        "csv": "table_292_page17.csv",
+        "shape": [
+          2,
+          2
+        ]
+      },
+      {
+        "index": 293,
+        "page": 18,
+        "csv": "table_293_page18.csv",
+        "shape": [
+          7,
+          7
+        ]
+      },
+      {
+        "index": 294,
+        "page": 18,
+        "csv": "table_294_page18.csv",
+        "shape": [
+          2,
+          1
+        ]
+      },
+      {
+        "index": 295,
+        "page": 18,
+        "csv": "table_295_page18.csv",
+        "shape": [
+          3,
+          1
+        ]
+      },
+      {
+        "index": 296,
+        "page": 18,
+        "csv": "table_296_page18.csv",
+        "shape": [
+          8,
+          7
+        ]
+      },
+      {
+        "index": 297,
+        "page": 19,
+        "csv": "table_297_page19.csv",
+        "shape": [
+          3,
+          1
+        ]
+      },
+      {
+        "index": 298,
+        "page": 19,
+        "csv": "table_298_page19.csv",
+        "shape": [
+          2,
+          1
+        ]
+      },
+      {
+        "index": 299,
+        "page": 19,
+        "csv": "table_299_page19.csv",
+        "shape": [
+          21,
+          7
+        ]
+      },
+      {
+        "index": 300,
+        "page": 19,
+        "csv": "table_300_page19.csv",
+        "shape": [
+          2,
+          1
+        ]
+      },
+      {
+        "index": 301,
+        "page": 19,
+        "csv": "table_301_page19.csv",
+        "shape": [
+          19,
+          7
+        ]
+      },
+      {
+        "index": 302,
+        "page": 19,
+        "csv": "table_302_page19.csv",
+        "shape": [
+          4,
+          1
+        ]
+      },
+      {
+        "index": 303,
+        "page": 19,
+        "csv": "table_303_page19.csv",
+        "shape": [
+          2,
+          1
+        ]
+      },
+      {
+        "index": 304,
+        "page": 19,
+        "csv": "table_304_page19.csv",
+        "shape": [
+          2,
+          2
+        ]
+      },
+      {
+        "index": 305,
+        "page": 19,
+        "csv": "table_305_page19.csv",
+        "shape": [
+          3,
+          1
+        ]
+      },
+      {
+        "index": 306,
+        "page": 19,
+        "csv": "table_306_page19.csv",
+        "shape": [
+          4,
+          1
+        ]
+      },
+      {
+        "index": 307,
+        "page": 19,
+        "csv": "table_307_page19.csv",
+        "shape": [
+          2,
+          1
+        ]
+      },
+      {
+        "index": 308,
+        "page": 20,
+        "csv": "table_308_page20.csv",
+        "shape": [
+          3,
+          1
+        ]
+      },
+      {
+        "index": 309,
+        "page": 20,
+        "csv": "table_309_page20.csv",
+        "shape": [
+          3,
+          1
+        ]
+      },
+      {
+        "index": 310,
+        "page": 20,
+        "csv": "table_310_page20.csv",
+        "shape": [
+          9,
+          7
+        ]
+      },
+      {
+        "index": 311,
+        "page": 20,
+        "csv": "table_311_page20.csv",
+        "shape": [
+          2,
+          1
+        ]
+      },
+      {
+        "index": 312,
+        "page": 20,
+        "csv": "table_312_page20.csv",
+        "shape": [
+          2,
+          1
+        ]
+      },
+      {
+        "index": 313,
+        "page": 20,
+        "csv": "table_313_page20.csv",
+        "shape": [
+          3,
+          1
+        ]
+      },
+      {
+        "index": 314,
+        "page": 20,
+        "csv": "table_314_page20.csv",
+        "shape": [
+          10,
+          7
+        ]
+      },
+      {
+        "index": 315,
+        "page": 21,
+        "csv": "table_315_page21.csv",
+        "shape": [
+          8,
+          8
+        ]
+      },
+      {
+        "index": 316,
+        "page": 21,
+        "csv": "table_316_page21.csv",
+        "shape": [
+          4,
+          4
+        ]
+      },
+      {
+        "index": 317,
+        "page": 21,
+        "csv": "table_317_page21.csv",
+        "shape": [
+          4,
+          8
+        ]
+      },
+      {
+        "index": 318,
+        "page": 21,
+        "csv": "table_318_page21.csv",
+        "shape": [
+          2,
+          1
+        ]
+      },
+      {
+        "index": 319,
+        "page": 22,
+        "csv": "table_319_page22.csv",
+        "shape": [
+          2,
+          1
+        ]
+      },
+      {
+        "index": 320,
+        "page": 22,
+        "csv": "table_320_page22.csv",
+        "shape": [
+          2,
+          1
+        ]
+      },
+      {
+        "index": 321,
+        "page": 22,
+        "csv": "table_321_page22.csv",
+        "shape": [
+          3,
+          1
+        ]
+      },
+      {
+        "index": 322,
+        "page": 22,
+        "csv": "table_322_page22.csv",
+        "shape": [
+          14,
+          7
+        ]
+      },
+      {
+        "index": 323,
+        "page": 22,
+        "csv": "table_323_page22.csv",
+        "shape": [
+          13,
+          7
+        ]
+      },
+      {
+        "index": 324,
+        "page": 22,
+        "csv": "table_324_page22.csv",
+        "shape": [
+          3,
+          1
+        ]
+      },
+      {
+        "index": 325,
+        "page": 22,
+        "csv": "table_325_page22.csv",
+        "shape": [
+          2,
+          1
+        ]
+      },
+      {
+        "index": 326,
+        "page": 22,
+        "csv": "table_326_page22.csv",
+        "shape": [
+          3,
+          1
+        ]
+      },
+      {
+        "index": 327,
+        "page": 23,
+        "csv": "table_327_page23.csv",
+        "shape": [
+          2,
+          1
+        ]
+      },
+      {
+        "index": 328,
+        "page": 23,
+        "csv": "table_328_page23.csv",
+        "shape": [
+          10,
+          7
+        ]
+      },
+      {
+        "index": 329,
+        "page": 23,
+        "csv": "table_329_page23.csv",
+        "shape": [
+          2,
+          1
+        ]
+      },
+      {
+        "index": 330,
+        "page": 23,
+        "csv": "table_330_page23.csv",
+        "shape": [
+          2,
+          1
+        ]
+      },
+      {
+        "index": 331,
+        "page": 23,
+        "csv": "table_331_page23.csv",
+        "shape": [
+          9,
+          7
+        ]
+      },
+      {
+        "index": 332,
+        "page": 23,
+        "csv": "table_332_page23.csv",
+        "shape": [
+          2,
+          1
+        ]
+      },
+      {
+        "index": 333,
+        "page": 23,
+        "csv": "table_333_page23.csv",
+        "shape": [
+          3,
+          1
+        ]
+      },
+      {
+        "index": 334,
+        "page": 24,
+        "csv": "table_334_page24.csv",
+        "shape": [
+          4,
+          1
+        ]
+      },
+      {
+        "index": 335,
+        "page": 24,
+        "csv": "table_335_page24.csv",
+        "shape": [
+          13,
+          7
+        ]
+      },
+      {
+        "index": 336,
+        "page": 24,
+        "csv": "table_336_page24.csv",
+        "shape": [
+          3,
+          1
+        ]
+      },
+      {
+        "index": 337,
+        "page": 24,
+        "csv": "table_337_page24.csv",
+        "shape": [
+          12,
+          7
+        ]
+      },
+      {
+        "index": 338,
+        "page": 24,
+        "csv": "table_338_page24.csv",
+        "shape": [
+          2,
+          1
+        ]
+      },
+      {
+        "index": 339,
+        "page": 24,
+        "csv": "table_339_page24.csv",
+        "shape": [
+          3,
+          1
+        ]
+      },
+      {
+        "index": 340,
+        "page": 24,
+        "csv": "table_340_page24.csv",
+        "shape": [
+          3,
+          1
+        ]
+      },
+      {
+        "index": 341,
+        "page": 24,
+        "csv": "table_341_page24.csv",
+        "shape": [
+          2,
+          1
+        ]
+      },
+      {
+        "index": 342,
+        "page": 25,
+        "csv": "table_342_page25.csv",
+        "shape": [
+          4,
+          1
+        ]
+      },
+      {
+        "index": 343,
+        "page": 25,
+        "csv": "table_343_page25.csv",
+        "shape": [
+          3,
+          1
+        ]
+      },
+      {
+        "index": 344,
+        "page": 25,
+        "csv": "table_344_page25.csv",
+        "shape": [
+          9,
+          7
+        ]
+      },
+      {
+        "index": 345,
+        "page": 25,
+        "csv": "table_345_page25.csv",
+        "shape": [
+          3,
+          1
+        ]
+      },
+      {
+        "index": 346,
+        "page": 25,
+        "csv": "table_346_page25.csv",
+        "shape": [
+          8,
+          7
+        ]
+      },
+      {
+        "index": 347,
+        "page": 25,
+        "csv": "table_347_page25.csv",
+        "shape": [
+          2,
+          1
+        ]
+      },
+      {
+        "index": 348,
+        "page": 25,
+        "csv": "table_348_page25.csv",
+        "shape": [
+          2,
+          1
+        ]
+      },
+      {
+        "index": 349,
+        "page": 25,
+        "csv": "table_349_page25.csv",
+        "shape": [
+          2,
+          1
+        ]
+      }
+    ]
+  },
+  "stream": {
+    "mode": "stream",
+    "elapsed_seconds": 12.535,
+    "num_tables": 15,
+    "per_page_counts": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0,
+      "5": 0,
+      "6": 0,
+      "7": 0,
+      "8": 0,
+      "9": 0,
+      "10": 0,
+      "11": 0,
+      "12": 0,
+      "13": 1,
+      "14": 1,
+      "15": 1,
+      "16": 1,
+      "17": 2,
+      "18": 1,
+      "19": 2,
+      "20": 1,
+      "21": 1,
+      "22": 1,
+      "23": 1,
+      "24": 1,
+      "25": 1
+    },
+    "tables": [
+      {
+        "index": 1,
+        "page": 13,
+        "csv": "table_01_page13.csv",
+        "shape": [
+          10,
+          8
+        ]
+      },
+      {
+        "index": 2,
+        "page": 14,
+        "csv": "table_02_page14.csv",
+        "shape": [
+          7,
+          8
+        ]
+      },
+      {
+        "index": 3,
+        "page": 15,
+        "csv": "table_03_page15.csv",
+        "shape": [
+          13,
+          13
+        ]
+      },
+      {
+        "index": 4,
+        "page": 16,
+        "csv": "table_04_page16.csv",
+        "shape": [
+          11,
+          9
+        ]
+      },
+      {
+        "index": 5,
+        "page": 17,
+        "csv": "table_05_page17.csv",
+        "shape": [
+          6,
+          9
+        ]
+      },
+      {
+        "index": 6,
+        "page": 17,
+        "csv": "table_06_page17.csv",
+        "shape": [
+          6,
+          9
+        ]
+      },
+      {
+        "index": 7,
+        "page": 18,
+        "csv": "table_07_page18.csv",
+        "shape": [
+          4,
+          7
+        ]
+      },
+      {
+        "index": 8,
+        "page": 19,
+        "csv": "table_08_page19.csv",
+        "shape": [
+          6,
+          7
+        ]
+      },
+      {
+        "index": 9,
+        "page": 19,
+        "csv": "table_09_page19.csv",
+        "shape": [
+          6,
+          7
+        ]
+      },
+      {
+        "index": 10,
+        "page": 20,
+        "csv": "table_10_page20.csv",
+        "shape": [
+          13,
+          7
+        ]
+      },
+      {
+        "index": 11,
+        "page": 21,
+        "csv": "table_11_page21.csv",
+        "shape": [
+          8,
+          7
+        ]
+      },
+      {
+        "index": 12,
+        "page": 22,
+        "csv": "table_12_page22.csv",
+        "shape": [
+          27,
+          7
+        ]
+      },
+      {
+        "index": 13,
+        "page": 23,
+        "csv": "table_13_page23.csv",
+        "shape": [
+          6,
+          7
+        ]
+      },
+      {
+        "index": 14,
+        "page": 24,
+        "csv": "table_14_page24.csv",
+        "shape": [
+          8,
+          7
+        ]
+      },
+      {
+        "index": 15,
+        "page": 25,
+        "csv": "table_15_page25.csv",
+        "shape": [
+          10,
+          8
+        ]
+      }
+    ]
+  }
+}
