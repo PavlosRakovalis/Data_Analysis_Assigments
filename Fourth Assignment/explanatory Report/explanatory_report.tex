@@ -1,0 +1,1127 @@
+% !TEX program = xelatex
+\documentclass[12pt,a4paper]{article}
+
+\usepackage{fontspec}
+\usepackage{polyglossia}
+\setmainlanguage{greek}
+\setotherlanguage{english}
+\setmainfont[Script=Greek]{DejaVu Serif}
+\setsansfont[Script=Greek]{DejaVu Sans}
+\setmonofont[Script=Greek]{DejaVu Sans Mono}
+\newfontfamily\greekfonttt[Script=Greek]{DejaVu Sans Mono}
+
+\usepackage[a4paper, margin=2.45cm]{geometry}
+\usepackage{amsmath, amssymb}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{caption}
+\usepackage[hidelinks]{hyperref}
+\usepackage{enumitem}
+\usepackage{parskip}
+\usepackage{xcolor}
+\usepackage{listings}
+\usepackage{fancyhdr}
+
+\pagestyle{fancy}
+\fancyhf{}
+\lhead{4η Εργασία -- Explanatory Report}
+\rhead{Ενιαίο αρχείο}
+\cfoot{\thepage}
+\setlength{\headheight}{14.5pt}
+
+\newcommand{\code}[1]{\texttt{\textenglish{#1}}}
+
+\lstset{
+    basicstyle=\ttfamily\small,
+    breaklines=true,
+    frame=single,
+    backgroundcolor=\color{gray!8},
+    columns=fullflexible,
+    keepspaces=true
+}
+
+\title{
+    \textbf{Ανάλυση Δεδομένων 2025--26}\\[0.25cm]
+    \Large 4η Εργασία -- Ενιαίο Explanatory Report\\[0.15cm]
+    \large Δέντρα ταξινόμησης και ensemble μέθοδοι για πρόβλεψη τύπου κρασιού
+}
+\author{
+    Ρακοβαλής Παύλος\\
+    ΑΕΜ: 6931
+}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+\thispagestyle{fancy}
+
+\begin{abstract}
+Το παρόν αρχείο είναι το ενιαίο επεξηγηματικό report της 4ης εργασίας. Είναι
+γραμμένο με εκπαιδευτικό ύφος, σαν να απευθύνεται σε κάποιον που δεν έχει
+προηγούμενη εμπειρία στην Ανάλυση Δεδομένων. Για κάθε ερώτημα παρουσιάζεται
+πρώτα τι ζητάει η εκφώνηση, στη συνέχεια δίνεται το απαραίτητο θεωρητικό
+υπόβαθρο και τέλος εξηγείται βήμα προς βήμα η λύση και η ερμηνεία των
+αποτελεσμάτων. Σε αυτή την έκδοση έχουν ενσωματωθεί τα Ερωτήματα 1, 2, 3, 4
+και 5.
+Τα επόμενα ερωτήματα θα προστεθούν στο ίδιο αρχείο.
+\end{abstract}
+
+\tableofcontents
+\newpage
+
+%=============================================================================
+\section{Γενικό πλαίσιο της εργασίας}
+%=============================================================================
+
+Η 4η εργασία χρησιμοποιεί τα δεδομένα της 3ης εργασίας. Ο στόχος είναι να
+προβλέψουμε τον τύπο κρασιού, δηλαδή αν ένα κρασί είναι λευκό ή κόκκινο.
+
+Η μεταβλητή που θέλουμε να προβλέψουμε είναι:
+
+\begin{center}
+\code{wine\_type}
+\end{center}
+
+και μπορεί να πάρει δύο τιμές:
+
+\begin{center}
+\begin{tabular}{ll}
+\toprule
+\textbf{Τιμή} & \textbf{Σημασία} \\
+\midrule
+\code{red} & κόκκινο κρασί \\
+\code{white} & λευκό κρασί \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+Επειδή οι αλγόριθμοι μηχανικής μάθησης δουλεύουν πιο εύκολα με αριθμητικές
+τιμές, κωδικοποιήσαμε τη μεταβλητή στόχο ως:
+
+\begin{center}
+\code{red = 0} \hspace{1cm} και \hspace{1cm} \code{white = 1}.
+\end{center}
+
+\subsection{Προβλεπτικές μεταβλητές}
+
+Η εκφώνηση ζητά να χρησιμοποιηθούν όλες οι διαθέσιμες μεταβλητές εκτός από τη
+\code{quality}. Η \code{wine\_type} δεν μπαίνει φυσικά στους predictors,
+επειδή είναι η μεταβλητή που προσπαθούμε να προβλέψουμε.
+
+Άρα οι προβλεπτικές μεταβλητές είναι 11:
+
+\begin{center}
+\footnotesize
+\begin{tabular}{lll}
+\toprule
+\code{fixed acidity} & \code{volatile acidity} & \code{citric acid} \\
+\code{residual sugar} & \code{chlorides} & \code{free sulfur dioxide} \\
+\code{total sulfur dioxide} & \code{density} & \code{pH} \\
+\code{sulphates} & \code{alcohol} & \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\subsection{Training set και test set}
+
+Τα δεδομένα χωρίστηκαν σε:
+
+\begin{center}
+70\% training set και 30\% test set.
+\end{center}
+
+Το training set είναι το κομμάτι των δεδομένων από το οποίο μαθαίνει το
+μοντέλο. Το test set είναι το κομμάτι που κρατάμε στην άκρη και το
+χρησιμοποιούμε μόνο στο τέλος, για να δούμε αν το μοντέλο μπορεί να προβλέψει
+σωστά δεδομένα που δεν είχε δει κατά την εκπαίδευση.
+
+\begin{center}
+\begin{tabular}{lrr}
+\toprule
+\textbf{Σύνολο} & \textbf{Πλήθος} & \textbf{Ποσοστό} \\
+\midrule
+Training set & 3706 & 70\% \\
+Test set & 1589 & 30\% \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+Χρησιμοποιήθηκε:
+
+\begin{center}
+\code{random\_state = 6931}
+\end{center}
+
+ώστε ο διαχωρισμός να μπορεί να αναπαραχθεί ακριβώς. Επίσης χρησιμοποιήθηκε
+\code{stratify=y}, ώστε η αναλογία λευκών και κόκκινων κρασιών να παραμείνει
+παρόμοια στο training και στο test set.
+
+\subsection{Πώς μετράμε την απόδοση}
+
+Το βασικό μέτρο απόδοσης που ζητά η εργασία είναι η test accuracy:
+
+\[
+    \text{Test Accuracy} =
+    \frac{\text{σωστές προβλέψεις στο test set}}
+         {\text{σύνολο παρατηρήσεων στο test set}}.
+\]
+
+Επίσης χρησιμοποιούμε το test error:
+
+\[
+    \text{Test Error} = 1 - \text{Test Accuracy}.
+\]
+
+Αν ένα μοντέλο έχει accuracy 0.9660, αυτό σημαίνει ότι ταξινομεί σωστά περίπου
+το 96.60\% των test παρατηρήσεων. Αντίστοιχα, test error 0.0340 σημαίνει ότι
+κάνει λάθος περίπου στο 3.40\% των test παρατηρήσεων.
+
+%=============================================================================
+\section{Ερώτημα 1: Δέντρο ταξινόμησης μέγιστου βάθους 2}
+%=============================================================================
+
+\subsection{Τι ζητάει το ερώτημα}
+
+Το πρώτο ερώτημα είναι:
+
+\begin{quote}
+\textbf{«Να γίνει πρόβλεψη/εκτίμηση του τύπου κρασιού με δέντρο ταξινόμησης
+μέγιστου βάθους 2.»}
+\end{quote}
+
+Με απλά λόγια, θέλουμε να φτιάξουμε ένα μοντέλο που χρησιμοποιεί κανόνες τύπου
+«αν ισχύει αυτό, πήγαινε αριστερά, αλλιώς πήγαινε δεξιά» για να αποφασίσει αν
+ένα κρασί είναι λευκό ή κόκκινο.
+
+Ο περιορισμός \code{max\_depth=2} σημαίνει ότι το δέντρο πρέπει να παραμείνει
+πολύ απλό. Μπορεί να κάνει το πολύ δύο επίπεδα ερωτήσεων πριν καταλήξει σε
+τελική πρόβλεψη.
+
+\subsection{Θεωρητικό υπόβαθρο}
+
+Ένα δέντρο ταξινόμησης μοιάζει με διάγραμμα αποφάσεων. Σε κάθε κόμβο κάνει μία
+ερώτηση για κάποια μεταβλητή. Για παράδειγμα:
+
+\begin{quote}
+Είναι το \code{chlorides} μικρότερο ή ίσο από 0.05;
+\end{quote}
+
+Ανάλογα με την απάντηση, η παρατήρηση ακολουθεί διαφορετικό κλαδί. Στο τέλος
+φτάνει σε ένα φύλλο, όπου το δέντρο δίνει την τελική πρόβλεψη:
+\code{red} ή \code{white}.
+
+Το πλεονέκτημα των δέντρων είναι ότι είναι εύκολα ερμηνεύσιμα. Μπορούμε να
+δούμε τους κανόνες τους και να καταλάβουμε πώς πήραν μια απόφαση. Το
+μειονέκτημά τους είναι ότι, αν αφεθούν να μεγαλώσουν πάρα πολύ, μπορούν να
+υπερπροσαρμοστούν στα training δεδομένα. Για αυτό η εκφώνηση ζητά περιορισμό
+στο βάθος.
+
+\subsection{Πώς το λύσαμε}
+
+Ορίσαμε τους predictors και τη μεταβλητή στόχο:
+
+\begin{lstlisting}[language=Python]
+features = [col for col in df.columns if col not in ("quality", "wine_type")]
+X = df[features]
+y = (df["wine_type"] == "white").astype(int)
+\end{lstlisting}
+
+Στη συνέχεια κάναμε το train/test split:
+
+\begin{lstlisting}[language=Python]
+X_train, X_test, y_train, y_test = train_test_split(
+    X,
+    y,
+    test_size=0.30,
+    random_state=6931,
+    stratify=y,
+)
+\end{lstlisting}
+
+Τέλος εκπαιδεύσαμε το δέντρο:
+
+\begin{lstlisting}[language=Python]
+model = DecisionTreeClassifier(max_depth=2, random_state=6931)
+model.fit(X_train, y_train)
+\end{lstlisting}
+
+\subsection{Αποτελέσματα}
+
+\begin{table}[H]
+\centering
+\caption{Αποτελέσματα δέντρου ταξινόμησης με \code{max\_depth=2}.}
+\begin{tabular}{lr}
+\toprule
+\textbf{Μέτρο} & \textbf{Τιμή} \\
+\midrule
+Test accuracy & 0.9339 \\
+Test error & 0.0661 \\
+Σωστές προβλέψεις & 1484 \\
+Λανθασμένες προβλέψεις & 105 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+Ο confusion matrix ήταν:
+
+\begin{table}[H]
+\centering
+\caption{Confusion matrix για το Ερώτημα 1.}
+\begin{tabular}{lcc}
+\toprule
+& \textbf{Πρόβλεψη red} & \textbf{Πρόβλεψη white} \\
+\midrule
+\textbf{Πραγματικό red} & 360 & 31 \\
+\textbf{Πραγματικό white} & 74 & 1124 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.62\textwidth]{q1_confusion_matrix.png}
+\caption{Confusion matrix του δέντρου ταξινόμησης.}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\textwidth]{q1_decision_tree_plot.png}
+\caption{Το δέντρο ταξινόμησης με μέγιστο βάθος 2.}
+\end{figure}
+
+\subsection{Ερμηνεία}
+
+Το δέντρο βασίστηκε κυρίως στις μεταβλητές \code{total sulfur dioxide} και
+\code{chlorides}. Οι κανόνες του ήταν:
+
+\begin{verbatim}
+total sulfur dioxide <= 67.50
+|-- chlorides <= 0.05  -> white
+|-- chlorides >  0.05  -> red
+
+total sulfur dioxide > 67.50
+|-- chlorides <= 0.07  -> white
+|-- chlorides >  0.07  -> red
+\end{verbatim}
+
+Το μοντέλο πέτυχε accuracy 0.9339, δηλαδή ταξινόμησε σωστά περίπου το 93.39\%
+των test παρατηρήσεων. Αυτό είναι αρκετά καλό αποτέλεσμα, ειδικά επειδή το
+δέντρο είναι πολύ απλό.
+
+%=============================================================================
+\section{Ερώτημα 2: Bagging με 200 εκτιμητές}
+%=============================================================================
+
+\subsection{Τι ζητάει το ερώτημα}
+
+Το δεύτερο ερώτημα είναι:
+
+\begin{quote}
+\textbf{«Να γίνει πρόβλεψη/εκτίμηση του τύπου κρασιού με τη μέθοδο Bagging,
+χρησιμοποιώντας 200 εκτιμητές.»}
+\end{quote}
+
+Εδώ δεν χρησιμοποιούμε ένα μόνο δέντρο. Χρησιμοποιούμε 200 δέντρα και
+συνδυάζουμε τις προβλέψεις τους.
+
+\subsection{Θεωρητικό υπόβαθρο}
+
+Το Bagging προέρχεται από τη φράση \textenglish{Bootstrap Aggregating}. Η
+βασική ιδέα είναι:
+
+\begin{enumerate}
+    \item Δημιουργούμε πολλά bootstrap δείγματα από το training set.
+    \item Εκπαιδεύουμε ένα δέντρο σε κάθε bootstrap δείγμα.
+    \item Κάθε δέντρο κάνει τη δική του πρόβλεψη.
+    \item Η τελική πρόβλεψη προκύπτει με πλειοψηφική ψηφοφορία.
+\end{enumerate}
+
+Ένα bootstrap δείγμα δημιουργείται με δειγματοληψία με επανάθεση. Αυτό σημαίνει
+ότι μία παρατήρηση μπορεί να εμφανιστεί περισσότερες από μία φορές στο ίδιο
+δείγμα, ενώ κάποια άλλη μπορεί να μην εμφανιστεί καθόλου.
+
+Το Bagging βοηθά επειδή μειώνει την αστάθεια ενός μεμονωμένου δέντρου. Αν ένα
+δέντρο κάνει λάθος, η τελική απόφαση μπορεί να διορθωθεί από τα υπόλοιπα
+δέντρα.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.92\textwidth]{q2_bagging_concept.png}
+\caption{Η βασική ιδέα του Bagging.}
+\end{figure}
+
+\subsection{Πώς το λύσαμε}
+
+Χρησιμοποιήσαμε τον ίδιο διαχωρισμό training/test με το Ερώτημα 1. Το μοντέλο
+ορίστηκε ως:
+
+\begin{lstlisting}[language=Python]
+model = BaggingClassifier(
+    estimator=DecisionTreeClassifier(random_state=6931),
+    n_estimators=200,
+    random_state=6931,
+    n_jobs=-1,
+)
+\end{lstlisting}
+
+Η παράμετρος \code{n\_estimators=200} σημαίνει ότι το Bagging εκπαιδεύει 200
+δέντρα ταξινόμησης.
+
+\subsection{Αποτελέσματα}
+
+\begin{table}[H]
+\centering
+\caption{Αποτελέσματα Bagging με 200 εκτιμητές.}
+\begin{tabular}{lr}
+\toprule
+\textbf{Μέτρο} & \textbf{Τιμή} \\
+\midrule
+Test accuracy & 0.9660 \\
+Test error & 0.0340 \\
+Σωστές προβλέψεις & 1535 \\
+Λανθασμένες προβλέψεις & 54 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+Ο confusion matrix ήταν:
+
+\begin{table}[H]
+\centering
+\caption{Confusion matrix για το Bagging.}
+\begin{tabular}{lcc}
+\toprule
+& \textbf{Πρόβλεψη red} & \textbf{Πρόβλεψη white} \\
+\midrule
+\textbf{Πραγματικό red} & 365 & 26 \\
+\textbf{Πραγματικό white} & 28 & 1170 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.62\textwidth]{q2_confusion_matrix.png}
+\caption{Confusion matrix του Bagging.}
+\end{figure}
+
+\subsection{Σύγκριση με το Ερώτημα 1}
+
+\begin{table}[H]
+\centering
+\caption{Σύγκριση απλού δέντρου και Bagging.}
+\begin{tabular}{lrr}
+\toprule
+\textbf{Μοντέλο} & \textbf{Test Accuracy} & \textbf{Test Error} \\
+\midrule
+Decision Tree (\code{max\_depth=2}) & 0.9339 & 0.0661 \\
+Bagging (200 estimators) & 0.9660 & 0.0340 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+Το Bagging έκανε 54 λάθη, ενώ το απλό δέντρο έκανε 105 λάθη. Άρα το Bagging
+έκανε:
+
+\[
+    105 - 54 = 51
+\]
+
+λιγότερα λάθη.
+
+\subsection{Σημαντικότητα χαρακτηριστικών}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.82\textwidth]{q2_bagging_feature_importance.png}
+\caption{Οι σημαντικότερες μεταβλητές στο Bagging.}
+\end{figure}
+
+Οι σημαντικότερες μεταβλητές στο Bagging ήταν κυρίως οι
+\code{total sulfur dioxide} και \code{chlorides}. Αυτό συμφωνεί με το απλό
+δέντρο του Ερωτήματος 1.
+
+\subsection{Συμπέρασμα Ερωτήματος 2}
+
+Το Bagging με 200 εκτιμητές πέτυχε test accuracy 0.9660. Η απόδοση είναι
+σημαντικά καλύτερη από το απλό δέντρο, επειδή το Bagging δεν βασίζεται σε ένα
+μόνο δέντρο αλλά σε ψηφοφορία πολλών δέντρων.
+
+%=============================================================================
+\section{Ερώτημα 3: Random Forest με 200 εκτιμητές και \texorpdfstring{$m=p/2$}{m=p/2}}
+%=============================================================================
+
+\subsection{Τι ζητάει το ερώτημα}
+
+Το τρίτο ερώτημα είναι:
+
+\begin{quote}
+\textbf{«Να γίνει πρόβλεψη/εκτίμηση του τύπου κρασιού με Random Forest,
+χρησιμοποιώντας 200 εκτιμητές και τυχαίο πλήθος υποψήφιων χαρακτηριστικών
+$m=p/2$.»}
+\end{quote}
+
+Εδώ χρησιμοποιούμε ξανά πολλά δέντρα, όπως στο Bagging. Η διαφορά είναι ότι
+στο Random Forest κάθε split κάθε δέντρου δεν εξετάζει όλες τις μεταβλητές,
+αλλά μόνο ένα τυχαίο υποσύνολο.
+
+\subsection{Θεωρητικό υπόβαθρο}
+
+Το Random Forest είναι σαν Bagging, αλλά με επιπλέον τυχαιότητα. Συγκεκριμένα:
+
+\begin{itemize}
+    \item κάθε δέντρο εκπαιδεύεται σε bootstrap δείγμα,
+    \item σε κάθε split εξετάζεται μόνο τυχαίο υποσύνολο χαρακτηριστικών,
+    \item στο τέλος τα δέντρα ψηφίζουν για την τελική κλάση.
+\end{itemize}
+
+Αυτό βοηθά γιατί κάνει τα δέντρα πιο διαφορετικά μεταξύ τους. Αν όλα τα δέντρα
+μοιάζουν πολύ, τότε μπορεί να κάνουν παρόμοια λάθη. Αν όμως είναι πιο
+διαφορετικά, η πλειοψηφική ψηφοφορία γίνεται πιο χρήσιμη.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.92\textwidth]{q3_random_forest_concept.png}
+\caption{Η βασική ιδέα του Random Forest.}
+\end{figure}
+
+\subsection{Τι σημαίνει \texorpdfstring{$m=p/2$}{m=p/2}}
+
+Στο πρόβλημά μας οι προβλεπτικές μεταβλητές είναι:
+
+\[
+    p = 11.
+\]
+
+Η εκφώνηση ζητά:
+
+\[
+    m = \frac{p}{2} = \frac{11}{2} = 5.5.
+\]
+
+Επειδή το \code{scikit-learn} χρειάζεται ακέραιο πλήθος χαρακτηριστικών όταν
+δίνουμε το \code{max\_features} ως αριθμό, χρησιμοποιήθηκε:
+
+\begin{center}
+\code{max\_features = 5}.
+\end{center}
+
+Άρα, σε κάθε split, το Random Forest εξέταζε τυχαία 5 από τις 11 μεταβλητές.
+
+\subsection{Πώς το λύσαμε}
+
+Ο υπολογισμός του $m$ έγινε ως εξής:
+
+\begin{lstlisting}[language=Python]
+features = [col for col in df.columns if col not in ("quality", "wine_type")]
+p = len(features)
+max_features = p // 2
+\end{lstlisting}
+
+Το μοντέλο ορίστηκε ως:
+
+\begin{lstlisting}[language=Python]
+model = RandomForestClassifier(
+    n_estimators=200,
+    max_features=5,
+    random_state=6931,
+    n_jobs=-1,
+)
+\end{lstlisting}
+
+\subsection{Αποτελέσματα}
+
+\begin{table}[H]
+\centering
+\caption{Αποτελέσματα Random Forest.}
+\begin{tabular}{lr}
+\toprule
+\textbf{Μέτρο} & \textbf{Τιμή} \\
+\midrule
+Πλήθος predictors $p$ & 11 \\
+$p/2$ & 5.5 \\
+Χρησιμοποιημένο \code{max\_features} & 5 \\
+Test accuracy & 0.9666 \\
+Test error & 0.0334 \\
+Σωστές προβλέψεις & 1536 \\
+Λανθασμένες προβλέψεις & 53 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+Ο confusion matrix ήταν:
+
+\begin{table}[H]
+\centering
+\caption{Confusion matrix για το Random Forest.}
+\begin{tabular}{lcc}
+\toprule
+& \textbf{Πρόβλεψη red} & \textbf{Πρόβλεψη white} \\
+\midrule
+\textbf{Πραγματικό red} & 365 & 26 \\
+\textbf{Πραγματικό white} & 27 & 1171 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.62\textwidth]{q3_confusion_matrix.png}
+\caption{Confusion matrix του Random Forest.}
+\end{figure}
+
+\subsection{Σύγκριση με τα Ερωτήματα 1 και 2}
+
+\begin{table}[H]
+\centering
+\caption{Σύγκριση των τριών πρώτων μοντέλων.}
+\begin{tabular}{lrr}
+\toprule
+\textbf{Μοντέλο} & \textbf{Test Accuracy} & \textbf{Test Error} \\
+\midrule
+Decision Tree (\code{max\_depth=2}) & 0.9339 & 0.0661 \\
+Bagging (200 estimators) & 0.9660 & 0.0340 \\
+Random Forest (200 estimators, $m=5$) & 0.9666 & 0.0334 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+Το Random Forest έκανε 53 λάθη, δηλαδή ένα λιγότερο από το Bagging και 52
+λιγότερα από το απλό δέντρο.
+
+\subsection{Σημαντικότητα χαρακτηριστικών}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.82\textwidth]{q3_random_forest_feature_importance.png}
+\caption{Οι σημαντικότερες μεταβλητές στο Random Forest.}
+\end{figure}
+
+Οι σημαντικότερες μεταβλητές ήταν και πάλι οι \code{total sulfur dioxide} και
+\code{chlorides}. Αυτό είναι συνεπές με όσα είδαμε και στα δύο προηγούμενα
+ερωτήματα.
+
+\subsection{Συμπέρασμα Ερωτήματος 3}
+
+Το Random Forest με 200 δέντρα και \code{max\_features=5} πέτυχε test accuracy
+0.9666. Η απόδοση ήταν πολύ καλύτερη από το απλό δέντρο και οριακά καλύτερη
+από το Bagging. Η βελτίωση σε σχέση με το Bagging είναι μικρή, αλλά το Random
+Forest παραμένει θεωρητικά πιο ισχυρή παραλλαγή, επειδή μειώνει τη συσχέτιση
+μεταξύ των δέντρων μέσω της τυχαίας επιλογής χαρακτηριστικών.
+
+%=============================================================================
+\section{Ερώτημα 4: Boosting με 200 επιμέρους μοντέλα}
+%=============================================================================
+
+\subsection{Τι ζητάει το ερώτημα}
+
+Το τέταρτο ερώτημα είναι:
+
+\begin{quote}
+\textbf{«Να γίνει πρόβλεψη/εκτίμηση του τύπου κρασιού με τη μέθοδο Boosting,
+χρησιμοποιώντας 200 επιμέρους μοντέλα, συντελεστή μάθησης 0.1 και μέγιστο
+βάθος 1.»}
+\end{quote}
+
+Με απλά λόγια, θέλουμε ξανά να προβλέψουμε αν ένα κρασί είναι λευκό ή κόκκινο,
+αλλά αυτή τη φορά με τη μέθοδο \textbf{Boosting}. Η βασική ιδέα του Boosting
+είναι διαφορετική από το Bagging και το Random Forest. Στο Bagging και στο
+Random Forest τα δέντρα μπορούν να εκπαιδευτούν σχετικά ανεξάρτητα μεταξύ
+τους. Στο Boosting, όμως, τα μοντέλα χτίζονται \textbf{διαδοχικά}.
+
+Δηλαδή:
+
+\begin{itemize}
+    \item πρώτα εκπαιδεύεται ένα απλό μοντέλο,
+    \item μετά εκπαιδεύεται ένα δεύτερο μοντέλο που προσπαθεί να διορθώσει τα
+    λάθη του πρώτου,
+    \item μετά ένα τρίτο που προσπαθεί να βελτιώσει ακόμη περισσότερο το
+    σύνολο,
+    \item και η διαδικασία συνεχίζεται μέχρι να φτάσουμε στα 200 μοντέλα.
+\end{itemize}
+
+Στο ερώτημα ζητούνται συγκεκριμένες τιμές:
+
+\begin{center}
+\code{n\_estimators = 200}, \hspace{0.7cm}
+\code{learning\_rate = 0.1}, \hspace{0.7cm}
+\code{max\_depth = 1}.
+\end{center}
+
+\subsection{Θεωρητικό υπόβαθρο}
+
+Το Boosting είναι μία ensemble μέθοδος. Αυτό σημαίνει ότι δεν βασίζεται σε ένα
+μόνο μοντέλο, αλλά συνδυάζει πολλά μικρότερα μοντέλα.
+
+Η σημαντική διαφορά είναι ότι στο Boosting τα μοντέλα δεν φτιάχνονται όλα
+ανεξάρτητα. Φτιάχνονται το ένα μετά το άλλο. Κάθε νέο μοντέλο προσπαθεί να
+βελτιώσει το συνολικό μοντέλο που έχει δημιουργηθεί μέχρι εκείνη τη στιγμή.
+
+\subsection{Τι είναι weak learner}
+
+Στο Boosting συχνά χρησιμοποιούμε πολύ απλά μοντέλα, τα οποία λέγονται
+\textbf{weak learners}. Ένας weak learner δεν είναι απαραίτητα πολύ ισχυρός
+μόνος του. Μπορεί να κάνει αρκετά λάθη. Όμως, όταν συνδυάσουμε πολλούς weak
+learners σωστά, μπορούμε να δημιουργήσουμε ένα πολύ ισχυρό μοντέλο.
+
+Στο δικό μας ερώτημα, κάθε επιμέρους μοντέλο είναι δέντρο με:
+
+\begin{center}
+\code{max\_depth = 1}.
+\end{center}
+
+Ένα δέντρο βάθους 1 λέγεται συχνά \textenglish{decision stump}. Είναι ένα πολύ
+απλό δέντρο, το οποίο κάνει μόνο έναν βασικό διαχωρισμό. Από μόνο του δεν έχει
+μεγάλη εκφραστική δύναμη, αλλά πολλά τέτοια μικρά δέντρα μαζί μπορούν να
+δώσουν πολύ καλή πρόβλεψη.
+
+\subsection{Τι σημαίνει learning rate}
+
+Η παράμετρος \code{learning\_rate} ελέγχει πόσο έντονα επηρεάζει κάθε νέο
+μοντέλο το συνολικό ensemble.
+
+Στο ερώτημα χρησιμοποιούμε:
+
+\begin{center}
+\code{learning\_rate = 0.1}.
+\end{center}
+
+Αυτό σημαίνει ότι κάθε νέο δέντρο προστίθεται με σχετικά μικρό βάρος. Με απλά
+λόγια, το μοντέλο μαθαίνει πιο αργά και πιο προσεκτικά. Ένα μικρό learning
+rate μπορεί να βοηθήσει στη σταθερότητα της μεθόδου, επειδή αποφεύγει τις πολύ
+απότομες αλλαγές από ένα μόνο επιμέρους μοντέλο.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.92\textwidth]{q4_boosting_concept.png}
+\caption{Η βασική ιδέα του Boosting: τα επιμέρους μοντέλα χτίζονται διαδοχικά.}
+\end{figure}
+
+\subsection{Πώς το λύσαμε}
+
+Χρησιμοποιήσαμε το ίδιο dataset, τους ίδιους predictors και το ίδιο train/test
+split με τα προηγούμενα ερωτήματα. Η μεταβλητή στόχος ήταν πάλι η
+\code{wine\_type}, με κωδικοποίηση \code{red=0} και \code{white=1}.
+
+Το μοντέλο ορίστηκε ως:
+
+\begin{lstlisting}[language=Python]
+model = GradientBoostingClassifier(
+    n_estimators=200,
+    learning_rate=0.1,
+    max_depth=1,
+    random_state=6931,
+)
+\end{lstlisting}
+
+Ας δούμε τι σημαίνει κάθε παράμετρος:
+
+\begin{itemize}
+    \item \code{GradientBoostingClassifier}: δηλώνει ότι χρησιμοποιούμε
+    Boosting για ταξινόμηση.
+    \item \code{n\_estimators=200}: το μοντέλο θα αποτελείται από 200
+    επιμέρους δέντρα.
+    \item \code{learning\_rate=0.1}: κάθε νέο δέντρο επηρεάζει το συνολικό
+    μοντέλο με σχετικά μικρό βήμα.
+    \item \code{max\_depth=1}: κάθε επιμέρους δέντρο είναι πολύ απλό.
+    \item \code{random\_state=6931}: τα αποτελέσματα είναι αναπαραγώγιμα.
+\end{itemize}
+
+Μετά την εκπαίδευση, έγιναν προβλέψεις στο test set:
+
+\begin{lstlisting}[language=Python]
+y_pred = model.predict(X_test)
+\end{lstlisting}
+
+και υπολογίστηκαν:
+
+\begin{lstlisting}[language=Python]
+accuracy = accuracy_score(y_test, y_pred)
+test_error = 1 - accuracy
+\end{lstlisting}
+
+\subsection{Αποτελέσματα}
+
+\begin{table}[H]
+\centering
+\caption{Αποτελέσματα Boosting.}
+\begin{tabular}{lr}
+\toprule
+\textbf{Μέτρο} & \textbf{Τιμή} \\
+\midrule
+\code{n\_estimators} & 200 \\
+\code{learning\_rate} & 0.1 \\
+\code{max\_depth} & 1 \\
+Test accuracy & 0.9679 \\
+Test error & 0.0321 \\
+Σωστές προβλέψεις & 1538 \\
+Λανθασμένες προβλέψεις & 51 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+Το Boosting πέτυχε:
+
+\begin{center}
+\textbf{Test accuracy = 0.9679}
+\end{center}
+
+δηλαδή ταξινόμησε σωστά περίπου το 96.79\% των test παρατηρήσεων.
+
+\subsection{Confusion matrix}
+
+Ο confusion matrix ήταν:
+
+\begin{table}[H]
+\centering
+\caption{Confusion matrix για το Boosting.}
+\begin{tabular}{lcc}
+\toprule
+& \textbf{Πρόβλεψη red} & \textbf{Πρόβλεψη white} \\
+\midrule
+\textbf{Πραγματικό red} & 361 & 30 \\
+\textbf{Πραγματικό white} & 21 & 1177 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.62\textwidth]{q4_confusion_matrix.png}
+\caption{Confusion matrix του Boosting.}
+\end{figure}
+
+Ο πίνακας δείχνει ότι:
+
+\begin{itemize}
+    \item 361 κόκκινα κρασιά ταξινομήθηκαν σωστά ως κόκκινα,
+    \item 30 κόκκινα κρασιά ταξινομήθηκαν λάθος ως λευκά,
+    \item 21 λευκά κρασιά ταξινομήθηκαν λάθος ως κόκκινα,
+    \item 1177 λευκά κρασιά ταξινομήθηκαν σωστά ως λευκά.
+\end{itemize}
+
+Άρα οι σωστές προβλέψεις είναι:
+
+\[
+    361 + 1177 = 1538.
+\]
+
+Τα συνολικά λάθη είναι:
+
+\[
+    30 + 21 = 51.
+\]
+
+\subsection{Σύγκριση με τα προηγούμενα μοντέλα}
+
+\begin{table}[H]
+\centering
+\caption{Σύγκριση των τεσσάρων πρώτων μοντέλων.}
+\begin{tabular}{lrr}
+\toprule
+\textbf{Μοντέλο} & \textbf{Test Accuracy} & \textbf{Test Error} \\
+\midrule
+Decision Tree (\code{max\_depth=2}) & 0.9339 & 0.0661 \\
+Bagging (200 estimators) & 0.9660 & 0.0340 \\
+Random Forest (200 estimators, $m=5$) & 0.9666 & 0.0334 \\
+Boosting (200 estimators) & 0.9679 & 0.0321 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+Μέχρι τώρα, το Boosting έχει την καλύτερη test accuracy. Η διαφορά από το
+Random Forest είναι μικρή, αλλά το Boosting έκανε τα λιγότερα συνολικά λάθη:
+
+\begin{center}
+\begin{tabular}{lrr}
+\toprule
+\textbf{Μοντέλο} & \textbf{Λάθη} & \textbf{Σωστές προβλέψεις} \\
+\midrule
+Decision Tree & 105 & 1484 \\
+Bagging & 54 & 1535 \\
+Random Forest & 53 & 1536 \\
+Boosting & 51 & 1538 \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\subsection{Σημαντικότητα χαρακτηριστικών}
+
+Το Boosting δίνει επίσης μία ένδειξη για το ποιες μεταβλητές βοήθησαν
+περισσότερο στην ταξινόμηση.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.82\textwidth]{q4_boosting_feature_importance.png}
+\caption{Οι σημαντικότερες μεταβλητές στο Boosting.}
+\end{figure}
+
+Οι δύο σημαντικότερες μεταβλητές ήταν και εδώ οι:
+
+\begin{itemize}
+    \item \code{total sulfur dioxide}
+    \item \code{chlorides}
+\end{itemize}
+
+Αυτό επιβεβαιώνει για ακόμη μία φορά ότι αυτές οι μεταβλητές είναι πολύ
+χρήσιμες για τη διάκριση λευκού και κόκκινου κρασιού.
+
+\subsection{Συμπέρασμα Ερωτήματος 4}
+
+Το Boosting με 200 επιμέρους μοντέλα, \code{learning\_rate=0.1} και
+\code{max\_depth=1} πέτυχε test accuracy 0.9679. Είναι το καλύτερο αποτέλεσμα
+μέχρι στιγμής ανάμεσα στα αρχικά μοντέλα των Ερωτημάτων 1--4.
+
+Η μέθοδος πέτυχε υψηλή απόδοση παρότι κάθε επιμέρους δέντρο ήταν πολύ απλό.
+Αυτό δείχνει τη δύναμη του Boosting: πολλά απλά μοντέλα, όταν συνδυαστούν
+διαδοχικά και σωστά, μπορούν να δημιουργήσουν έναν πολύ ισχυρό ταξινομητή.
+
+%=============================================================================
+\section{Ερώτημα 5: Test error του δέντρου συναρτήσει του βάθους}
+%=============================================================================
+
+\subsection{Τι ζητάει το ερώτημα}
+
+Το πέμπτο ερώτημα είναι:
+
+\begin{quote}
+\textbf{«Να παρασταθεί γραφικά το test error της μεθόδου του ερωτήματος 1
+συναρτήσει του βάθους του δέντρου. Τι παρατηρείτε; Σχολιάστε.»}
+\end{quote}
+
+Με απλά λόγια, μέχρι τώρα στο Ερώτημα 1 χρησιμοποιήσαμε ένα δέντρο με
+\code{max\_depth=2}. Τώρα η εκφώνηση μάς ζητά να μην κρατήσουμε σταθερό το
+βάθος, αλλά να δοκιμάσουμε πολλά διαφορετικά βάθη και να δούμε πώς αλλάζει το
+test error.
+
+Το ερώτημα θέλει να απαντήσουμε σε κάτι πολύ σημαντικό:
+
+\begin{quote}
+Αν κάνουμε το δέντρο πιο βαθύ, γίνεται πάντα καλύτερο;
+\end{quote}
+
+Η απάντηση, όπως θα δούμε, είναι όχι. Μέχρι ένα σημείο το μεγαλύτερο βάθος
+βοηθά. Μετά από ένα σημείο, όμως, το δέντρο γίνεται υπερβολικά σύνθετο και
+μπορεί να αρχίσει να γενικεύει χειρότερα.
+
+\subsection{Θεωρητικό υπόβαθρο}
+
+Το βάθος ενός δέντρου καθορίζει πόσο σύνθετο μπορεί να γίνει το μοντέλο.
+
+\begin{itemize}
+    \item Ένα πολύ ρηχό δέντρο έχει λίγους κανόνες και είναι πολύ απλό.
+    \item Ένα πολύ βαθύ δέντρο έχει πολλούς κανόνες και μπορεί να ξεχωρίσει
+    λεπτομέρειες στα δεδομένα.
+\end{itemize}
+
+Αν το δέντρο είναι υπερβολικά απλό, μπορεί να μην καταλαβαίνει αρκετά καλά τη
+σχέση ανάμεσα στα χαρακτηριστικά και στον τύπο κρασιού. Αυτό λέγεται
+\textbf{underfitting}.
+
+Αν το δέντρο είναι υπερβολικά βαθύ, μπορεί να αρχίσει να μαθαίνει όχι μόνο το
+γενικό μοτίβο, αλλά και τυχαίες λεπτομέρειες του training set. Αυτό λέγεται
+\textbf{overfitting}.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.88\textwidth]{q5_tree_depth_concept.png}
+\caption{Η βασική ιδέα του Ερωτήματος 5: πολύ μικρό, μέτριο και πολύ μεγάλο βάθος.}
+\end{figure}
+
+\subsection{Τι είναι test error}
+
+Το test error είναι:
+
+\[
+    \text{Test Error} = 1 - \text{Test Accuracy}.
+\]
+
+Αν ένα μοντέλο έχει test accuracy 0.9339, τότε:
+
+\[
+    \text{Test Error} = 1 - 0.9339 = 0.0661.
+\]
+
+Το test error δείχνει το ποσοστό των test παρατηρήσεων που ταξινομήθηκαν
+λάθος. Όσο μικρότερο είναι, τόσο καλύτερο είναι το μοντέλο.
+
+\subsection{Πώς το λύσαμε}
+
+Χρησιμοποιήσαμε το ίδιο dataset και το ίδιο train/test split με τα προηγούμενα
+ερωτήματα. Στη συνέχεια εκπαιδεύσαμε πολλά δέντρα ταξινόμησης, αλλάζοντας την
+τιμή του \code{max\_depth}.
+
+Δοκιμάσαμε βάθη:
+
+\begin{center}
+\code{max\_depth = 1, 2, 3, ..., 20}.
+\end{center}
+
+Για κάθε βάθος εκπαιδεύτηκε ξεχωριστό δέντρο και υπολογίστηκε το test error:
+
+\begin{lstlisting}[language=Python]
+for depth in range(1, 21):
+    model = DecisionTreeClassifier(max_depth=depth, random_state=6931)
+    model.fit(X_train, y_train)
+    y_pred = model.predict(X_test)
+    accuracy = accuracy_score(y_test, y_pred)
+    test_error = 1 - accuracy
+\end{lstlisting}
+
+Έτσι πήραμε έναν πίνακα που δείχνει πώς αλλάζει το test error ανάλογα με το
+βάθος του δέντρου.
+
+\subsection{Αριθμητικά αποτελέσματα}
+
+\begin{table}[H]
+\centering
+\caption{Test accuracy και test error για διαφορετικά βάθη δέντρου.}
+\small
+\begin{tabular}{rrr|rrr}
+\toprule
+\textbf{Depth} & \textbf{Accuracy} & \textbf{Error} &
+\textbf{Depth} & \textbf{Accuracy} & \textbf{Error} \\
+\midrule
+1  & 0.9119 & 0.0881 & 11 & 0.9610 & 0.0390 \\
+2  & 0.9339 & 0.0661 & 12 & 0.9497 & 0.0503 \\
+3  & 0.9509 & 0.0491 & 13 & 0.9497 & 0.0503 \\
+4  & 0.9629 & 0.0371 & 14 & 0.9484 & 0.0516 \\
+5  & 0.9641 & 0.0359 & 15 & 0.9465 & 0.0535 \\
+6  & 0.9654 & 0.0346 & 16 & 0.9396 & 0.0604 \\
+7  & 0.9616 & 0.0384 & 17 & 0.9408 & 0.0592 \\
+8  & 0.9616 & 0.0384 & 18 & 0.9415 & 0.0585 \\
+9  & 0.9604 & 0.0396 & 19 & 0.9358 & 0.0642 \\
+10 & 0.9597 & 0.0403 & 20 & 0.9346 & 0.0654 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.88\textwidth]{q5_tree_depth_error.png}
+\caption{Test error του δέντρου ταξινόμησης συναρτήσει του \code{max\_depth}.}
+\end{figure}
+
+\subsection{Τι παρατηρούμε}
+
+Στα πολύ μικρά βάθη, το test error είναι σχετικά υψηλό. Για παράδειγμα:
+
+\begin{itemize}
+    \item για \code{max\_depth=1}, το test error είναι 0.0881,
+    \item για \code{max\_depth=2}, το test error είναι 0.0661.
+\end{itemize}
+
+Αυτό σημαίνει ότι ένα πολύ απλό δέντρο δεν αρκεί για να αποτυπώσει πλήρως τη
+δομή των δεδομένων. Έχει λίγους κανόνες και άρα δεν μπορεί να διαχωρίσει
+τέλεια τα λευκά από τα κόκκινα κρασιά.
+
+Καθώς αυξάνεται το βάθος, το test error μειώνεται. Η καλύτερη τιμή εμφανίζεται
+στο:
+
+\begin{center}
+\code{max\_depth = 6}.
+\end{center}
+
+Για αυτό το βάθος έχουμε:
+
+\[
+    \text{Test Accuracy} = 0.9654,
+    \qquad
+    \text{Test Error} = 0.0346.
+\]
+
+Άρα το δέντρο βάθους 6 είναι πολύ καλύτερο από το αρχικό δέντρο βάθους 2.
+Συγκεκριμένα, το test error μειώνεται από 0.0661 σε 0.0346.
+
+\subsection{Γιατί μετά το βάθος 6 χειροτερεύει}
+
+Μετά το βάθος 6, το test error δεν συνεχίζει να μειώνεται. Αντίθετα, αρχίζει
+γενικά να αυξάνεται. Για παράδειγμα:
+
+\begin{itemize}
+    \item στο βάθος 10, το test error είναι 0.0403,
+    \item στο βάθος 15, το test error είναι 0.0535,
+    \item στο βάθος 20, το test error είναι 0.0654.
+\end{itemize}
+
+Αυτό είναι ένδειξη overfitting. Το βαθύτερο δέντρο μαθαίνει όλο και πιο
+λεπτομερείς κανόνες από το training set. Αυτοί οι κανόνες μπορεί να
+ταιριάζουν καλά στα training δεδομένα, αλλά να μην είναι τόσο χρήσιμοι για
+νέα δεδομένα.
+
+Με άλλα λόγια:
+
+\begin{quote}
+Το πιο σύνθετο μοντέλο δεν είναι πάντα το καλύτερο μοντέλο.
+\end{quote}
+
+\subsection{Συμπέρασμα Ερωτήματος 5}
+
+Το test error μειώνεται καθώς το βάθος αυξάνεται από 1 έως 6, επειδή το
+δέντρο αποκτά περισσότερη ευελιξία και μπορεί να περιγράψει καλύτερα τη δομή
+των δεδομένων. Η καλύτερη τιμή εμφανίζεται στο \code{max\_depth=6}, με test
+accuracy 0.9654 και test error 0.0346.
+
+Για μεγαλύτερα βάθη, το test error αρχίζει να αυξάνεται. Αυτό δείχνει ότι το
+δέντρο γίνεται υπερβολικά σύνθετο και πιθανόν υπερπροσαρμόζεται στα training
+δεδομένα. Επομένως, ένα μέτριο βάθος δέντρου προσφέρει την καλύτερη ισορροπία
+ανάμεσα σε απλότητα και προβλεπτική ικανότητα.
+
+%=============================================================================
+\section{Συγκεντρωτική εικόνα μέχρι το Ερώτημα 5}
+%=============================================================================
+
+\begin{table}[H]
+\centering
+\caption{Συγκεντρωτικός πίνακας αποτελεσμάτων μέχρι το Ερώτημα 5.}
+\begin{tabular}{lrrr}
+\toprule
+\textbf{Ερώτημα} & \textbf{Μέθοδος} & \textbf{Accuracy} & \textbf{Error} \\
+\midrule
+1 & Decision Tree & 0.9339 & 0.0661 \\
+2 & Bagging & 0.9660 & 0.0340 \\
+3 & Random Forest & 0.9666 & 0.0334 \\
+4 & Boosting & 0.9679 & 0.0321 \\
+5 & Best Tree Depth (6) & 0.9654 & 0.0346 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+Μέχρι στιγμής, το Boosting έχει την καλύτερη ακρίβεια ανάμεσα στα αρχικά
+μοντέλα των Ερωτημάτων 1--4. Το Ερώτημα 5 δείχνει όμως ότι το αρχικό δέντρο
+βάθους 2 δεν ήταν το καλύτερο δυνατό απλό δέντρο. Αν αυξήσουμε το βάθος μέχρι
+το 6, το δέντρο φτάνει σε test accuracy 0.9654, δηλαδή πλησιάζει πολύ τις
+ensemble μεθόδους.
+
+%=============================================================================
+\appendix
+\section{Αρχεία που χρησιμοποιούνται στο ενιαίο explanatory report}
+%=============================================================================
+
+Τα βασικά βοηθητικά αρχεία που έχουν δημιουργηθεί μέχρι τώρα είναι:
+
+\begin{itemize}
+    \item \code{q1\_explanatory\_decision\_tree.py}
+    \item \code{q2\_explanatory\_bagging.py}
+    \item \code{q3\_explanatory\_random\_forest.py}
+    \item \code{q4\_explanatory\_boosting.py}
+    \item \code{q5\_explanatory\_tree\_depth.py}
+    \item \code{q1\_confusion\_matrix.png}
+    \item \code{q1\_decision\_tree\_plot.png}
+    \item \code{q2\_confusion\_matrix.png}
+    \item \code{q2\_bagging\_concept.png}
+    \item \code{q2\_bagging\_feature\_importance.png}
+    \item \code{q3\_confusion\_matrix.png}
+    \item \code{q3\_random\_forest\_concept.png}
+    \item \code{q3\_random\_forest\_feature\_importance.png}
+    \item \code{q4\_confusion\_matrix.png}
+    \item \code{q4\_boosting\_concept.png}
+    \item \code{q4\_boosting\_feature\_importance.png}
+    \item \code{q5\_tree\_depth\_concept.png}
+    \item \code{q5\_tree\_depth\_error.png}
+\end{itemize}
+
+\end{document}

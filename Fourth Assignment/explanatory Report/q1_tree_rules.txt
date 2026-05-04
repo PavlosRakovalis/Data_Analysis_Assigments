@@ -1,0 +1,10 @@
+|--- total sulfur dioxide <= 67.50
+|   |--- chlorides <= 0.05
+|   |   |--- class: 1
+|   |--- chlorides >  0.05
+|   |   |--- class: 0
+|--- total sulfur dioxide >  67.50
+|   |--- chlorides <= 0.07
+|   |   |--- class: 1
+|   |--- chlorides >  0.07
+|   |   |--- class: 0

@@ -1,0 +1,2 @@
+model,n_estimators,learning_rate,max_depth,random_state,n_total,n_train,n_test,n_features,test_accuracy,test_error,tn,fp,fn,tp
+Boosting,200,0.1,1,6931,5295,3706,1589,11,0.9679043423536816,0.03209565764631839,361,30,21,1177

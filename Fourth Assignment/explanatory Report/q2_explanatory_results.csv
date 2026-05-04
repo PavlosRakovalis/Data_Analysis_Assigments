@@ -1,0 +1,2 @@
+model,n_estimators,random_state,n_total,n_train,n_test,n_features,test_accuracy,test_error,tn,fp,fn,tp
+Bagging,200,6931,5295,3706,1589,11,0.9660163624921334,0.03398363750786659,365,26,28,1170

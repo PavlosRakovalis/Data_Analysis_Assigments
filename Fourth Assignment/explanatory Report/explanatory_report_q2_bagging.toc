@@ -1,0 +1,32 @@
+\xpginauxfiletrue 
+\selectlanguage *{greek}
+\contentsline {section}{\numberline {1}Το ερώτημα της εργασίας}{3}{section.1}%
+\contentsline {subsection}{\numberline {1.1}Τι ακριβώς πρέπει να παραδώσουμε}{3}{subsection.1.1}%
+\contentsline {section}{\numberline {2}Υπενθύμιση του προβλήματος}{3}{section.2}%
+\contentsline {subsection}{\numberline {2.1}Το ίδιο train/test split με το Ερώτημα 1}{4}{subsection.2.1}%
+\contentsline {section}{\numberline {3}Θεωρητικό υπόβαθρο: γιατί δεν αρκεί πάντα ένα δέντρο}{4}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Τι σημαίνει ότι ένα δέντρο είναι ασταθές}{4}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}Η βασική ιδέα των ensemble μεθόδων}{5}{subsection.3.2}%
+\contentsline {section}{\numberline {4}Θεωρητικό υπόβαθρο: τι είναι το Bagging}{5}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Τι είναι bootstrap δείγμα}{5}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}Τι σημαίνει n\_estimators}{6}{subsection.4.2}%
+\contentsline {subsection}{\numberline {4.3}Πώς αποφασίζει τελικά το Bagging}{6}{subsection.4.3}%
+\contentsline {subsection}{\numberline {4.4}Γιατί το Bagging συνήθως βοηθάει}{6}{subsection.4.4}%
+\contentsline {section}{\numberline {5}Πώς λύσαμε το ερώτημα βήμα-βήμα}{7}{section.5}%
+\contentsline {subsection}{\numberline {5.1}Βήμα 1: Φορτώσαμε τα δεδομένα}{7}{subsection.5.1}%
+\contentsline {subsection}{\numberline {5.2}Βήμα 2: Ορίσαμε predictors και target}{7}{subsection.5.2}%
+\contentsline {subsection}{\numberline {5.3}Βήμα 3: Χωρίσαμε τα δεδομένα σε training και test}{7}{subsection.5.3}%
+\contentsline {subsection}{\numberline {5.4}Βήμα 4: Δημιουργήσαμε το Bagging μοντέλο}{8}{subsection.5.4}%
+\contentsline {subsection}{\numberline {5.5}Βήμα 5: Εκπαιδεύσαμε το μοντέλο}{8}{subsection.5.5}%
+\contentsline {subsection}{\numberline {5.6}Βήμα 6: Κάναμε προβλέψεις στο test set}{8}{subsection.5.6}%
+\contentsline {subsection}{\numberline {5.7}Βήμα 7: Υπολογίσαμε accuracy και test error}{8}{subsection.5.7}%
+\contentsline {section}{\numberline {6}Αποτελέσματα του Bagging}{9}{section.6}%
+\contentsline {subsection}{\numberline {6.1}Confusion matrix}{9}{subsection.6.1}%
+\contentsline {subsection}{\numberline {6.2}Πώς διαβάζουμε τα αποτελέσματα}{10}{subsection.6.2}%
+\contentsline {section}{\numberline {7}Σύγκριση με το απλό δέντρο του Ερωτήματος 1}{11}{section.7}%
+\contentsline {subsection}{\numberline {7.1}Γιατί βελτιώθηκε η απόδοση}{11}{subsection.7.1}%
+\contentsline {section}{\numberline {8}Ποια χαρακτηριστικά χρησιμοποίησε περισσότερο το Bagging}{12}{section.8}%
+\contentsline {section}{\numberline {9}Τελικός σχολιασμός για το Ερώτημα 2}{13}{section.9}%
+\contentsline {subsection}{\numberline {9.1}Σύντομη απάντηση που μπορεί να μπει στην εργασία}{13}{subsection.9.1}%
+\contentsline {section}{\numberline {\Greeknumeral {1}}Αρχεία που δημιουργήθηκαν για το report}{13}{appendix.Alph1}%
+\xpginauxfilefalse 

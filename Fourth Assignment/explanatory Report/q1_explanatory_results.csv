@@ -1,0 +1,2 @@
+model,max_depth,random_state,n_total,n_train,n_test,n_features,test_accuracy,test_error,tn,fp,fn,tp
+Decision Tree,2,6931,5295,3706,1589,11,0.933920704845815,0.06607929515418498,360,31,74,1124
