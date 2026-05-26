@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023/Debian) (preloaded format=xelatex 2026.3.22)  30 APR 2026 14:29
+This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023/Debian) (preloaded format=xelatex 2026.3.22)  11 MAY 2026 17:00
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -765,11 +765,21 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 (./explanatory_report.toc [1
 
-])
+]
+LaTeX Info: Redefining \rmfamily on input line 54.
+LaTeX Info: Redefining \sffamily on input line 54.
+LaTeX Info: Redefining \ttfamily on input line 54.
+LaTeX Info: Redefining \rmfamily on input line 56.
+LaTeX Info: Redefining \sffamily on input line 56.
+LaTeX Info: Redefining \ttfamily on input line 56.
+LaTeX Info: Redefining \rmfamily on input line 56.
+LaTeX Info: Redefining \sffamily on input line 56.
+LaTeX Info: Redefining \ttfamily on input line 56.
+ [2])
 \tf@toc=\write4
 \openout4 = `explanatory_report.toc'.
 
- [2]
+ [3]
 LaTeX Info: Redefining \rmfamily on input line 85.
 LaTeX Info: Redefining \sffamily on input line 85.
 LaTeX Info: Redefining \ttfamily on input line 85.
@@ -830,7 +840,7 @@ LaTeX Info: Redefining \ttfamily on input line 155.
 LaTeX Info: Redefining \rmfamily on input line 159.
 LaTeX Info: Redefining \sffamily on input line 159.
 LaTeX Info: Redefining \ttfamily on input line 159.
- [3]
+ [4]
 LaTeX Info: Redefining \rmfamily on input line 199.
 LaTeX Info: Redefining \sffamily on input line 199.
 LaTeX Info: Redefining \ttfamily on input line 199.
@@ -843,311 +853,890 @@ LaTeX Info: Redefining \ttfamily on input line 214.
 LaTeX Info: Redefining \rmfamily on input line 214.
 LaTeX Info: Redefining \sffamily on input line 214.
 LaTeX Info: Redefining \ttfamily on input line 214.
- [4]
-(/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
-File: lstlang1.sty 2023/02/27 1.9 listings language file
-)
-LaTeX Info: Redefining \rmfamily on input line 255.
-LaTeX Info: Redefining \sffamily on input line 255.
-LaTeX Info: Redefining \ttfamily on input line 255.
-LaTeX Info: Redefining \rmfamily on input line 255.
-LaTeX Info: Redefining \sffamily on input line 255.
-LaTeX Info: Redefining \ttfamily on input line 255.
-File: q1_confusion_matrix.png Graphic file (type bmp)
-<q1_confusion_matrix.png>
  [5]
-File: q1_decision_tree_plot.png Graphic file (type bmp)
-<q1_decision_tree_plot.png>
-LaTeX Info: Redefining \rmfamily on input line 297.
-LaTeX Info: Redefining \sffamily on input line 297.
-LaTeX Info: Redefining \ttfamily on input line 297.
-LaTeX Info: Redefining \rmfamily on input line 298.
-LaTeX Info: Redefining \sffamily on input line 298.
-LaTeX Info: Redefining \ttfamily on input line 298.
- [6]
-LaTeX Info: Redefining \rmfamily on input line 332.
-LaTeX Info: Redefining \sffamily on input line 332.
-LaTeX Info: Redefining \ttfamily on input line 332.
-File: q2_bagging_concept.png Graphic file (type bmp)
-<q2_bagging_concept.png>
+LaTeX Info: Redefining \rmfamily on input line 225.
+LaTeX Info: Redefining \sffamily on input line 225.
+LaTeX Info: Redefining \ttfamily on input line 225.
+LaTeX Info: Redefining \rmfamily on input line 225.
+LaTeX Info: Redefining \sffamily on input line 225.
+LaTeX Info: Redefining \ttfamily on input line 225.
+LaTeX Info: Redefining \rmfamily on input line 230.
+LaTeX Info: Redefining \sffamily on input line 230.
+LaTeX Info: Redefining \ttfamily on input line 230.
+LaTeX Info: Redefining \rmfamily on input line 231.
+LaTeX Info: Redefining \sffamily on input line 231.
+LaTeX Info: Redefining \ttfamily on input line 231.
+LaTeX Info: Redefining \rmfamily on input line 237.
+LaTeX Info: Redefining \sffamily on input line 237.
+LaTeX Info: Redefining \ttfamily on input line 237.
 
-[7]
-LaTeX Info: Redefining \rmfamily on input line 370.
-LaTeX Info: Redefining \sffamily on input line 370.
-LaTeX Info: Redefining \ttfamily on input line 370.
- [8]
-File: q2_confusion_matrix.png Graphic file (type bmp)
-<q2_confusion_matrix.png>
-LaTeX Info: Redefining \rmfamily on input line 420.
-LaTeX Info: Redefining \sffamily on input line 420.
-LaTeX Info: Redefining \ttfamily on input line 420.
-File: q2_bagging_feature_importance.png Graphic file (type bmp)
-<q2_bagging_feature_importance.png>
- [9]
-LaTeX Info: Redefining \rmfamily on input line 444.
-LaTeX Info: Redefining \sffamily on input line 444.
-LaTeX Info: Redefining \ttfamily on input line 444.
-LaTeX Info: Redefining \rmfamily on input line 444.
-LaTeX Info: Redefining \sffamily on input line 444.
-LaTeX Info: Redefining \ttfamily on input line 444.
-
-Overfull \hbox (17.3948pt too wide) in paragraph at lines 464--465
-[]\TU/DejaVuSerif(1)/b/n/12 «Να γίνει πρόβλεψη/εκτίμηση του τύπου κρασιού με Ra
-ndom
+Overfull \hbox (2.93777pt too wide) in paragraph at lines 236--238
+[]\TU/DejaVuSerif(1)/m/n/12 Για κάθε μεταβλητή δοκιμάζει πολλά πιθανά όρια διαχ
+ωρισμού ([]thresh-
  []
 
+LaTeX Info: Redefining \rmfamily on input line 245.
+LaTeX Info: Redefining \sffamily on input line 245.
+LaTeX Info: Redefining \ttfamily on input line 245.
+LaTeX Info: Redefining \rmfamily on input line 245.
+LaTeX Info: Redefining \sffamily on input line 245.
+LaTeX Info: Redefining \ttfamily on input line 245.
+LaTeX Info: Redefining \rmfamily on input line 246.
+LaTeX Info: Redefining \sffamily on input line 246.
+LaTeX Info: Redefining \ttfamily on input line 246.
+LaTeX Info: Redefining \rmfamily on input line 263.
+LaTeX Info: Redefining \sffamily on input line 263.
+LaTeX Info: Redefining \ttfamily on input line 263.
+[6]
+Overfull \hbox (1.12723pt too wide) in paragraph at lines 278--280
+[]\TU/DejaVuSerif(1)/m/n/12 Κρατά το threshold που μειώνει περισσότερο τη συνολ
+ική Gini impurity. 
+ []
+
+LaTeX Info: Redefining \rmfamily on input line 318.
+LaTeX Info: Redefining \sffamily on input line 318.
+LaTeX Info: Redefining \ttfamily on input line 318.
+LaTeX Info: Redefining \rmfamily on input line 319.
+LaTeX Info: Redefining \sffamily on input line 319.
+LaTeX Info: Redefining \ttfamily on input line 319.
+LaTeX Info: Redefining \rmfamily on input line 320.
+LaTeX Info: Redefining \sffamily on input line 320.
+LaTeX Info: Redefining \ttfamily on input line 320.
+LaTeX Info: Redefining \rmfamily on input line 321.
+LaTeX Info: Redefining \sffamily on input line 321.
+LaTeX Info: Redefining \ttfamily on input line 321.
+LaTeX Info: Redefining \rmfamily on input line 322.
+LaTeX Info: Redefining \sffamily on input line 322.
+LaTeX Info: Redefining \ttfamily on input line 322.
+LaTeX Info: Redefining \rmfamily on input line 323.
+LaTeX Info: Redefining \sffamily on input line 323.
+LaTeX Info: Redefining \ttfamily on input line 323.
+LaTeX Info: Redefining \rmfamily on input line 324.
+LaTeX Info: Redefining \sffamily on input line 324.
+LaTeX Info: Redefining \ttfamily on input line 324.
+LaTeX Info: Redefining \rmfamily on input line 325.
+LaTeX Info: Redefining \sffamily on input line 325.
+LaTeX Info: Redefining \ttfamily on input line 325.
+LaTeX Info: Redefining \rmfamily on input line 326.
+LaTeX Info: Redefining \sffamily on input line 326.
+LaTeX Info: Redefining \ttfamily on input line 326.
+LaTeX Info: Redefining \rmfamily on input line 327.
+LaTeX Info: Redefining \sffamily on input line 327.
+LaTeX Info: Redefining \ttfamily on input line 327.
+LaTeX Info: Redefining \rmfamily on input line 328.
+LaTeX Info: Redefining \sffamily on input line 328.
+LaTeX Info: Redefining \ttfamily on input line 328.
+LaTeX Info: Redefining \rmfamily on input line 333.
+LaTeX Info: Redefining \sffamily on input line 333.
+LaTeX Info: Redefining \ttfamily on input line 333.
+LaTeX Info: Redefining \rmfamily on input line 337.
+LaTeX Info: Redefining \sffamily on input line 337.
+LaTeX Info: Redefining \ttfamily on input line 337.
+LaTeX Info: Redefining \rmfamily on input line 338.
+LaTeX Info: Redefining \sffamily on input line 338.
+LaTeX Info: Redefining \ttfamily on input line 338.
+[7]
+LaTeX Info: Redefining \rmfamily on input line 343.
+LaTeX Info: Redefining \sffamily on input line 343.
+LaTeX Info: Redefining \ttfamily on input line 343.
+LaTeX Info: Redefining \rmfamily on input line 347.
+LaTeX Info: Redefining \sffamily on input line 347.
+LaTeX Info: Redefining \ttfamily on input line 347.
+LaTeX Info: Redefining \rmfamily on input line 348.
+LaTeX Info: Redefining \sffamily on input line 348.
+LaTeX Info: Redefining \ttfamily on input line 348.
+LaTeX Info: Redefining \rmfamily on input line 351.
+LaTeX Info: Redefining \sffamily on input line 351.
+LaTeX Info: Redefining \ttfamily on input line 351.
+LaTeX Info: Redefining \rmfamily on input line 357.
+LaTeX Info: Redefining \sffamily on input line 357.
+LaTeX Info: Redefining \ttfamily on input line 357.
+LaTeX Info: Redefining \rmfamily on input line 368.
+LaTeX Info: Redefining \sffamily on input line 368.
+LaTeX Info: Redefining \ttfamily on input line 368.
+
+Underfull \hbox (badness 10000) in paragraph at lines 368--368
+[]|[]\TU/DejaVuSansMono(0)/m/n/10.95 total sulfur
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 368--368
+\TU/DejaVuSansMono(0)/m/n/10.95 dioxide <=
+ []
+
+
+Underfull \hbox (badness 4752) in paragraph at lines 371--371
+[]|\TU/DejaVuSerif(0)/m/n/10.95 Αριστερός κόμ-
+ []
+
+LaTeX Info: Redefining \rmfamily on input line 372.
+LaTeX Info: Redefining \sffamily on input line 372.
+LaTeX Info: Redefining \ttfamily on input line 372.
+
+Underfull \hbox (badness 10000) in paragraph at lines 372--372
+[]|[]\TU/DejaVuSansMono(0)/m/n/10.95 chlorides <=
+ []
+
+LaTeX Info: Redefining \rmfamily on input line 376.
+LaTeX Info: Redefining \sffamily on input line 376.
+LaTeX Info: Redefining \ttfamily on input line 376.
+
+Underfull \hbox (badness 10000) in paragraph at lines 376--376
+[]|[]\TU/DejaVuSansMono(0)/m/n/10.95 chlorides <=
+ []
+
+LaTeX Info: Redefining \rmfamily on input line 385.
+LaTeX Info: Redefining \sffamily on input line 385.
+LaTeX Info: Redefining \ttfamily on input line 385.
+LaTeX Info: Redefining \rmfamily on input line 391.
+LaTeX Info: Redefining \sffamily on input line 391.
+LaTeX Info: Redefining \ttfamily on input line 391.
+LaTeX Info: Redefining \rmfamily on input line 392.
+LaTeX Info: Redefining \sffamily on input line 392.
+LaTeX Info: Redefining \ttfamily on input line 392.
+(/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
+File: lstlang1.sty 2023/02/27 1.9 listings language file
+) [8]
+LaTeX Info: Redefining \rmfamily on input line 427.
+LaTeX Info: Redefining \sffamily on input line 427.
+LaTeX Info: Redefining \ttfamily on input line 427.
+LaTeX Info: Redefining \rmfamily on input line 427.
+LaTeX Info: Redefining \sffamily on input line 427.
+LaTeX Info: Redefining \ttfamily on input line 427.
+LaTeX Info: Redefining \rmfamily on input line 467.
+LaTeX Info: Redefining \sffamily on input line 467.
+LaTeX Info: Redefining \ttfamily on input line 467.
+LaTeX Info: Redefining \rmfamily on input line 468.
+LaTeX Info: Redefining \sffamily on input line 468.
+LaTeX Info: Redefining \ttfamily on input line 468.
+ [9]
+LaTeX Info: Redefining \rmfamily on input line 473.
+LaTeX Info: Redefining \sffamily on input line 473.
+LaTeX Info: Redefining \ttfamily on input line 473.
+LaTeX Info: Redefining \rmfamily on input line 475.
+LaTeX Info: Redefining \sffamily on input line 475.
+LaTeX Info: Redefining \ttfamily on input line 475.
+
 [10]
-File: q3_random_forest_concept.png Graphic file (type bmp)
-<q3_random_forest_concept.png>
-LaTeX Info: Redefining \rmfamily on input line 505.
-LaTeX Info: Redefining \sffamily on input line 505.
-LaTeX Info: Redefining \ttfamily on input line 505.
-LaTeX Info: Redefining \rmfamily on input line 506.
-LaTeX Info: Redefining \sffamily on input line 506.
-LaTeX Info: Redefining \ttfamily on input line 506.
-LaTeX Info: Redefining \rmfamily on input line 509.
-LaTeX Info: Redefining \sffamily on input line 509.
-LaTeX Info: Redefining \ttfamily on input line 509.
+File: q1_confusion_matrix.png Graphic file (type bmp)
+<q1_confusion_matrix.png>
+File: q1_decision_tree_plot.png Graphic file (type bmp)
+<q1_decision_tree_plot.png>
+LaTeX Info: Redefining \rmfamily on input line 576.
+LaTeX Info: Redefining \sffamily on input line 576.
+LaTeX Info: Redefining \ttfamily on input line 576.
+LaTeX Info: Redefining \rmfamily on input line 577.
+LaTeX Info: Redefining \sffamily on input line 577.
+LaTeX Info: Redefining \ttfamily on input line 577.
  [11]
-LaTeX Info: Redefining \rmfamily on input line 546.
-LaTeX Info: Redefining \sffamily on input line 546.
-LaTeX Info: Redefining \ttfamily on input line 546.
-File: q3_confusion_matrix.png Graphic file (type bmp)
-<q3_confusion_matrix.png>
- [12]
-LaTeX Info: Redefining \rmfamily on input line 585.
-LaTeX Info: Redefining \sffamily on input line 585.
-LaTeX Info: Redefining \ttfamily on input line 585.
-File: q3_random_forest_feature_importance.png Graphic file (type bmp)
-<q3_random_forest_feature_importance.png>
- [13]
+LaTeX Info: Redefining \rmfamily on input line 591.
+LaTeX Info: Redefining \sffamily on input line 591.
+LaTeX Info: Redefining \ttfamily on input line 591.
+LaTeX Info: Redefining \rmfamily on input line 592.
+LaTeX Info: Redefining \sffamily on input line 592.
+LaTeX Info: Redefining \ttfamily on input line 592.
+LaTeX Info: Redefining \rmfamily on input line 593.
+LaTeX Info: Redefining \sffamily on input line 593.
+LaTeX Info: Redefining \ttfamily on input line 593.
+LaTeX Info: Redefining \rmfamily on input line 596.
+LaTeX Info: Redefining \sffamily on input line 596.
+LaTeX Info: Redefining \ttfamily on input line 596.
+LaTeX Info: Redefining \rmfamily on input line 598.
+LaTeX Info: Redefining \sffamily on input line 598.
+LaTeX Info: Redefining \ttfamily on input line 598.
+LaTeX Info: Redefining \rmfamily on input line 598.
+LaTeX Info: Redefining \sffamily on input line 598.
+LaTeX Info: Redefining \ttfamily on input line 598.
+LaTeX Info: Redefining \rmfamily on input line 600.
+LaTeX Info: Redefining \sffamily on input line 600.
+LaTeX Info: Redefining \ttfamily on input line 600.
+LaTeX Info: Redefining \rmfamily on input line 602.
+LaTeX Info: Redefining \sffamily on input line 602.
+LaTeX Info: Redefining \ttfamily on input line 602.
+LaTeX Info: Redefining \rmfamily on input line 602.
+LaTeX Info: Redefining \sffamily on input line 602.
+LaTeX Info: Redefining \ttfamily on input line 602.
 LaTeX Info: Redefining \rmfamily on input line 603.
 LaTeX Info: Redefining \sffamily on input line 603.
 LaTeX Info: Redefining \ttfamily on input line 603.
 LaTeX Info: Redefining \rmfamily on input line 604.
 LaTeX Info: Redefining \sffamily on input line 604.
 LaTeX Info: Redefining \ttfamily on input line 604.
-LaTeX Info: Redefining \rmfamily on input line 609.
-LaTeX Info: Redefining \sffamily on input line 609.
-LaTeX Info: Redefining \ttfamily on input line 609.
+ [12]
+LaTeX Info: Redefining \rmfamily on input line 660.
+LaTeX Info: Redefining \sffamily on input line 660.
+LaTeX Info: Redefining \ttfamily on input line 660.
+LaTeX Info: Redefining \rmfamily on input line 661.
+LaTeX Info: Redefining \sffamily on input line 661.
+LaTeX Info: Redefining \ttfamily on input line 661.
+LaTeX Info: Redefining \rmfamily on input line 666.
+LaTeX Info: Redefining \sffamily on input line 666.
+LaTeX Info: Redefining \ttfamily on input line 666.
+LaTeX Info: Redefining \rmfamily on input line 667.
+LaTeX Info: Redefining \sffamily on input line 667.
+LaTeX Info: Redefining \ttfamily on input line 667.
 
-Overfull \hbox (8.16965pt too wide) in paragraph at lines 626--627
+Overfull \hbox (3.16629pt too wide) in paragraph at lines 694--697
+[]\TU/DejaVuSerif(1)/m/n/12 Το «με επανάθεση» σημαίνει ότι όταν διαλέγουμε μία 
+γραμμή από το training
+ []
+
+[13]
+LaTeX Info: Redefining \rmfamily on input line 730.
+LaTeX Info: Redefining \sffamily on input line 730.
+LaTeX Info: Redefining \ttfamily on input line 730.
+LaTeX Info: Redefining \rmfamily on input line 730.
+LaTeX Info: Redefining \sffamily on input line 730.
+LaTeX Info: Redefining \ttfamily on input line 730.
+LaTeX Info: Redefining \rmfamily on input line 742.
+LaTeX Info: Redefining \sffamily on input line 742.
+LaTeX Info: Redefining \ttfamily on input line 742.
+
+Overfull \hbox (6.0352pt too wide) in paragraph at lines 752--756
+[]\TU/DejaVuSerif(1)/m/n/12 Ένα bootstrap δείγμα δημιουργείται με δειγματοληψία
+ \TU/DejaVuSerif(1)/b/n/12 με επανάθεση\TU/DejaVuSerif(1)/m/n/12 . Αυτό
+ []
+
+[14]
+LaTeX Info: Redefining \rmfamily on input line 776.
+LaTeX Info: Redefining \sffamily on input line 776.
+LaTeX Info: Redefining \ttfamily on input line 776.
+LaTeX Info: Redefining \rmfamily on input line 784.
+LaTeX Info: Redefining \sffamily on input line 784.
+LaTeX Info: Redefining \ttfamily on input line 784.
+LaTeX Info: Redefining \rmfamily on input line 784.
+LaTeX Info: Redefining \sffamily on input line 784.
+LaTeX Info: Redefining \ttfamily on input line 784.
+LaTeX Info: Redefining \rmfamily on input line 806.
+LaTeX Info: Redefining \sffamily on input line 806.
+LaTeX Info: Redefining \ttfamily on input line 806.
+LaTeX Info: Redefining \rmfamily on input line 807.
+LaTeX Info: Redefining \sffamily on input line 807.
+LaTeX Info: Redefining \ttfamily on input line 807.
+LaTeX Info: Redefining \rmfamily on input line 812.
+LaTeX Info: Redefining \sffamily on input line 812.
+LaTeX Info: Redefining \ttfamily on input line 812.
+LaTeX Info: Redefining \rmfamily on input line 813.
+LaTeX Info: Redefining \sffamily on input line 813.
+LaTeX Info: Redefining \ttfamily on input line 813.
+LaTeX Info: Redefining \rmfamily on input line 815.
+LaTeX Info: Redefining \sffamily on input line 815.
+LaTeX Info: Redefining \ttfamily on input line 815.
+LaTeX Info: Redefining \rmfamily on input line 816.
+LaTeX Info: Redefining \sffamily on input line 816.
+LaTeX Info: Redefining \ttfamily on input line 816.
+
+Overfull \hbox (6.78706pt too wide) in paragraph at lines 820--823
+\TU/DejaVuSerif(1)/m/n/12 γνωστό μειονέκτημα: μπορούν να είναι ασταθή. Μικρές α
+λλαγές στα training
+ []
+
+[15]
+File: q2_bagging_concept.png Graphic file (type bmp)
+<q2_bagging_concept.png>
+ [16]
+LaTeX Info: Redefining \rmfamily on input line 882.
+LaTeX Info: Redefining \sffamily on input line 882.
+LaTeX Info: Redefining \ttfamily on input line 882.
+LaTeX Info: Redefining \rmfamily on input line 884.
+LaTeX Info: Redefining \sffamily on input line 884.
+LaTeX Info: Redefining \ttfamily on input line 884.
+LaTeX Info: Redefining \rmfamily on input line 886.
+LaTeX Info: Redefining \sffamily on input line 886.
+LaTeX Info: Redefining \ttfamily on input line 886.
+LaTeX Info: Redefining \rmfamily on input line 888.
+LaTeX Info: Redefining \sffamily on input line 888.
+LaTeX Info: Redefining \ttfamily on input line 888.
+LaTeX Info: Redefining \rmfamily on input line 889.
+LaTeX Info: Redefining \sffamily on input line 889.
+LaTeX Info: Redefining \ttfamily on input line 889.
+LaTeX Info: Redefining \rmfamily on input line 910.
+LaTeX Info: Redefining \sffamily on input line 910.
+LaTeX Info: Redefining \ttfamily on input line 910.
+ [17] [18]
+File: q2_confusion_matrix.png Graphic file (type bmp)
+<q2_confusion_matrix.png>
+LaTeX Info: Redefining \rmfamily on input line 1028.
+LaTeX Info: Redefining \sffamily on input line 1028.
+LaTeX Info: Redefining \ttfamily on input line 1028.
+ [19]
+LaTeX Info: Redefining \rmfamily on input line 1061.
+LaTeX Info: Redefining \sffamily on input line 1061.
+LaTeX Info: Redefining \ttfamily on input line 1061.
+File: q2_bagging_feature_importance.png Graphic file (type bmp)
+<q2_bagging_feature_importance.png>
+ [20]
+LaTeX Info: Redefining \rmfamily on input line 1083.
+LaTeX Info: Redefining \sffamily on input line 1083.
+LaTeX Info: Redefining \ttfamily on input line 1083.
+LaTeX Info: Redefining \rmfamily on input line 1083.
+LaTeX Info: Redefining \sffamily on input line 1083.
+LaTeX Info: Redefining \ttfamily on input line 1083.
+LaTeX Info: Redefining \rmfamily on input line 1094.
+LaTeX Info: Redefining \sffamily on input line 1094.
+LaTeX Info: Redefining \ttfamily on input line 1094.
+LaTeX Info: Redefining \rmfamily on input line 1095.
+LaTeX Info: Redefining \sffamily on input line 1095.
+LaTeX Info: Redefining \ttfamily on input line 1095.
+LaTeX Info: Redefining \rmfamily on input line 1096.
+LaTeX Info: Redefining \sffamily on input line 1096.
+LaTeX Info: Redefining \ttfamily on input line 1096.
+LaTeX Info: Redefining \rmfamily on input line 1097.
+LaTeX Info: Redefining \sffamily on input line 1097.
+LaTeX Info: Redefining \ttfamily on input line 1097.
+LaTeX Info: Redefining \rmfamily on input line 1098.
+LaTeX Info: Redefining \sffamily on input line 1098.
+LaTeX Info: Redefining \ttfamily on input line 1098.
+LaTeX Info: Redefining \rmfamily on input line 1099.
+LaTeX Info: Redefining \sffamily on input line 1099.
+LaTeX Info: Redefining \ttfamily on input line 1099.
+LaTeX Info: Redefining \rmfamily on input line 1100.
+LaTeX Info: Redefining \sffamily on input line 1100.
+LaTeX Info: Redefining \ttfamily on input line 1100.
+LaTeX Info: Redefining \rmfamily on input line 1101.
+LaTeX Info: Redefining \sffamily on input line 1101.
+LaTeX Info: Redefining \ttfamily on input line 1101.
+LaTeX Info: Redefining \rmfamily on input line 1102.
+LaTeX Info: Redefining \sffamily on input line 1102.
+LaTeX Info: Redefining \ttfamily on input line 1102.
+LaTeX Info: Redefining \rmfamily on input line 1103.
+LaTeX Info: Redefining \sffamily on input line 1103.
+LaTeX Info: Redefining \ttfamily on input line 1103.
+LaTeX Info: Redefining \rmfamily on input line 1104.
+LaTeX Info: Redefining \sffamily on input line 1104.
+LaTeX Info: Redefining \ttfamily on input line 1104.
+LaTeX Info: Redefining \rmfamily on input line 1111.
+LaTeX Info: Redefining \sffamily on input line 1111.
+LaTeX Info: Redefining \ttfamily on input line 1111.
+LaTeX Info: Redefining \rmfamily on input line 1111.
+LaTeX Info: Redefining \sffamily on input line 1111.
+LaTeX Info: Redefining \ttfamily on input line 1111.
+ [21]
+Overfull \hbox (17.3948pt too wide) in paragraph at lines 1136--1137
+[]\TU/DejaVuSerif(1)/b/n/12 «Να γίνει πρόβλεψη/εκτίμηση του τύπου κρασιού με Ra
+ndom
+ []
+
+[22]
+LaTeX Info: Redefining \rmfamily on input line 1184.
+LaTeX Info: Redefining \sffamily on input line 1184.
+LaTeX Info: Redefining \ttfamily on input line 1184.
+File: q3_random_forest_concept.png Graphic file (type bmp)
+<q3_random_forest_concept.png>
+ [23]
+LaTeX Info: Redefining \rmfamily on input line 1239.
+LaTeX Info: Redefining \sffamily on input line 1239.
+LaTeX Info: Redefining \ttfamily on input line 1239.
+LaTeX Info: Redefining \rmfamily on input line 1239.
+LaTeX Info: Redefining \sffamily on input line 1239.
+LaTeX Info: Redefining \ttfamily on input line 1239.
+LaTeX Info: Redefining \rmfamily on input line 1239.
+LaTeX Info: Redefining \sffamily on input line 1239.
+LaTeX Info: Redefining \ttfamily on input line 1239.
+LaTeX Info: Redefining \rmfamily on input line 1239.
+LaTeX Info: Redefining \sffamily on input line 1239.
+LaTeX Info: Redefining \ttfamily on input line 1239.
+LaTeX Info: Redefining \rmfamily on input line 1239.
+LaTeX Info: Redefining \sffamily on input line 1239.
+LaTeX Info: Redefining \ttfamily on input line 1239.
+LaTeX Info: Redefining \rmfamily on input line 1246.
+LaTeX Info: Redefining \sffamily on input line 1246.
+LaTeX Info: Redefining \ttfamily on input line 1246.
+LaTeX Info: Redefining \rmfamily on input line 1246.
+LaTeX Info: Redefining \sffamily on input line 1246.
+LaTeX Info: Redefining \ttfamily on input line 1246.
+LaTeX Info: Redefining \rmfamily on input line 1246.
+LaTeX Info: Redefining \sffamily on input line 1246.
+LaTeX Info: Redefining \ttfamily on input line 1246.
+LaTeX Info: Redefining \rmfamily on input line 1247.
+LaTeX Info: Redefining \sffamily on input line 1247.
+LaTeX Info: Redefining \ttfamily on input line 1247.
+LaTeX Info: Redefining \rmfamily on input line 1247.
+LaTeX Info: Redefining \sffamily on input line 1247.
+LaTeX Info: Redefining \ttfamily on input line 1247.
+ [24]
+LaTeX Info: Redefining \rmfamily on input line 1263.
+LaTeX Info: Redefining \sffamily on input line 1263.
+LaTeX Info: Redefining \ttfamily on input line 1263.
+LaTeX Info: Redefining \rmfamily on input line 1265.
+LaTeX Info: Redefining \sffamily on input line 1265.
+LaTeX Info: Redefining \ttfamily on input line 1265.
+LaTeX Info: Redefining \rmfamily on input line 1273.
+LaTeX Info: Redefining \sffamily on input line 1273.
+LaTeX Info: Redefining \ttfamily on input line 1273.
+LaTeX Info: Redefining \rmfamily on input line 1273.
+LaTeX Info: Redefining \sffamily on input line 1273.
+LaTeX Info: Redefining \ttfamily on input line 1273.
+LaTeX Info: Redefining \rmfamily on input line 1273.
+LaTeX Info: Redefining \sffamily on input line 1273.
+LaTeX Info: Redefining \ttfamily on input line 1273.
+LaTeX Info: Redefining \rmfamily on input line 1274.
+LaTeX Info: Redefining \sffamily on input line 1274.
+LaTeX Info: Redefining \ttfamily on input line 1274.
+LaTeX Info: Redefining \rmfamily on input line 1274.
+LaTeX Info: Redefining \sffamily on input line 1274.
+LaTeX Info: Redefining \ttfamily on input line 1274.
+LaTeX Info: Redefining \rmfamily on input line 1274.
+LaTeX Info: Redefining \sffamily on input line 1274.
+LaTeX Info: Redefining \ttfamily on input line 1274.
+LaTeX Info: Redefining \rmfamily on input line 1275.
+LaTeX Info: Redefining \sffamily on input line 1275.
+LaTeX Info: Redefining \ttfamily on input line 1275.
+LaTeX Info: Redefining \rmfamily on input line 1275.
+LaTeX Info: Redefining \sffamily on input line 1275.
+LaTeX Info: Redefining \ttfamily on input line 1275.
+LaTeX Info: Redefining \rmfamily on input line 1275.
+LaTeX Info: Redefining \sffamily on input line 1275.
+LaTeX Info: Redefining \ttfamily on input line 1275.
+LaTeX Info: Redefining \rmfamily on input line 1276.
+LaTeX Info: Redefining \sffamily on input line 1276.
+LaTeX Info: Redefining \ttfamily on input line 1276.
+LaTeX Info: Redefining \rmfamily on input line 1276.
+LaTeX Info: Redefining \sffamily on input line 1276.
+LaTeX Info: Redefining \ttfamily on input line 1276.
+LaTeX Info: Redefining \rmfamily on input line 1287.
+LaTeX Info: Redefining \sffamily on input line 1287.
+LaTeX Info: Redefining \ttfamily on input line 1287.
+LaTeX Info: Redefining \rmfamily on input line 1288.
+LaTeX Info: Redefining \sffamily on input line 1288.
+LaTeX Info: Redefining \ttfamily on input line 1288.
+LaTeX Info: Redefining \rmfamily on input line 1291.
+LaTeX Info: Redefining \sffamily on input line 1291.
+LaTeX Info: Redefining \ttfamily on input line 1291.
+ [25]
+LaTeX Info: Redefining \rmfamily on input line 1327.
+LaTeX Info: Redefining \sffamily on input line 1327.
+LaTeX Info: Redefining \ttfamily on input line 1327.
+LaTeX Info: Redefining \rmfamily on input line 1327.
+LaTeX Info: Redefining \sffamily on input line 1327.
+LaTeX Info: Redefining \ttfamily on input line 1327.
+LaTeX Info: Redefining \rmfamily on input line 1331.
+LaTeX Info: Redefining \sffamily on input line 1331.
+LaTeX Info: Redefining \ttfamily on input line 1331.
+
+Overfull \hbox (5.93192pt too wide) in paragraph at lines 1333--1335
+[]\TU/DejaVuSerif(1)/m/n/12 Κάθε δέντρο εκπαιδεύτηκε σε διαφορετικό bootstrap δ
+είγμα του training
+ []
+
+LaTeX Info: Redefining \rmfamily on input line 1349.
+LaTeX Info: Redefining \sffamily on input line 1349.
+LaTeX Info: Redefining \ttfamily on input line 1349.
+LaTeX Info: Redefining \rmfamily on input line 1373.
+LaTeX Info: Redefining \sffamily on input line 1373.
+LaTeX Info: Redefining \ttfamily on input line 1373.
+LaTeX Info: Redefining \rmfamily on input line 1374.
+LaTeX Info: Redefining \sffamily on input line 1374.
+LaTeX Info: Redefining \ttfamily on input line 1374.
+[26]
+LaTeX Info: Redefining \rmfamily on input line 1388.
+LaTeX Info: Redefining \sffamily on input line 1388.
+LaTeX Info: Redefining \ttfamily on input line 1388.
+File: q3_confusion_matrix.png Graphic file (type bmp)
+<q3_confusion_matrix.png>
+ [27]
+LaTeX Info: Redefining \rmfamily on input line 1448.
+LaTeX Info: Redefining \sffamily on input line 1448.
+LaTeX Info: Redefining \ttfamily on input line 1448.
+LaTeX Info: Redefining \rmfamily on input line 1464.
+LaTeX Info: Redefining \sffamily on input line 1464.
+LaTeX Info: Redefining \ttfamily on input line 1464.
+LaTeX Info: Redefining \rmfamily on input line 1465.
+LaTeX Info: Redefining \sffamily on input line 1465.
+LaTeX Info: Redefining \ttfamily on input line 1465.
+ [28]
+Overfull \hbox (6.5823pt too wide) in paragraph at lines 1468--1471
+[]\TU/DejaVuSerif(1)/m/n/12 Το Random Forest κέρδισε οριακά επειδή μείωσε λίγο 
+περισσότερο την ομοιό-
+ []
+
+File: q3_random_forest_feature_importance.png Graphic file (type bmp)
+<q3_random_forest_feature_importance.png>
+LaTeX Info: Redefining \rmfamily on input line 1480.
+LaTeX Info: Redefining \sffamily on input line 1480.
+LaTeX Info: Redefining \ttfamily on input line 1480.
+LaTeX Info: Redefining \rmfamily on input line 1481.
+LaTeX Info: Redefining \sffamily on input line 1481.
+LaTeX Info: Redefining \ttfamily on input line 1481.
+LaTeX Info: Redefining \rmfamily on input line 1497.
+LaTeX Info: Redefining \sffamily on input line 1497.
+LaTeX Info: Redefining \ttfamily on input line 1497.
+[29]
+Overfull \hbox (8.16965pt too wide) in paragraph at lines 1519--1520
 \TU/DejaVuSerif(1)/b/n/12 μέθοδο Boosting, χρησιμοποιώντας 200 επιμέρους μοντέλ
 α,
  []
 
-[14]
-LaTeX Info: Redefining \rmfamily on input line 649.
-LaTeX Info: Redefining \sffamily on input line 649.
-LaTeX Info: Redefining \ttfamily on input line 649.
-LaTeX Info: Redefining \rmfamily on input line 650.
-LaTeX Info: Redefining \sffamily on input line 650.
-LaTeX Info: Redefining \ttfamily on input line 650.
-LaTeX Info: Redefining \rmfamily on input line 651.
-LaTeX Info: Redefining \sffamily on input line 651.
-LaTeX Info: Redefining \ttfamily on input line 651.
+[30]
+LaTeX Info: Redefining \rmfamily on input line 1548.
+LaTeX Info: Redefining \sffamily on input line 1548.
+LaTeX Info: Redefining \ttfamily on input line 1548.
+LaTeX Info: Redefining \rmfamily on input line 1549.
+LaTeX Info: Redefining \sffamily on input line 1549.
+LaTeX Info: Redefining \ttfamily on input line 1549.
+LaTeX Info: Redefining \rmfamily on input line 1550.
+LaTeX Info: Redefining \sffamily on input line 1550.
+LaTeX Info: Redefining \ttfamily on input line 1550.
 
-Overfull \hbox (6.96317pt too wide) in paragraph at lines 659--662
+Overfull \hbox (6.96317pt too wide) in paragraph at lines 1558--1561
 \TU/DejaVuSerif(1)/m/n/12 σπαθεί να βελτιώσει το συνολικό μοντέλο που έχει δημι
 ουργηθεί μέχρι εκείνη
  []
 
-LaTeX Info: Redefining \rmfamily on input line 673.
-LaTeX Info: Redefining \sffamily on input line 673.
-LaTeX Info: Redefining \ttfamily on input line 673.
-LaTeX Info: Redefining \rmfamily on input line 676.
-LaTeX Info: Redefining \sffamily on input line 676.
-LaTeX Info: Redefining \ttfamily on input line 676.
-LaTeX Info: Redefining \rmfamily on input line 683.
-LaTeX Info: Redefining \sffamily on input line 683.
-LaTeX Info: Redefining \ttfamily on input line 683.
-LaTeX Info: Redefining \rmfamily on input line 689.
-LaTeX Info: Redefining \sffamily on input line 689.
-LaTeX Info: Redefining \ttfamily on input line 689.
-[15]
+LaTeX Info: Redefining \rmfamily on input line 1571.
+LaTeX Info: Redefining \sffamily on input line 1571.
+LaTeX Info: Redefining \ttfamily on input line 1571.
+
+Underfull \hbox (badness 10000) in paragraph at lines 1590--1590
+[]|\TU/DejaVuSerif(1)/b/n/12 Πώς φτιάχνονται
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1593--1593
+[]|\TU/DejaVuSerif(1)/m/n/12 Πολλά δέντρα φτιά-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1593--1593
+\TU/DejaVuSerif(1)/m/n/12 χνονται σε διαφορε-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1593--1593
+\TU/DejaVuSerif(1)/m/n/12 τικά bootstrap δείγ-
+ []
+
+
+Underfull \hbox (badness 1466) in paragraph at lines 1594--1595
+[]|\TU/DejaVuSerif(1)/m/n/12 Μειώνουμε την αστά-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1594--1595
+\TU/DejaVuSerif(1)/m/n/12 θεια ενός δέντρου
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1597--1598
+\TU/DejaVuSerif(1)/m/n/12 διαφορετικά μεταξύ
+ []
+
+
+Underfull \hbox (badness 5274) in paragraph at lines 1600--1601
+\TU/DejaVuSerif(1)/m/n/12 σπαθεί να διορθώσει
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1600--1601
+\TU/DejaVuSerif(1)/m/n/12 τις αδυναμίες του
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1600--1601
+\TU/DejaVuSerif(1)/m/n/12 προηγούμενου συνό-
+ []
+
+[31]
+LaTeX Info: Redefining \rmfamily on input line 1620.
+LaTeX Info: Redefining \sffamily on input line 1620.
+LaTeX Info: Redefining \ttfamily on input line 1620.
+LaTeX Info: Redefining \rmfamily on input line 1621.
+LaTeX Info: Redefining \sffamily on input line 1621.
+LaTeX Info: Redefining \ttfamily on input line 1621.
+LaTeX Info: Redefining \rmfamily on input line 1626.
+LaTeX Info: Redefining \sffamily on input line 1626.
+LaTeX Info: Redefining \ttfamily on input line 1626.
+LaTeX Info: Redefining \rmfamily on input line 1636.
+LaTeX Info: Redefining \sffamily on input line 1636.
+LaTeX Info: Redefining \ttfamily on input line 1636.
+ [32]
+LaTeX Info: Redefining \rmfamily on input line 1648.
+LaTeX Info: Redefining \sffamily on input line 1648.
+LaTeX Info: Redefining \ttfamily on input line 1648.
+LaTeX Info: Redefining \rmfamily on input line 1651.
+LaTeX Info: Redefining \sffamily on input line 1651.
+LaTeX Info: Redefining \ttfamily on input line 1651.
+LaTeX Info: Redefining \rmfamily on input line 1659.
+LaTeX Info: Redefining \sffamily on input line 1659.
+LaTeX Info: Redefining \ttfamily on input line 1659.
+LaTeX Info: Redefining \rmfamily on input line 1660.
+LaTeX Info: Redefining \sffamily on input line 1660.
+LaTeX Info: Redefining \ttfamily on input line 1660.
+LaTeX Info: Redefining \rmfamily on input line 1660.
+LaTeX Info: Redefining \sffamily on input line 1660.
+LaTeX Info: Redefining \ttfamily on input line 1660.
+LaTeX Info: Redefining \rmfamily on input line 1668.
+LaTeX Info: Redefining \sffamily on input line 1668.
+LaTeX Info: Redefining \ttfamily on input line 1668.
+LaTeX Info: Redefining \rmfamily on input line 1683.
+LaTeX Info: Redefining \sffamily on input line 1683.
+LaTeX Info: Redefining \ttfamily on input line 1683.
+LaTeX Info: Redefining \rmfamily on input line 1688.
+LaTeX Info: Redefining \sffamily on input line 1688.
+LaTeX Info: Redefining \ttfamily on input line 1688.
+LaTeX Info: Redefining \rmfamily on input line 1694.
+LaTeX Info: Redefining \sffamily on input line 1694.
+LaTeX Info: Redefining \ttfamily on input line 1694.
+ [33]
+LaTeX Info: Redefining \rmfamily on input line 1705.
+LaTeX Info: Redefining \sffamily on input line 1705.
+LaTeX Info: Redefining \ttfamily on input line 1705.
+LaTeX Info: Redefining \rmfamily on input line 1707.
+LaTeX Info: Redefining \sffamily on input line 1707.
+LaTeX Info: Redefining \ttfamily on input line 1707.
+LaTeX Info: Redefining \rmfamily on input line 1711.
+LaTeX Info: Redefining \sffamily on input line 1711.
+LaTeX Info: Redefining \ttfamily on input line 1711.
+LaTeX Info: Redefining \rmfamily on input line 1716.
+LaTeX Info: Redefining \sffamily on input line 1716.
+LaTeX Info: Redefining \ttfamily on input line 1716.
+LaTeX Info: Redefining \rmfamily on input line 1716.
+LaTeX Info: Redefining \sffamily on input line 1716.
+LaTeX Info: Redefining \ttfamily on input line 1716.
+
+Overfull \hbox (3.04616pt too wide) in paragraph at lines 1716--1716
+[]\TU/DejaVuSerif(1)/b/n/14.4 Η σχέση ανάμεσα σε []\TU/DejaVuSansMono(0)/b/n/14
+.4 n_estimators []\TU/DejaVuSerif(1)/b/n/14.4 και []\TU/DejaVuSansMono(0)/b/n/1
+4.4 learning_rate 
+ []
+
+LaTeX Info: Redefining \rmfamily on input line 1718.
+LaTeX Info: Redefining \sffamily on input line 1718.
+LaTeX Info: Redefining \ttfamily on input line 1718.
+LaTeX Info: Redefining \rmfamily on input line 1718.
+LaTeX Info: Redefining \sffamily on input line 1718.
+LaTeX Info: Redefining \ttfamily on input line 1718.
+LaTeX Info: Redefining \rmfamily on input line 1722.
+LaTeX Info: Redefining \sffamily on input line 1722.
+LaTeX Info: Redefining \ttfamily on input line 1722.
+LaTeX Info: Redefining \rmfamily on input line 1723.
+LaTeX Info: Redefining \sffamily on input line 1723.
+LaTeX Info: Redefining \ttfamily on input line 1723.
+LaTeX Info: Redefining \rmfamily on input line 1735.
+LaTeX Info: Redefining \sffamily on input line 1735.
+LaTeX Info: Redefining \ttfamily on input line 1735.
+LaTeX Info: Redefining \rmfamily on input line 1736.
+LaTeX Info: Redefining \sffamily on input line 1736.
+LaTeX Info: Redefining \ttfamily on input line 1736.
+LaTeX Info: Redefining \rmfamily on input line 1737.
+LaTeX Info: Redefining \sffamily on input line 1737.
+LaTeX Info: Redefining \ttfamily on input line 1737.
 File: q4_boosting_concept.png Graphic file (type bmp)
 <q4_boosting_concept.png>
-LaTeX Info: Redefining \rmfamily on input line 707.
-LaTeX Info: Redefining \sffamily on input line 707.
-LaTeX Info: Redefining \ttfamily on input line 707.
-LaTeX Info: Redefining \rmfamily on input line 707.
-LaTeX Info: Redefining \sffamily on input line 707.
-LaTeX Info: Redefining \ttfamily on input line 707.
-LaTeX Info: Redefining \rmfamily on input line 707.
-LaTeX Info: Redefining \sffamily on input line 707.
-LaTeX Info: Redefining \ttfamily on input line 707.
+[34]
+LaTeX Info: Redefining \rmfamily on input line 1762.
+LaTeX Info: Redefining \sffamily on input line 1762.
+LaTeX Info: Redefining \ttfamily on input line 1762.
+LaTeX Info: Redefining \rmfamily on input line 1763.
+LaTeX Info: Redefining \sffamily on input line 1763.
+LaTeX Info: Redefining \ttfamily on input line 1763.
+LaTeX Info: Redefining \rmfamily on input line 1773.
+LaTeX Info: Redefining \sffamily on input line 1773.
+LaTeX Info: Redefining \ttfamily on input line 1773.
+LaTeX Info: Redefining \rmfamily on input line 1773.
+LaTeX Info: Redefining \sffamily on input line 1773.
+LaTeX Info: Redefining \ttfamily on input line 1773.
+LaTeX Info: Redefining \rmfamily on input line 1773.
+LaTeX Info: Redefining \sffamily on input line 1773.
+LaTeX Info: Redefining \ttfamily on input line 1773.
 
-Overfull \hbox (4.50937pt too wide) in paragraph at lines 705--708
+Overfull \hbox (4.50937pt too wide) in paragraph at lines 1771--1774
 []\TU/DejaVuSerif(1)/m/n/12 Χρησιμοποιήσαμε το ίδιο dataset, τους ίδιους predic
 tors και το ίδιο train/test
  []
 
 
-Overfull \hbox (28.39722pt too wide) in paragraph at lines 705--708
+Overfull \hbox (28.39722pt too wide) in paragraph at lines 1771--1774
 \TU/DejaVuSerif(1)/m/n/12 split με τα προηγούμενα ερωτήματα. Η μεταβλητή στόχος
  ήταν πάλι η []\TU/DejaVuSansMono(0)/m/n/12 wine_type[]\TU/DejaVuSerif(1)/m/n/1
 2 ,
  []
 
-LaTeX Info: Redefining \rmfamily on input line 723.
-LaTeX Info: Redefining \sffamily on input line 723.
-LaTeX Info: Redefining \ttfamily on input line 723.
-LaTeX Info: Redefining \rmfamily on input line 725.
-LaTeX Info: Redefining \sffamily on input line 725.
-LaTeX Info: Redefining \ttfamily on input line 725.
-LaTeX Info: Redefining \rmfamily on input line 727.
-LaTeX Info: Redefining \sffamily on input line 727.
-LaTeX Info: Redefining \ttfamily on input line 727.
-LaTeX Info: Redefining \rmfamily on input line 729.
-LaTeX Info: Redefining \sffamily on input line 729.
-LaTeX Info: Redefining \ttfamily on input line 729.
-LaTeX Info: Redefining \rmfamily on input line 730.
-LaTeX Info: Redefining \sffamily on input line 730.
-LaTeX Info: Redefining \ttfamily on input line 730.
-[16]
-LaTeX Info: Redefining \rmfamily on input line 755.
-LaTeX Info: Redefining \sffamily on input line 755.
-LaTeX Info: Redefining \ttfamily on input line 755.
-LaTeX Info: Redefining \rmfamily on input line 756.
-LaTeX Info: Redefining \sffamily on input line 756.
-LaTeX Info: Redefining \ttfamily on input line 756.
-LaTeX Info: Redefining \rmfamily on input line 757.
-LaTeX Info: Redefining \sffamily on input line 757.
-LaTeX Info: Redefining \ttfamily on input line 757.
+[35]
+LaTeX Info: Redefining \rmfamily on input line 1789.
+LaTeX Info: Redefining \sffamily on input line 1789.
+LaTeX Info: Redefining \ttfamily on input line 1789.
+LaTeX Info: Redefining \rmfamily on input line 1791.
+LaTeX Info: Redefining \sffamily on input line 1791.
+LaTeX Info: Redefining \ttfamily on input line 1791.
+LaTeX Info: Redefining \rmfamily on input line 1793.
+LaTeX Info: Redefining \sffamily on input line 1793.
+LaTeX Info: Redefining \ttfamily on input line 1793.
+LaTeX Info: Redefining \rmfamily on input line 1795.
+LaTeX Info: Redefining \sffamily on input line 1795.
+LaTeX Info: Redefining \ttfamily on input line 1795.
+LaTeX Info: Redefining \rmfamily on input line 1796.
+LaTeX Info: Redefining \sffamily on input line 1796.
+LaTeX Info: Redefining \ttfamily on input line 1796.
+LaTeX Info: Redefining \rmfamily on input line 1803.
+LaTeX Info: Redefining \sffamily on input line 1803.
+LaTeX Info: Redefining \ttfamily on input line 1803.
+LaTeX Info: Redefining \rmfamily on input line 1805.
+LaTeX Info: Redefining \sffamily on input line 1805.
+LaTeX Info: Redefining \ttfamily on input line 1805.
+LaTeX Info: Redefining \rmfamily on input line 1808.
+LaTeX Info: Redefining \sffamily on input line 1808.
+LaTeX Info: Redefining \ttfamily on input line 1808.
+LaTeX Info: Redefining \rmfamily on input line 1842.
+LaTeX Info: Redefining \sffamily on input line 1842.
+LaTeX Info: Redefining \ttfamily on input line 1842.
+LaTeX Info: Redefining \rmfamily on input line 1843.
+LaTeX Info: Redefining \sffamily on input line 1843.
+LaTeX Info: Redefining \ttfamily on input line 1843.
+LaTeX Info: Redefining \rmfamily on input line 1844.
+LaTeX Info: Redefining \sffamily on input line 1844.
+LaTeX Info: Redefining \ttfamily on input line 1844.
+ [36]
 File: q4_confusion_matrix.png Graphic file (type bmp)
 <q4_confusion_matrix.png>
- [17]
-LaTeX Info: Redefining \rmfamily on input line 827.
-LaTeX Info: Redefining \sffamily on input line 827.
-LaTeX Info: Redefining \ttfamily on input line 827.
- [18]
+ [37]
+LaTeX Info: Redefining \rmfamily on input line 1947.
+LaTeX Info: Redefining \sffamily on input line 1947.
+LaTeX Info: Redefining \ttfamily on input line 1947.
+ [38]
 File: q4_boosting_feature_importance.png Graphic file (type bmp)
 <q4_boosting_feature_importance.png>
-LaTeX Info: Redefining \rmfamily on input line 865.
-LaTeX Info: Redefining \sffamily on input line 865.
-LaTeX Info: Redefining \ttfamily on input line 865.
-LaTeX Info: Redefining \rmfamily on input line 866.
-LaTeX Info: Redefining \sffamily on input line 866.
-LaTeX Info: Redefining \ttfamily on input line 866.
-LaTeX Info: Redefining \rmfamily on input line 874.
-LaTeX Info: Redefining \sffamily on input line 874.
-LaTeX Info: Redefining \ttfamily on input line 874.
-LaTeX Info: Redefining \rmfamily on input line 875.
-LaTeX Info: Redefining \sffamily on input line 875.
-LaTeX Info: Redefining \ttfamily on input line 875.
+ [39]
+LaTeX Info: Redefining \rmfamily on input line 2006.
+LaTeX Info: Redefining \sffamily on input line 2006.
+LaTeX Info: Redefining \ttfamily on input line 2006.
+LaTeX Info: Redefining \rmfamily on input line 2007.
+LaTeX Info: Redefining \sffamily on input line 2007.
+LaTeX Info: Redefining \ttfamily on input line 2007.
+LaTeX Info: Redefining \rmfamily on input line 2022.
+LaTeX Info: Redefining \sffamily on input line 2022.
+LaTeX Info: Redefining \ttfamily on input line 2022.
+LaTeX Info: Redefining \rmfamily on input line 2022.
+LaTeX Info: Redefining \sffamily on input line 2022.
+LaTeX Info: Redefining \ttfamily on input line 2022.
+LaTeX Info: Redefining \rmfamily on input line 2036.
+LaTeX Info: Redefining \sffamily on input line 2036.
+LaTeX Info: Redefining \ttfamily on input line 2036.
+LaTeX Info: Redefining \rmfamily on input line 2037.
+LaTeX Info: Redefining \sffamily on input line 2037.
+LaTeX Info: Redefining \ttfamily on input line 2037.
 
-Overfull \hbox (6.31406pt too wide) in paragraph at lines 874--877
+Overfull \hbox (6.31406pt too wide) in paragraph at lines 2036--2039
 []\TU/DejaVuSerif(1)/m/n/12 Το Boosting με 200 επιμέρους μοντέλα, []\TU/DejaVuS
 ansMono(0)/m/n/12 learning_rate=0.1 []\TU/DejaVuSerif(1)/m/n/12 και []\TU/DejaV
 uSansMono(0)/m/n/12 max_depth=1
  []
 
-[19]
-LaTeX Info: Redefining \rmfamily on input line 896.
-LaTeX Info: Redefining \sffamily on input line 896.
-LaTeX Info: Redefining \ttfamily on input line 896.
+[40]
+LaTeX Info: Redefining \rmfamily on input line 2047.
+LaTeX Info: Redefining \sffamily on input line 2047.
+LaTeX Info: Redefining \ttfamily on input line 2047.
+LaTeX Info: Redefining \rmfamily on input line 2048.
+LaTeX Info: Redefining \sffamily on input line 2048.
+LaTeX Info: Redefining \ttfamily on input line 2048.
+LaTeX Info: Redefining \rmfamily on input line 2065.
+LaTeX Info: Redefining \sffamily on input line 2065.
+LaTeX Info: Redefining \ttfamily on input line 2065.
+ [41]
 File: q5_tree_depth_concept.png Graphic file (type bmp)
 <q5_tree_depth_concept.png>
- [20]
-LaTeX Info: Redefining \rmfamily on input line 955.
-LaTeX Info: Redefining \sffamily on input line 955.
-LaTeX Info: Redefining \ttfamily on input line 955.
-LaTeX Info: Redefining \rmfamily on input line 960.
-LaTeX Info: Redefining \sffamily on input line 960.
-LaTeX Info: Redefining \ttfamily on input line 960.
- [21]
+LaTeX Info: Redefining \rmfamily on input line 2124.
+LaTeX Info: Redefining \sffamily on input line 2124.
+LaTeX Info: Redefining \ttfamily on input line 2124.
+LaTeX Info: Redefining \rmfamily on input line 2129.
+LaTeX Info: Redefining \sffamily on input line 2129.
+LaTeX Info: Redefining \ttfamily on input line 2129.
+ [42]
 File: q5_tree_depth_error.png Graphic file (type bmp)
 <q5_tree_depth_error.png>
-LaTeX Info: Redefining \rmfamily on input line 1005.
-LaTeX Info: Redefining \sffamily on input line 1005.
-LaTeX Info: Redefining \ttfamily on input line 1005.
-LaTeX Info: Redefining \rmfamily on input line 1005.
-LaTeX Info: Redefining \sffamily on input line 1005.
-LaTeX Info: Redefining \ttfamily on input line 1005.
-LaTeX Info: Redefining \rmfamily on input line 1013.
-LaTeX Info: Redefining \sffamily on input line 1013.
-LaTeX Info: Redefining \ttfamily on input line 1013.
-LaTeX Info: Redefining \rmfamily on input line 1014.
-LaTeX Info: Redefining \sffamily on input line 1014.
-LaTeX Info: Redefining \ttfamily on input line 1014.
- [22]
-LaTeX Info: Redefining \rmfamily on input line 1025.
-LaTeX Info: Redefining \sffamily on input line 1025.
-LaTeX Info: Redefining \ttfamily on input line 1025.
-LaTeX Info: Redefining \rmfamily on input line 1065.
-LaTeX Info: Redefining \sffamily on input line 1065.
-LaTeX Info: Redefining \ttfamily on input line 1065.
- [23]
-LaTeX Info: Redefining \rmfamily on input line 1107.
-LaTeX Info: Redefining \sffamily on input line 1107.
-LaTeX Info: Redefining \ttfamily on input line 1107.
-LaTeX Info: Redefining \rmfamily on input line 1108.
-LaTeX Info: Redefining \sffamily on input line 1108.
-LaTeX Info: Redefining \ttfamily on input line 1108.
-LaTeX Info: Redefining \rmfamily on input line 1109.
-LaTeX Info: Redefining \sffamily on input line 1109.
-LaTeX Info: Redefining \ttfamily on input line 1109.
-LaTeX Info: Redefining \rmfamily on input line 1110.
-LaTeX Info: Redefining \sffamily on input line 1110.
-LaTeX Info: Redefining \ttfamily on input line 1110.
-LaTeX Info: Redefining \rmfamily on input line 1111.
-LaTeX Info: Redefining \sffamily on input line 1111.
-LaTeX Info: Redefining \ttfamily on input line 1111.
-LaTeX Info: Redefining \rmfamily on input line 1112.
-LaTeX Info: Redefining \sffamily on input line 1112.
-LaTeX Info: Redefining \ttfamily on input line 1112.
-LaTeX Info: Redefining \rmfamily on input line 1113.
-LaTeX Info: Redefining \sffamily on input line 1113.
-LaTeX Info: Redefining \ttfamily on input line 1113.
-LaTeX Info: Redefining \rmfamily on input line 1114.
-LaTeX Info: Redefining \sffamily on input line 1114.
-LaTeX Info: Redefining \ttfamily on input line 1114.
-LaTeX Info: Redefining \rmfamily on input line 1115.
-LaTeX Info: Redefining \sffamily on input line 1115.
-LaTeX Info: Redefining \ttfamily on input line 1115.
-LaTeX Info: Redefining \rmfamily on input line 1116.
-LaTeX Info: Redefining \sffamily on input line 1116.
-LaTeX Info: Redefining \ttfamily on input line 1116.
-LaTeX Info: Redefining \rmfamily on input line 1117.
-LaTeX Info: Redefining \sffamily on input line 1117.
-LaTeX Info: Redefining \ttfamily on input line 1117.
-LaTeX Info: Redefining \rmfamily on input line 1118.
-LaTeX Info: Redefining \sffamily on input line 1118.
-LaTeX Info: Redefining \ttfamily on input line 1118.
-LaTeX Info: Redefining \rmfamily on input line 1119.
-LaTeX Info: Redefining \sffamily on input line 1119.
-LaTeX Info: Redefining \ttfamily on input line 1119.
-LaTeX Info: Redefining \rmfamily on input line 1120.
-LaTeX Info: Redefining \sffamily on input line 1120.
-LaTeX Info: Redefining \ttfamily on input line 1120.
-LaTeX Info: Redefining \rmfamily on input line 1121.
-LaTeX Info: Redefining \sffamily on input line 1121.
-LaTeX Info: Redefining \ttfamily on input line 1121.
-LaTeX Info: Redefining \rmfamily on input line 1122.
-LaTeX Info: Redefining \sffamily on input line 1122.
-LaTeX Info: Redefining \ttfamily on input line 1122.
-LaTeX Info: Redefining \rmfamily on input line 1123.
-LaTeX Info: Redefining \sffamily on input line 1123.
-LaTeX Info: Redefining \ttfamily on input line 1123.
- [24]
-LaTeX Info: Redefining \rmfamily on input line 1124.
-LaTeX Info: Redefining \sffamily on input line 1124.
-LaTeX Info: Redefining \ttfamily on input line 1124.
- [25] (./explanatory_report.aux)
+LaTeX Info: Redefining \rmfamily on input line 2174.
+LaTeX Info: Redefining \sffamily on input line 2174.
+LaTeX Info: Redefining \ttfamily on input line 2174.
+LaTeX Info: Redefining \rmfamily on input line 2174.
+LaTeX Info: Redefining \sffamily on input line 2174.
+LaTeX Info: Redefining \ttfamily on input line 2174.
+ [43]
+LaTeX Info: Redefining \rmfamily on input line 2182.
+LaTeX Info: Redefining \sffamily on input line 2182.
+LaTeX Info: Redefining \ttfamily on input line 2182.
+LaTeX Info: Redefining \rmfamily on input line 2183.
+LaTeX Info: Redefining \sffamily on input line 2183.
+LaTeX Info: Redefining \ttfamily on input line 2183.
+LaTeX Info: Redefining \rmfamily on input line 2194.
+LaTeX Info: Redefining \sffamily on input line 2194.
+LaTeX Info: Redefining \ttfamily on input line 2194.
+LaTeX Info: Redefining \rmfamily on input line 2234.
+LaTeX Info: Redefining \sffamily on input line 2234.
+LaTeX Info: Redefining \ttfamily on input line 2234.
+ [44]
+LaTeX Info: Redefining \rmfamily on input line 2276.
+LaTeX Info: Redefining \sffamily on input line 2276.
+LaTeX Info: Redefining \ttfamily on input line 2276.
+LaTeX Info: Redefining \rmfamily on input line 2277.
+LaTeX Info: Redefining \sffamily on input line 2277.
+LaTeX Info: Redefining \ttfamily on input line 2277.
+LaTeX Info: Redefining \rmfamily on input line 2278.
+LaTeX Info: Redefining \sffamily on input line 2278.
+LaTeX Info: Redefining \ttfamily on input line 2278.
+LaTeX Info: Redefining \rmfamily on input line 2279.
+LaTeX Info: Redefining \sffamily on input line 2279.
+LaTeX Info: Redefining \ttfamily on input line 2279.
+LaTeX Info: Redefining \rmfamily on input line 2280.
+LaTeX Info: Redefining \sffamily on input line 2280.
+LaTeX Info: Redefining \ttfamily on input line 2280.
+LaTeX Info: Redefining \rmfamily on input line 2281.
+LaTeX Info: Redefining \sffamily on input line 2281.
+LaTeX Info: Redefining \ttfamily on input line 2281.
+LaTeX Info: Redefining \rmfamily on input line 2282.
+LaTeX Info: Redefining \sffamily on input line 2282.
+LaTeX Info: Redefining \ttfamily on input line 2282.
+LaTeX Info: Redefining \rmfamily on input line 2283.
+LaTeX Info: Redefining \sffamily on input line 2283.
+LaTeX Info: Redefining \ttfamily on input line 2283.
+LaTeX Info: Redefining \rmfamily on input line 2284.
+LaTeX Info: Redefining \sffamily on input line 2284.
+LaTeX Info: Redefining \ttfamily on input line 2284.
+LaTeX Info: Redefining \rmfamily on input line 2285.
+LaTeX Info: Redefining \sffamily on input line 2285.
+LaTeX Info: Redefining \ttfamily on input line 2285.
+LaTeX Info: Redefining \rmfamily on input line 2286.
+LaTeX Info: Redefining \sffamily on input line 2286.
+LaTeX Info: Redefining \ttfamily on input line 2286.
+LaTeX Info: Redefining \rmfamily on input line 2287.
+LaTeX Info: Redefining \sffamily on input line 2287.
+LaTeX Info: Redefining \ttfamily on input line 2287.
+LaTeX Info: Redefining \rmfamily on input line 2288.
+LaTeX Info: Redefining \sffamily on input line 2288.
+LaTeX Info: Redefining \ttfamily on input line 2288.
+LaTeX Info: Redefining \rmfamily on input line 2289.
+LaTeX Info: Redefining \sffamily on input line 2289.
+LaTeX Info: Redefining \ttfamily on input line 2289.
+LaTeX Info: Redefining \rmfamily on input line 2290.
+LaTeX Info: Redefining \sffamily on input line 2290.
+LaTeX Info: Redefining \ttfamily on input line 2290.
+LaTeX Info: Redefining \rmfamily on input line 2291.
+LaTeX Info: Redefining \sffamily on input line 2291.
+LaTeX Info: Redefining \ttfamily on input line 2291.
+LaTeX Info: Redefining \rmfamily on input line 2292.
+LaTeX Info: Redefining \sffamily on input line 2292.
+LaTeX Info: Redefining \ttfamily on input line 2292.
+ [45]
+LaTeX Info: Redefining \rmfamily on input line 2293.
+LaTeX Info: Redefining \sffamily on input line 2293.
+LaTeX Info: Redefining \ttfamily on input line 2293.
+LaTeX Info: Redefining \rmfamily on input line 2294.
+LaTeX Info: Redefining \sffamily on input line 2294.
+LaTeX Info: Redefining \ttfamily on input line 2294.
+ [46] (./explanatory_report.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-22>
  ***********
 Package rerunfilecheck Info: File `explanatory_report.out' has not changed.
-(rerunfilecheck)             Checksum: CBAA6C656668D377625582C7F3B785B3;11656.
+(rerunfilecheck)             Checksum: E05D8B292EDD8EA812F4FFD72CB44B4D;20070.
  ) 
 Here is how much of TeX's memory you used:
- 18075 strings out of 476846
- 353119 string characters out of 5803824
- 2001627 words of memory out of 5000000
- 39715 multiletter control sequences out of 15000+600000
- 570911 words of font info for 133 fonts, out of 8000000 for 9000
+ 18082 strings out of 476846
+ 353302 string characters out of 5803824
+ 2020627 words of memory out of 5000000
+ 39721 multiletter control sequences out of 15000+600000
+ 570919 words of font info for 134 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 79i,12n,117p,530b,1231s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 79i,12n,117p,582b,1964s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on explanatory_report.pdf (25 pages).
+Output written on explanatory_report.pdf (46 pages).
