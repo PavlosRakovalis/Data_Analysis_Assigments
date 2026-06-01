@@ -1,0 +1,2 @@
+model,parameters,train_accuracy_epoch_30,validation_accuracy_epoch_30,train_loss_epoch_30,validation_loss_epoch_30,test_loss,test_accuracy
+cnn,515146,0.9997530579566956,0.9881481528282166,0.0010278024710714,0.0654476657509803,0.04693629965186119,0.9898750185966492
